@@ -101,24 +101,52 @@ def add_genre(name, sheetname, top_parents, parents):
         pare.append(g[f'{gnr}'])
 
     subgenres = []
-    genr = Genre(name, sheetname, t_pare, pare, subgenres)
-    g[f'{name}'] = genr
-    if top_parents != '':
-        for par in genr.top_parents:
-            par.subgenres.append(genr)
-        for par in genr.parents:
-            if genr not in par.subgenres:
+    if f'{name}' not in g:
+        genr = Genre(name, sheetname, t_pare, pare, subgenres)
+        g[f'{name}'] = genr
+
+        if top_parents != '': #This function is to update the Genre's subgenre list
+            for par in genr.top_parents:
                 par.subgenres.append(genr)
+            for par in genr.parents:
+                if genr not in par.subgenres:
+                    par.subgenres.append(genr)
+    elif f'{name}' in g:
+        # TODO: (!) The eventual purpose of this is to make it possible to add a genre again
+        # but with new information. If I add a genre that's already been added but I have new
+        # information in the "parents" field, then it will add that parent to the list rather
+        # than replacing the genre entirely
+
+        # Although it seems redundant, this will eventually coexist with a function that allows
+        # you to add or change the parents of a genre. It may also be replaced by that, but
+        # for now I'm doing this because the spreadsheet I'm importing from has a lot of
+        # duplicate genres that I'd rather not sift through and having a method like this makes
+        # it easier to deal with for now.
+
+        print('Debugging Note: Duplicate')
+
+        genr = g[f'{name}']
+
+        for gnr in pare:
+            if gnr not in genr.parents:
+                genr.parents.append(gnr)
+
+        pass
 
 def main():
     add_genre('Top-level', '', '', '')
     add_genre('Ambient', 'n/a', ['Top-level'], ['Top-level'])
-    add_genre('Space', 'n/a', ['Ambient'], ['Ambient'])
-    add_genre('Space Again', 'n/a', ['Ambient'], ['Ambient'])
+    add_genre('Electronic', 'n/a', ['Top-level'], ['Top-level'])
+    add_genre('Ambient', 'n/a', ['Electronic'], ['Electronic'])
+    add_genre('Space', 'n/a', ['Ambient'], ['Ambient', 'Electronic'])
+    add_genre('Space Again', 'n/a', ['Ambient'], ['Ambient', 'Electronic'])
     print('')
     print(g)
     print('')
-    print(g['Space'].back_main())
+    print('Ambient + Ambient\'s Parents:', g['Ambient'].back_main())
+    print('Space + Space\'s Parents:', g['Space'].back_main())
+    print('')
+    print('Ambient Subgenres below:')
     for subg in g['Ambient'].subgenres:
         print(subg.name)
     print('')
