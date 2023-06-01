@@ -117,6 +117,8 @@ def add_genre(name, sheetname, parents):
         for gnr in pare:
             if gnr not in genr.parents:
                 genr.parents.append(gnr)
+        
+        # TODO: (!) Subgenres for this one
 
         pass
 

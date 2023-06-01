@@ -1,0 +1,10 @@
+import csv
+import pandas as pd
+
+data = pd.read_csv("genres test.csv")
+print(data)
+
+with open("genres test.csv") as file:
+    csvreader = csv.reader(file)
+    for row in csvreader:
+        print(row[0])
