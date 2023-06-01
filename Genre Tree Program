@@ -38,7 +38,10 @@ class Genre:
             #
             # If it's NOT a top-level genre, you do not need to put "Top-level" as a parent
         self.subgenres = subgenres 
-            # TODO: (!) Write the comment for this later
+            # This should always be a list of nodes, NOT name strings
+            # This is a list of a genre's child genres (a.k.a. "subgenres")
+
+            # This INCLUDES the subgenres of its subgenres.
         pass
     
     def back_main(self):
@@ -88,8 +91,17 @@ class Genre:
 def add_genre(name, sheetname, top_parents, parents):
     if sheetname.lower() == 'n/a':
         sheetname = name
+    
+    t_pare = []
+    pare = []
+
+    for gnr in top_parents:
+        t_pare.append(g[f'{gnr}'])
+    for gnr in parents:
+        pare.append(g[f'{gnr}'])
+
     subgenres = []
-    genr = Genre(name, sheetname, top_parents, parents, subgenres)
+    genr = Genre(name, sheetname, t_pare, pare, subgenres)
     g[f'{name}'] = genr
     if top_parents != '':
         for par in genr.top_parents:
@@ -100,17 +112,17 @@ def add_genre(name, sheetname, top_parents, parents):
 
 def main():
     add_genre('Top-level', '', '', '')
-    add_genre('Ambient', 'n/a', [g['Top-level']], [g['Top-level']])
-    add_genre('Space', 'n/a', [g['Ambient']], [g['Ambient']])
-    add_genre('Space Again', 'n/a', [g['Ambient']], [g['Ambient']])
+    add_genre('Ambient', 'n/a', ['Top-level'], ['Top-level'])
+    add_genre('Space', 'n/a', ['Ambient'], ['Ambient'])
+    add_genre('Space Again', 'n/a', ['Ambient'], ['Ambient'])
     print('')
     print(g)
     print('')
+    print(g['Space'].back_main())
     for subg in g['Ambient'].subgenres:
         print(subg.name)
     print('')
 
 if __name__ == "__main__":
     main()
-    # TODO: (!) Eventually, you should determine whether or not it's important for you to use
-    # this and if the Class should be included within.
+    
