@@ -1,3 +1,5 @@
+import csv
+
 g = {}
     # This is the genre dictionary. It's intentionally just called "g" because it
     # will be called often while adding genres.
@@ -74,6 +76,8 @@ class Genre:
 
         pass
 
+    # TODO: (!) Make a function that returns the list of subgenres
+
     def __str__(self):
         if self.name == self.sheetname:
             return f'{self.name} // Parents: {self.parents}'
@@ -118,27 +122,38 @@ def add_genre(name, sheetname, parents):
             if gnr not in genr.parents:
                 genr.parents.append(gnr)
         
-        # TODO: (!) Subgenres for this one
+        if parents != '': #This function is to update the Genre's subgenre list
+            for par in genr.parents:
+                if genr not in par.subgenres:
+                    par.subgenres.append(genr)
 
         pass
 
 def main():
-    add_genre('Top-level', '', '')
-    add_genre('Ambient', 'n/a', ['Top-level'])
-    add_genre('Electronic', 'n/a', ['Top-level'])
-    add_genre('Ambient', 'n/a', ['Electronic'])
-    add_genre('Space', 'n/a', ['Ambient', 'Electronic'])
-    add_genre('Space Again', 'n/a', ['Ambient', 'Electronic'])
+    with open("genres2.csv") as file:
+        csvreader = csv.reader(file)
+        for row in csvreader:
+            par_gen = [] #To make the list of parent genres
+            sheetname = 'n/a'
+            if row[0] != row[1]: #If the sheet name (row[1]) is different from the regular name (row[0])
+                sheetname = row[1] #Change the sheet name variable to the sheet name
+            for gnr in range(2,12): #This is for the columns that have the parent genres
+                if row[gnr] != '': #If it's not blank
+                    par_gen.append(row[gnr]) #Append the genre to the par_gen list
+            add_genre(row[0], sheetname, par_gen)
+    
+    #Testing
+    print('Ambient: ', g['Ambient'].back_main())
+    print('Americana: ', g['Americana'].back_main())
+    print('Disco: ', g['Disco'].back_main())
+    print('Dance-Pop: ', g['Dance-Pop'].back_main())
+
     print('')
-    print(g)
-    print('')
-    print('Ambient + Ambient\'s Parents:', g['Ambient'].back_main())
-    print('Space + Space\'s Parents:', g['Space'].back_main())
-    print('')
-    print('Ambient Subgenres below:')
-    for subg in g['Ambient'].subgenres:
+
+    print('Dance subgenres:')
+    for subg in g['Dance'].subgenres:
         print(subg.name)
-    print('')
+
 
 if __name__ == "__main__":
     main()

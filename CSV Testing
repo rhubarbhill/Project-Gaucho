@@ -7,4 +7,9 @@ print(data)
 with open("genres test.csv") as file:
     csvreader = csv.reader(file)
     for row in csvreader:
-        print(row[0])
+        print(row[2])
+        if row[2] == 'Electronic':
+            print('Elec')
+        if row[2] == '':
+            print('Blank')
+        
