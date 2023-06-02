@@ -150,20 +150,6 @@ def csv_extract(filename): #Function to add genres from a csv file
 def main():
     csv_extract('genres2.csv')
 
-    #Testing
-    print('Ambient: ', g['Ambient'].back_main())
-    print('Americana: ', g['Americana'].back_main())
-    print('Disco: ', g['Disco'].back_main())
-    print('Dance-Pop: ', g['Dance-Pop'].back_main())
-
-    print('')
-
-    #print('Top-level subgenres:')
-    #for subg in g['Top-level'].subgenres:
-        #print(subg.name)
-
-    print('')
-
     #Algorithm to print all genres along with their parents
     print(g['Top-level'].name)
     for subg in g['Top-level'].subgenres:
