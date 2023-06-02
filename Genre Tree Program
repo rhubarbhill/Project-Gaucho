@@ -79,10 +79,15 @@ class Genre:
     # TODO: (!) Make a function that returns the list of subgenres
 
     def __str__(self):
+        parent_strings = []
+
+        for genre in self.parents:
+            parent_strings.append(genre.name)
+
         if self.name == self.sheetname:
-            return f'{self.name} // Parents: {self.parents}'
+            return f'{self.name} // Parents: {parent_strings}'
         else:
-            return f'{self.name} (Sheet Name: {self.sheetname}) // Parents: {self.parents}'
+            return f'{self.name} (Sheet Name: {self.sheetname}) // Parents: {parent_strings}'
 
 def add_genre(name, sheetname, parents):
     if sheetname.lower() == 'n/a':
@@ -129,8 +134,8 @@ def add_genre(name, sheetname, parents):
 
         pass
 
-def main():
-    with open("genres2.csv") as file:
+def csv_extract(filename): #Function to add genres from a csv file
+    with open(filename) as file:
         csvreader = csv.reader(file)
         for row in csvreader:
             par_gen = [] #To make the list of parent genres
@@ -141,7 +146,10 @@ def main():
                 if row[gnr] != '': #If it's not blank
                     par_gen.append(row[gnr]) #Append the genre to the par_gen list
             add_genre(row[0], sheetname, par_gen)
-    
+
+def main():
+    csv_extract('genres2.csv')
+
     #Testing
     print('Ambient: ', g['Ambient'].back_main())
     print('Americana: ', g['Americana'].back_main())
@@ -150,9 +158,18 @@ def main():
 
     print('')
 
-    print('Dance subgenres:')
-    for subg in g['Dance'].subgenres:
-        print(subg.name)
+    #print('Top-level subgenres:')
+    #for subg in g['Top-level'].subgenres:
+        #print(subg.name)
+
+    print('')
+
+    #Algorithm to print all genres along with their parents
+    print(g['Top-level'].name)
+    for subg in g['Top-level'].subgenres:
+        print(subg.__str__())
+        for subsubg in subg.subgenres:
+            print('> ', subsubg.__str__())
 
 
 if __name__ == "__main__":
