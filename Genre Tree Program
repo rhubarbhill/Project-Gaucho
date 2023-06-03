@@ -101,6 +101,7 @@ def add_genre(name, sheetname, parents):
     subgenres = []
     if f'{name}' not in g:
         genr = Genre(name, sheetname, pare, subgenres)
+        #print('Debug: ', genr.name)
         g[f'{name}'] = genr
 
         if parents != '': #This function is to update the Genre's subgenre list
@@ -119,9 +120,10 @@ def add_genre(name, sheetname, parents):
         # duplicate genres that I'd rather not sift through and having a method like this makes
         # it easier to deal with for now.
 
-        print('Debugging Note: Duplicate')
+        #print('Debugging Note: Duplicate')
 
         genr = g[f'{name}']
+        #print('Debug: ', genr.name)
 
         for gnr in pare:
             if gnr not in genr.parents:
@@ -135,7 +137,7 @@ def add_genre(name, sheetname, parents):
         pass
 
 def csv_extract(filename): #Function to add genres from a csv file
-    with open(filename) as file:
+    with open(filename, encoding='utf-8') as file:
         csvreader = csv.reader(file)
         for row in csvreader:
             par_gen = [] #To make the list of parent genres
@@ -148,7 +150,7 @@ def csv_extract(filename): #Function to add genres from a csv file
             add_genre(row[0], sheetname, par_gen)
 
 def main():
-    csv_extract('genres2.csv')
+    csv_extract('genres2full.csv')
 
     #Algorithm to print all genres along with their parents
     print(g['Top-level'].name)
