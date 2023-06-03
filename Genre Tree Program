@@ -38,7 +38,7 @@ class Genre:
             # This INCLUDES the subgenres of its subgenres.
         pass
     
-    def back_main(self):
+    def back_main(self, mode):
         # This should return a genre’s name along with all of its parents *who are not already*
         # textually contained within the genre’s name, with each genre separated by semicolons
             #These are what I call the “back main” genres
@@ -49,8 +49,11 @@ class Genre:
 
         # TODO: (!) There should eventually be a function that finds the back main genres of a set of
         # multiple front genres
-            # TODO: (!) Define “front genres” some other time for documentation purposes but you
-            # already know what they are
+            # ^ COMPLETED ON JUNE 2, 2023
+        # TODO: (!) Define “front genres” some other time for documentation purposes but you
+        # already know what they are
+
+        mode = mode
 
         back_main_genres = self.name
             # This is the string which will eventually be returned.
@@ -65,8 +68,11 @@ class Genre:
                 back_main_list.append(genre)
                     #This is so there's access to the objects themselves
                 back_main_genres += f'; {genre.sheetname}'
-            
-        return back_main_genres
+        
+        if mode == 'obj':
+            return back_main_list
+        if mode == 'str':
+            return back_main_genres
     
     def back_all(self):
         # This should return a genre’s name along with all of its parents, no matter what, with each
@@ -160,16 +166,50 @@ def print_all_genres():
 
     # TODO: (!) Currently, this does technically not print all genres, as it does not
     # print anything with a depth* greater than 2 (like "Flamenco nuevo", which is
-    # a subgenre of a subgenre of a subgenre of a... you get the point.)
+    # a subgenre of a subgenre of a subgenre of a... you get the point.) You must
+    # eventually make it able to print all genres, which may likely involve recursion.
     #
     # *depth = How deep it is in the genre tree. "Top-level" has a depth of 0,
     # genres like "Pop" and "Rock" have a depth of 1, and and subgenres like "Pop Rock"
     # has a depth of 2, etc.
 
+def back_main_multiple(genre_list):
+    #Enter a list of multiple genres, separated by "; ", and then it will return
+    #that list of genres (with their sheet names) plus all of the parents of each one.
+
+    g_list_str = genre_list.split('; ')
+    g_list_obj = []
+    back_main_genres = ''
+
+    for genre in g_list_str:
+        genr = g[f'{genre}']
+        g_list_obj.append(genr)
+
+    if len(g_list_str) == 1: #If only one genre is inputted
+        back_main_genres = g_list_obj[0].back_main('str')
+    elif len(g_list_str) > 1: #If more than one genre is inputted
+        back_main_genres += g_list_obj[0].sheetname
+
+        for genre in g_list_obj[1:]:
+            back_main_genres += f'; {genre.sheetname}'
+
+        for genre in g_list_obj:
+            g_list_2 = genre.back_main('obj')
+
+            for genr in g_list_2:
+                if genr.sheetname not in back_main_genres and genre.sheetname != 'Top-level':
+                    back_main_genres += f'; {genr.sheetname}'
+
+    return back_main_genres
+
 def main():
     csv_extract('genres2full.csv')
 
-    print(g['Spirituals'].back_main())
+    #Testing
+    print(g['Spirituals'].back_main('str'))
+    print(g['Spirituals'].back_main('obj'))
+    print('')
+    print(back_main_multiple('Chillwave; Jangle Pop; Country Rock'))
     
 
 
