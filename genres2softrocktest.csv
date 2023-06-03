@@ -1,0 +1,7 @@
+Top-level,Top-level,,,,,,,,,,,1
+Pop,Pop,,,,,,Top-level,,,,,22
+Rock,Rock,,,,,,Top-level,,,,,27
+Pop Rock,Pop Rock,,,,,,Pop,,,,,263
+Pop Rock,Pop Rock,,,,,,Rock,,,,,264
+Soft Rock,Soft Rock,Pop Rock,,,,,,,,,,812
+Softer Rock,Softer Rock,Soft Rock,,,,,,,,,,1000

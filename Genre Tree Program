@@ -47,17 +47,15 @@ class Genre:
         
         # Keep in mind that this function is just for finding the back main genres of a single genre.
 
-        # TODO: (!) There should eventually be a function that finds the back main genres of a set of
-        # multiple front genres
-            # ^ COMPLETED ON JUNE 2, 2023
         # TODO: (!) Define “front genres” some other time for documentation purposes but you
         # already know what they are
 
+        # TODO: (!) Make a name type parameter to toggle whether it returns names or sheet names
+
         mode = mode
 
-        back_main_genres = self.name
+        back_main_genres = self.sheetname
             # This is the string which will eventually be returned.
-        
         back_main_list = []
 
         # TODO: (!) You may eventually need to create a function that sorts the genres in self.parents
@@ -74,11 +72,50 @@ class Genre:
         if mode == 'str':
             return back_main_genres
     
-    def back_all(self):
+    def back_all(self, mode, method):
         # This should return a genre’s name along with all of its parents, no matter what, with each
         # genre separated by semicolons
 
         # TODO: (!) This function.
+
+        if self.name == 'Top-level' or self.name is None:
+            #Base case to stop recursion
+            return
+
+        mode = mode
+            # Whether it's an object or string
+            # 'obj' or 'str'
+            # or 'rec', which returns only the object itself.
+            # This is necessary for the recursive function to work
+        method = method
+            # Whether it does it by just returning the list of parents
+                # 'par_list'
+            # OR by going through each of the parents and doing back_all for each of them
+                # 'comp_look' (stands for "comprehensive look")
+
+        back_all_genres = self.name
+            # This is the string which will eventually be returned.     
+        back_all_list = []
+        back_all_list.append(self)
+
+        if method == 'par_list':
+            for genre in self.parents:
+                if genre.name != 'Top-level':
+                    back_all_list.append(genre)
+                    back_all_genres += f'; {genre.sheetname}'
+        if method == 'comp_look':
+            for genre in self.parents:
+                back_all_list.append(genre.back_all('rec', method))
+                back_all_genres += f'; {genre.back_all("str", method)}'
+                    #Recursive functions
+                #back_all_genres += f'; {genre.sheetname}'
+        
+        if mode == 'obj':
+            return back_all_list
+        if mode == 'rec':
+            return back_all_list
+        if mode == 'str':
+            return back_all_genres
 
         pass
 
@@ -99,6 +136,10 @@ def add_genre(name, sheetname, parents):
     if sheetname.lower() == 'n/a':
         sheetname = name
     
+    # TODO: (!) Eventually, it should be possible to input only a genre's immediate
+    # parents, and then you can iteratively use back_all on each of those parents
+    # so that you can find all of the grandparents just from there
+
     pare = []
 
     for gnr in parents:
@@ -211,16 +252,35 @@ def back_main_multiple(genre_list):
     return back_main_genres
 
 def main():
-    csv_extract('genres2full.csv')
+    #csv_extract('genres2full.csv')
+    csv_extract('genres2softrocktest.csv')
 
-    #Testing
-    print(g['Spirituals'].back_main('str'))
-    print(g['Spirituals'].back_main('obj'))
+    ##Testing
+    #print(g['Spirituals'].back_main('str'))
+    #print(g['Spirituals'].back_main('obj'))
+    #print('')
+    #print(back_main_multiple('Chillwave; Jangle Pop; Country Rock'))
+    #print(back_main_multiple('Digital Dancehall'))
+    #print('')
+    #print_subgenres('Caribbean Music')
+
+    print_all_genres()
+    print(g['Soft Rock'].__str__())
+    print(g['Softer Rock'].__str__())
     print('')
-    print(back_main_multiple('Chillwave; Jangle Pop; Country Rock'))
-    print(back_main_multiple('Digital Dancehall'))
+    print([g['Soft Rock'], g['Pop Rock'], g['Pop'], g['Rock']])
     print('')
-    print_subgenres('Caribbean Music')
+    print(g['Soft Rock'].back_all('obj', 'comp_look'))
+    print(g['Soft Rock'].back_all('str', 'comp_look'))
+    print('')
+    print('DIVIDER')
+    print('')
+    print(g['Softer Rock'].__str__())
+    print('')
+    print([g['Softer Rock'], g['Soft Rock'], g['Pop Rock'], g['Pop'], g['Rock']])
+    print('')
+    print(g['Softer Rock'].back_all('obj', 'comp_look'))
+    print(g['Softer Rock'].back_all('str', 'comp_look'))
     
 
 
