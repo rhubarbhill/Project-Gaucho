@@ -105,19 +105,28 @@ class Genre:
                     back_all_genres += f'; {genre.sheetname}'
         if method == 'comp_look':
             for genre in self.parents:
-                back_all_list.append(genre.back_all('rec', method))
-                back_all_genres += f'; {genre.back_all("str", method)}'
-                    #Recursive functions
-                #back_all_genres += f'; {genre.sheetname}'
+                back_all_list.append(genre.back_all('obj', 'comp_look'))
+                back_all_genres += f'; {genre.back_all("str", "comp_look")}'
+            #back_all_genres += f'; {genre.sheetname}'
         
         if mode == 'obj':
-            return back_all_list
-        if mode == 'rec':
             return back_all_list
         if mode == 'str':
             return back_all_genres
 
         pass
+
+    def back_all_helper(self, par_list, list, string):
+        par_list = par_list
+        list = list
+        string = string
+
+        for genre in par_list:
+            if genre.name != 'Top-level':
+                list.append(genre)
+                string += f'; {genre.sheetname}'
+        
+        return [list, string]
 
     # TODO: (!) Make a function that returns the list of subgenres
 
@@ -270,6 +279,9 @@ def main():
     print('')
     print([g['Soft Rock'], g['Pop Rock'], g['Pop'], g['Rock']])
     print('')
+    print(g['Soft Rock'].back_all('obj', 'par_list'))
+    print(g['Soft Rock'].back_all('str', 'par_list'))
+    print('')
     print(g['Soft Rock'].back_all('obj', 'comp_look'))
     print(g['Soft Rock'].back_all('str', 'comp_look'))
     print('')
@@ -278,6 +290,9 @@ def main():
     print(g['Softer Rock'].__str__())
     print('')
     print([g['Softer Rock'], g['Soft Rock'], g['Pop Rock'], g['Pop'], g['Rock']])
+    print('')
+    print(g['Softer Rock'].back_all('obj', 'par_list'))
+    print(g['Softer Rock'].back_all('str', 'par_list'))
     print('')
     print(g['Softer Rock'].back_all('obj', 'comp_look'))
     print(g['Softer Rock'].back_all('str', 'comp_look'))
