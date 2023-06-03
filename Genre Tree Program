@@ -72,7 +72,7 @@ class Genre:
         if mode == 'str':
             return back_main_genres
     
-    def back_all(self, mode, method):
+    def back_all(self, mode, name, method):
         # This should return a genre’s name along with all of its parents, no matter what, with each
         # genre separated by semicolons
 
@@ -87,46 +87,64 @@ class Genre:
             # 'obj' or 'str'
             # or 'rec', which returns only the object itself.
             # This is necessary for the recursive function to work
+        name = name
+            # Whether it should return the name or the sheetname
+            # 'name' or 'sheet'
         method = method
             # Whether it does it by just returning the list of parents
                 # 'par_list'
             # OR by going through each of the parents and doing back_all for each of them
                 # 'comp_look' (stands for "comprehensive look")
 
-        back_all_genres = self.name
+        back_all_genres = self.sheetname
             # This is the string which will eventually be returned.     
+        back_all_genres_n = self.name
         back_all_list = []
-        back_all_list.append(self)
+        #back_all_list.append(self)
 
         if method == 'par_list':
             for genre in self.parents:
                 if genre.name != 'Top-level':
                     back_all_list.append(genre)
-                    back_all_genres += f'; {genre.sheetname}'
+                    if mode == 'name':
+                        back_all_genres += f'; {genre.name}'
+                    if mode == 'sheet':
+                        back_all_genres += f'; {genre.sheetname}'
         if method == 'comp_look':
             for genre in self.parents:
-                back_all_list.append(genre.back_all('obj', 'comp_look'))
-                back_all_genres += f'; {genre.back_all("str", "comp_look")}'
-            #back_all_genres += f'; {genre.sheetname}'
+                back_all_genres += f'; {genre.back_all("str", "sheetname", "comp_look")}'
+                back_all_genres_n += f'; {genre.back_all("str", "name", "comp_look")}'
         
+        #g_list_str = genre_list.split('; ')
+            #g_list_obj = []
+            #back_main_genres = ''
+
+            #for genre in g_list_str:
+                #genr = g[f'{genre}']
+                #g_list_obj.append(genr)
+
         if mode == 'obj':
+            g_list_str = back_all_genres_n.split('; ')
+            for genre in g_list_str:
+                genr = g[f'{genre}']
+                back_all_list.append(genr)
             return back_all_list
         if mode == 'str':
-            return back_all_genres
+            return back_all_genres.replace('; None', '')
 
         pass
 
-    def back_all_helper(self, par_list, list, string):
-        par_list = par_list
-        list = list
-        string = string
+    #def back_all_helper(self, par_list, list, string):
+        #par_list = par_list
+        #list = list
+        #string = string
 
-        for genre in par_list:
-            if genre.name != 'Top-level':
-                list.append(genre)
-                string += f'; {genre.sheetname}'
+        #for genre in par_list:
+            #if genre.name != 'Top-level':
+                #list.append(genre)
+                #string += f'; {genre.sheetname}'
         
-        return [list, string]
+        #return [list, string]
 
     # TODO: (!) Make a function that returns the list of subgenres
 
@@ -279,11 +297,11 @@ def main():
     print('')
     print([g['Soft Rock'], g['Pop Rock'], g['Pop'], g['Rock']])
     print('')
-    print(g['Soft Rock'].back_all('obj', 'par_list'))
-    print(g['Soft Rock'].back_all('str', 'par_list'))
+    print(g['Soft Rock'].back_all('obj', 'sheet', 'par_list'))
+    print(g['Soft Rock'].back_all('str', 'sheet', 'par_list'))
     print('')
-    print(g['Soft Rock'].back_all('obj', 'comp_look'))
-    print(g['Soft Rock'].back_all('str', 'comp_look'))
+    print(g['Soft Rock'].back_all('obj', 'sheet', 'comp_look'))
+    print(g['Soft Rock'].back_all('str', 'sheet', 'comp_look'))
     print('')
     print('DIVIDER')
     print('')
@@ -291,11 +309,11 @@ def main():
     print('')
     print([g['Softer Rock'], g['Soft Rock'], g['Pop Rock'], g['Pop'], g['Rock']])
     print('')
-    print(g['Softer Rock'].back_all('obj', 'par_list'))
-    print(g['Softer Rock'].back_all('str', 'par_list'))
+    print(g['Softer Rock'].back_all('obj', 'sheet', 'par_list'))
+    print(g['Softer Rock'].back_all('str', 'sheet', 'par_list'))
     print('')
-    print(g['Softer Rock'].back_all('obj', 'comp_look'))
-    print(g['Softer Rock'].back_all('str', 'comp_look'))
+    print(g['Softer Rock'].back_all('obj', 'sheet', 'comp_look'))
+    print(g['Softer Rock'].back_all('str', 'sheet', 'comp_look'))
     
 
 
