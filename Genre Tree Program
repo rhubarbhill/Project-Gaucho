@@ -64,7 +64,7 @@ class Genre:
             if genre.name not in self.name and genre.name != 'Top-level':
                 back_main_list.append(genre)
                     #This is so there's access to the objects themselves
-                back_main_genres += f'; {genre.name}'
+                back_main_genres += f'; {genre.sheetname}'
             
         return back_main_genres
     
@@ -149,15 +149,28 @@ def csv_extract(filename): #Function to add genres from a csv file
                     par_gen.append(row[gnr]) #Append the genre to the par_gen list
             add_genre(row[0], sheetname, par_gen)
 
-def main():
-    csv_extract('genres2full.csv')
-
+def print_all_genres():
     #Algorithm to print all genres along with their parents
+
     print(g['Top-level'].name)
     for subg in g['Top-level'].subgenres:
         print(subg.__str__())
         for subsubg in subg.subgenres:
             print('> ', subsubg.__str__())
+
+    # TODO: (!) Currently, this does technically not print all genres, as it does not
+    # print anything with a depth* greater than 2 (like "Flamenco nuevo", which is
+    # a subgenre of a subgenre of a subgenre of a... you get the point.)
+    #
+    # *depth = How deep it is in the genre tree. "Top-level" has a depth of 0,
+    # genres like "Pop" and "Rock" have a depth of 1, and and subgenres like "Pop Rock"
+    # has a depth of 2, etc.
+
+def main():
+    csv_extract('genres2full.csv')
+
+    print(g['Spirituals'].back_main())
+    
 
 
 if __name__ == "__main__":
