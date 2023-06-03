@@ -60,9 +60,6 @@ class Genre:
             # This is the string which will eventually be returned.
         back_main_list = []
 
-        # TODO: (!) You may eventually need to create a function that sorts the genres in self.parents
-        # so that the more specific genres come first and the broader genres come last
-
         for genre in self.parents:
             if genre.name not in self.name and genre.name not in back_main_genres and genre.name != 'Top-level':
                 back_main_list.append(genre)
@@ -77,8 +74,6 @@ class Genre:
     def back_all(self, mode, name, method):
         # This should return a genre’s name along with all of its parents, no matter what, with each
         # genre separated by semicolons
-
-        # TODO: (!) This function.
 
         if self.name == 'Top-level' or self.name is None:
             #Base case to stop recursion
@@ -118,10 +113,25 @@ class Genre:
             g_list_str = back_all_genres_n.split('; ')
             for genre in g_list_str:
                 genr = g[f'{genre}']
-                back_all_list.append(genr)
+                if genr not in g_list_str:
+                    back_all_list.append(genr)
             return back_all_list
         if mode == 'str' or mode == '':
-            return back_all_genres.replace('; None', '')
+            # TODO: (!) Fix the duplication issue ("Metal; Metal")
+            # The below solution fixes it but it's a little clunky and strange
+            # Possibly just a temporary fix
+
+            back_all_genres = back_all_genres.replace('; None', '')
+            b_a_g = back_all_genres.split('; ')
+            b_a_g_nd = []
+                #nd = no duplicates
+            [b_a_g_nd.append(x) for x in b_a_g if x not in b_a_g_nd]
+
+            back_all_genres = b_a_g_nd[0]
+            for genre in b_a_g_nd[1:]:
+                back_all_genres += f'; {genre}'
+
+            return back_all_genres
 
         pass
 
@@ -189,6 +199,42 @@ def add_genre(name, sheetname, parents):
                     par.subgenres.append(genr)
 
         pass
+
+def add_genre_check(name, sheetname, parents):
+    # Checks a genre before adding it, returning all parents based on
+    # only the immediate parents and looking through all existing genres
+    # to see which ones are textually contained within it while also
+    # not being a parent of it
+    # This will not return anything, instead just printing (for now).
+
+    # Eventually will use this example:
+    # add_genre_check('Not Punk', 'Not Punk', ['Atmospheric Black Metal'])
+
+    add_genre(name, sheetname, parents)
+
+    if name == sheetname:
+        print(f'Name of genre: {name}')
+    else:
+        print(f'Name of genre: {name} (Sheet Name: {sheetname})')
+    
+    genr = g[f'{name}']
+
+    print('All parents of genre:', genr.back_all('', '', 'comp_look'))
+    all_parents_o = genr.back_all('obj', '', 'comp_look')
+    all_parents_s = []
+    for genre in all_parents_o:
+        all_parents_s.append(genre.name)
+
+    print('Contained Genres:')
+    for genre in g: #Checks the entire dictionary
+        if g[genre].name in name and g[genre].name not in all_parents_s and g[genre].name != name:
+            print(f'> {g[genre].name} contained in {name}')
+        
+    print('')
+
+    # TODO: (!) Review this again when I have more time
+
+    pass
 
 def csv_extract(filename): #Function to add genres from a csv file
     with open(filename, encoding='utf-8') as file:
@@ -267,17 +313,20 @@ def back_main_multiple(genre_list):
 def main():
     csv_extract('genres3.2.csv')
 
-    #Testing
-    print(g['Spirituals'].back_main('str'))
-    print(g['Spirituals'].back_main('obj'))
-    print('')
-    print(back_main_multiple('Chillwave; Jangle Pop; Country Rock'))
-    print(back_main_multiple('Digital Dancehall'))
-    print('')
-    print_subgenres('Caribbean Music')
-    print('')
-    print(g['Delta Blues'].back_all('', '', ''))
-    print(g['Delta Blues'].back_main(''))
+    ##Testing
+    #print(g['Spirituals'].back_main('str'))
+    #print(g['Spirituals'].back_main('obj'))
+    #print('')
+    #print(back_main_multiple('Chillwave; Jangle Pop; Country Rock'))
+    #print(back_main_multiple('Digital Dancehall'))
+    #print('')
+    #print_subgenres('Caribbean Music')
+    #print('')
+    #print(g['Delta Blues'].back_all('', '', ''))
+    #print(g['Delta Blues'].back_main(''))
+
+    add_genre_check('Not Punk', 'Not Punk', ['Atmospheric Black Metal'])
+    add_genre_check('Work Songs', 'Work Songs', ['Traditional Folk'])
 
 if __name__ == "__main__":
     main()
