@@ -173,6 +173,14 @@ def print_all_genres():
     # genres like "Pop" and "Rock" have a depth of 1, and and subgenres like "Pop Rock"
     # has a depth of 2, etc.
 
+def print_subgenres(genre):
+    genrename = g[f'{genre}'].name
+    print(genrename)
+    print('')
+    print(f'Subgenres of {genrename}:')
+    for subgenre in g[f'{genre}'].subgenres:
+        print(subgenre.__str__())
+
 def back_main_multiple(genre_list):
     #Enter a list of multiple genres, separated by "; ", and then it will return
     #that list of genres (with their sheet names) plus all of the parents of each one.
@@ -210,6 +218,9 @@ def main():
     print(g['Spirituals'].back_main('obj'))
     print('')
     print(back_main_multiple('Chillwave; Jangle Pop; Country Rock'))
+    print(back_main_multiple('Digital Dancehall'))
+    print('')
+    print_subgenres('Caribbean Music')
     
 
 
