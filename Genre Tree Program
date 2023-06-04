@@ -229,6 +229,7 @@ def add_genre_check(name, sheetname, parents):
     for genre in g: #Checks the entire dictionary
         if g[genre].name in name and g[genre].name not in all_parents_s and g[genre].name != name:
             print(f'> {g[genre].name} contained in {name}')
+        # TODO: (!) Make one for vice versa (if name is contained in genre name)
         
     print('')
 
@@ -310,6 +311,11 @@ def back_main_multiple(genre_list):
 
     return back_main_genres
 
+# TODO: (!) A function that checks a back_main_genres string to make sure
+# that it's correct: all genres in the string need to exist and need to have
+# the correct parents. Because back_main_genres strings use the sheetnames,
+# there will have to be a list or dictionary with all of the sheetnames
+
 def main():
     csv_extract('genres3.2.csv')
 
@@ -325,8 +331,10 @@ def main():
     #print(g['Delta Blues'].back_all('', '', ''))
     #print(g['Delta Blues'].back_main(''))
 
-    add_genre_check('Not Punk', 'Not Punk', ['Atmospheric Black Metal'])
-    add_genre_check('Work Songs', 'Work Songs', ['Traditional Folk'])
+    print(back_main_multiple('Pop Rap; West Coast Hip Hop; Conscious Hip Hop; Trap (Hip Hop)'))
+
+    #add_genre_check('Not Punk', 'Not Punk', ['Atmospheric Black Metal'])
+    #add_genre_check('Work Songs', 'Work Songs', ['Traditional Folk'])
 
 if __name__ == "__main__":
     main()
