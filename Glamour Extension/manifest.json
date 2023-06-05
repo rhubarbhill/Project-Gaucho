@@ -1,0 +1,21 @@
+{
+    "name": "Glamour Extension",
+    "description": "An extension for easily copying information about tracks, among other helpful things related to music info",
+    "version": "1.0",
+    "manifest_version": 3,
+    "icons": {
+        "16": "images/gaucho_icon-16.png",
+        "32": "images/gaucho_icon-32.png",
+        "48": "images/gaucho_icon-48.png",
+        "128": "images/gaucho_icon-128.png"
+    },
+    "action": {
+        "default_popup": "popup/popup.html",
+        "default_icon": {
+          "16": "images/gaucho_icon-16.png",
+          "32": "images/gaucho_icon-32.png",
+          "48": "images/gaucho_icon-48.png",
+          "128": "images/gaucho_icon-128.png"
+        }
+    }
+}  
