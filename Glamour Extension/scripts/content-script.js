@@ -24,4 +24,8 @@ for (let i = 0; i < all_tracks.length; i++) {
 
 function pencil(song_title) {
     console.log(song_title)
+    chrome.runtime.sendMessage({
+        song: song_title,
+        artist: "test"
+    })
 }
