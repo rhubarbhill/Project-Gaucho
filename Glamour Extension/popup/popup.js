@@ -1,26 +1,24 @@
 console.log("This is a popup!")
 console.log(document.body)
 
-curr_song = "..."
+// TODO: Make it so the pencil works even when the popup is closed
+
+var curr_song = "..."
+var curr_artist = "..."
+var content = ''
+var holder = ''
 
 chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
     console.dir(message.song)
     console.dir(message.artist)
 
-    curr_song = message.song
-    var songContent = curr_song
-    var songHolder = document.getElementById("song-holder")
-
-    console.log(songHolder.innerHTML)
-    songHolder.innerHTML = songContent
-    console.log(songHolder.innerHTML)
+    write_cell(curr_song, message.song, "song-holder")
+    write_cell(curr_artist, message.artist, "artist-holder")
 })
 
-/*(async () => {
-    const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
-    const [{ result }] = await chrome.scripting.executeScript(({
-      target: { tabId: tab.id },
-      func: () => song_title,
-    }))
-    document.body.textContent = result;
-  })()*/
+function write_cell (curr_, message_, id) {
+    curr_ = message_
+    content = curr_
+    holder = document.getElementById(id)
+    holder.innerHTML = content
+}
