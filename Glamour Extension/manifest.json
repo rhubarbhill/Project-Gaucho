@@ -17,5 +17,11 @@
           "48": "images/gaucho_icon-48.png",
           "128": "images/gaucho_icon-128.png"
         }
-    }
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://rateyourmusic.com/release/*"],
+            "js": ["scripts/content-script.js"]
+        }
+    ]
 }  
