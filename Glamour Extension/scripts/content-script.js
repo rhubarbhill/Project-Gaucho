@@ -1,6 +1,5 @@
 console.log('scripts/content-script.js')
 
-//var tracklist = document.getElementsByClassName("tracks tracklisting")
 var tracklist = document.getElementById("tracks")
 var all_tracks = tracklist.getElementsByClassName("track")
 
@@ -29,26 +28,29 @@ for (let i = 0; i < all_tracks.length; i++) {
     }
 }
 
-let table = "<table><tr><th>Song</th><th>Artist</th></tr><tr><td id='song-holder'>SONG</td><td id='artist-holder'>ARTIST</td></tr></table>"
+let table = "<table style='text-align:left;'><tr><th>Song</th><th>Artist</th></tr><tr><td id='song-holder'>SONG</td><td id='artist-holder'>ARTIST</td></tr></table>"
 //TODO: ^ Figure out how to make this shorter while still containing the same thing
-album_info_end.insertAdjacentHTML("afterend", table)
 
 var curr_song = "..."
 var curr_artist = "..."
 var content = ''
 var holder = ''
+var tableOn = 0
+
+var cell_separator = '	'
 
 function pencil(song_title) {
     console.log(song_title)
     chrome.runtime.sendMessage({
         song: song_title,
         artist: artist_name
-    })
+    }) //TODO: Phase this out, it's kind of unnecessary now
+    
+    if (tableOn == 0) {album_info_end.insertAdjacentHTML("afterend", table)}
+    tableOn = 1
 
     write_cell(curr_song, song_title, "song-holder")
     write_cell(curr_artist, artist_name, "artist-holder")
-
-    // TODO: Make it so the pencil works even when the popup is closed
 }
 
 function write_cell (curr_, message_, id) {
