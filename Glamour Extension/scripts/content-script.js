@@ -14,6 +14,20 @@ div > table.album_info_outer > tbody > tr > td > table > tbody > tr:nth-child(3)
 year_name = year_field.innerText
 //TODO: This is a general thing, but account for edge cases where some fields may be empty
 
+//NEW STUFF FOR CHECKING PRESENCE OF LANG FIELD + FINDING LOCATION OF GENRE & LANG
+var info_hdr_list = document.getElementsByClassName("info_hdr")
+var lang_row_num = -1
+
+for (let i = 0; i < info_hdr_list.length; i++) {
+    //if ('Language' in info_hdr_list[i].html)
+    if(info_hdr_list[i].innerText == 'Language') {
+        console.log('Language field is present')
+        console.log(info_hdr_list[i].innerText)
+        lang_row_num = i
+    }
+}
+//NEW STUFF FOR CHECKING PRESENCE OF LANG FIELD + FINDING LOCATION OF GENRE & LANG
+
 var pri_genres_field = document.querySelector("#column_container_right > div.section_main_info.section_outer > \
 div > table.album_info_outer > tbody > tr > td > table > tbody > tr.release_genres > td:nth-child(2) > \
 div > span.release_pri_genres")
@@ -22,12 +36,11 @@ div > span.release_pri_genres")
 //TODO: Eventually fix this to account for cases where some above rows are missing
 //TODO: This one's a long one, but integrate this with the Genre Tree Program
 
-var lang_field = document.querySelector("#column_container_right > div.section_main_info.section_outer > \
-div > table.album_info_outer > tbody > tr > td > table > tbody > tr:nth-child(10) > td")
-//lang_name = lang_field.innerText.replaceAll(",", ";")
-//
-//TODO: A bit busted right now. Fix this entire thing to account for cases where some above rows are missing
-//And for cases where there is no Language
+if (lang_row_num != -1) {
+    var lang_field = document.querySelector("#column_container_right > div.section_main_info.section_outer > \
+    div > table.album_info_outer > tbody > tr > td > table > tbody > tr:nth-child("+(lang_row_num+1)+") > td")
+    lang_name = lang_field.innerText.replaceAll(",", ";")
+}
 
 var album_info_end = document.querySelector("#column_container_right > div.section_main_info.section_outer > \
 div > table.album_info_outer")
@@ -152,7 +165,7 @@ function pencil(song_title) {
     write_cell(curr_artist, artist_name, "artist-holder")
     write_cell(curr_year, year_name, "year-holder")
     //write_cell(curr_pgenres, pri_genres, "pgenres-holder")
-    //write_cell(curr_lang, lang_name, "lang-holder")
+    write_cell(curr_lang, lang_name, "lang-holder")
     write_cell(curr_date, curr_date, "date-added-holder")
 }
 
