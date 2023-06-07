@@ -20,7 +20,7 @@ var lang_row_num = -1
 
 for (let i = 0; i < info_hdr_list.length; i++) {
     //if ('Language' in info_hdr_list[i].html)
-    if(info_hdr_list[i].innerText == 'Language') {
+    if(info_hdr_list[i].innerText == 'Language' || info_hdr_list[i].innerText == 'Languages') {
         console.log('Language field is present')
         console.log(info_hdr_list[i].innerText)
         lang_row_num = i
@@ -185,7 +185,11 @@ function table_clipboard () {
     song = document.getElementById("song-holder").innerHTML
     artist = document.getElementById("artist-holder").innerHTML
     year = document.getElementById("year-holder").innerHTML
-    the_row = `${song}${c}${artist}${c}${c}${year}`
+    //genres = do this later
+    language = document.getElementById("lang-holder").innerHTML
+    the_date = document.getElementById("date-added-holder").innerHTML
+
+    the_row = `${song}${c}${artist}${c}${c}${year}${c}${c}${c}${c}${c}${c}${c}${c}${language}${c}${c}${c}${c}${c}${c}${the_date}`
     navigator.clipboard.writeText(the_row)
 }
 
@@ -195,3 +199,5 @@ function write_cell (curr_, message_, id) {
     holder = document.getElementById(id)
     holder.innerHTML = content
 }
+
+//TODO: Clean this up. Like have more consistency with the variable names, etc.
