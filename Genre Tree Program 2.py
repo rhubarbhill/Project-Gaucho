@@ -107,7 +107,7 @@ class Genre:
         back_all_genres_s = self.sheetname
         back_all_list = []
 
-        if method == 'par_list':
+        if method == 'par_list' or method == '':
             for genre in self.parents:
                 if genre.name != 'Top-level':
                     back_all_list.append(genre)
@@ -115,8 +115,6 @@ class Genre:
                         back_all_genres_n += f'; {genre.name}'
                     if name == 'sheet':
                         back_all_genres_s += f'; {genre.sheetname}'
-            if name == 'sheet':
-                return back_all_genres_s
         if method == 'comp_look':
             for genre in self.parents:
                 back_all_genres_n += f'; {genre.back_all("str", "name", "comp_look")}'
@@ -146,7 +144,7 @@ class Genre:
                     back_all_genres_n += f'; {genre}'
 
                 return back_all_genres_n
-            elif name == 'sheet' and method == 'comp_look':
+            elif name == 'sheet':
                 back_all_genres_n = back_all_genres_n.replace('; None', '')
                 b_a_g = back_all_genres_n.split('; ')
                 b_a_g_nd = []
@@ -393,16 +391,10 @@ def main():
     #print('')
     #print_subgenres('Caribbean Music')
     #print('')
-    #print(g['Delta Blues'].back_all('str', 'name', 'comp_look'))
+    print('Name:', g['Delta Blues'].back_all('str', 'name', 'comp_look'))
+    print('Sheet:', g['Delta Blues'].back_all('str', 'sheet', 'comp_look'))
     #print(g['Delta Blues'].back_main(''))
     #print(g['Bop'].back_all('str', 'name', 'comp_look'))
-    #print('Name (par list):', g['Delta Blues'].back_all('str', 'name', 'par_list'))
-    #print('Sheet (par list):', g['Delta Blues'].back_all('str', 'sheet', 'par_list'))
-    #print('Name (comp look):', g['Delta Blues'].back_all('str', 'name', 'comp_look'))
-    #print('Sheet (comp look):', g['Delta Blues'].back_all('str', 'sheet', 'comp_look'))
-    #print('')
-    #print('Default Filled:', g['Delta Blues'].back_all('str', 'name', 'par_list'))
-    #print('Default Blank:', g['Delta Blues'].back_all('', '', ''))
 
     #print(back_main_multiple('French Folk Music'))
 
