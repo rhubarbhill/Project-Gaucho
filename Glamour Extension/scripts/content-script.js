@@ -117,6 +117,8 @@ var cell_sep = "	"
 
 var song
 var blank = ' '
+
+//TODO: Account for releases that don't have a track listing, prevent error
 for (let i = 0; i < all_tracks.length; i++) {
     if (all_tracks[i].style.textAlign != 'right') {
     this["song"+i] = all_tracks[i].getElementsByClassName("rendered_text")
@@ -165,7 +167,7 @@ function pencil(song_title) {
     write_cell(curr_artist, artist_name, "artist-holder")
     write_cell(curr_year, year_name, "year-holder")
     //write_cell(curr_pgenres, pri_genres, "pgenres-holder")
-    write_cell(curr_lang, lang_name, "lang-holder")
+    if (lang_row_num != -1) {write_cell(curr_lang, lang_name, "lang-holder")}
     write_cell(curr_date, curr_date, "date-added-holder")
 }
 

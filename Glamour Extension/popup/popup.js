@@ -1,8 +1,6 @@
 console.log("This is a popup!")
-console.log(document.body)
 
-// TODO: Make it so the pencil works even when the popup is closed
-
+/*
 var curr_song = "..."
 var curr_artist = "..."
 var content = ''
@@ -22,3 +20,4 @@ function write_cell (curr_, message_, id) {
     holder = document.getElementById(id)
     holder.innerHTML = content
 }
+*/
