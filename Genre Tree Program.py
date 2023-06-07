@@ -332,6 +332,7 @@ def main():
     #print(g['Delta Blues'].back_main(''))
 
     print(back_main_multiple('Pop Rap; West Coast Hip Hop; Conscious Hip Hop; Trap (Hip Hop)'))
+    print(back_main_multiple('Bossa nova'))
 
     #add_genre_check('Not Punk', 'Not Punk', ['Atmospheric Black Metal'])
     #add_genre_check('Work Songs', 'Work Songs', ['Traditional Folk'])

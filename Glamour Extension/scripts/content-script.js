@@ -171,7 +171,7 @@ function pencil(song_title) {
     write_cell(curr_date, curr_date, "date-added-holder")
 }
 
-//TODO: Make a clipboard button for the entire table
+//TODO: Make a clipboard button for other parts of the page (Artist, Genres, etc.)
 
 function clipboard (song_title) {
     navigator.clipboard.writeText(song_title)
