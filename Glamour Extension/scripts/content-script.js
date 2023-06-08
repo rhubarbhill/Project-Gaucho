@@ -13,6 +13,8 @@ var year_field = document.querySelector("#column_container_right > div.section_m
 div > table.album_info_outer > tbody > tr > td > table > tbody > tr:nth-child(3) > td > a > b")
 year_name = year_field.innerText
 //TODO: This is a general thing, but account for edge cases where some fields may be empty
+//TODO: Account for cases where "Composer" rows push the Year field down, such as
+//Canticles of Ecstasy by Sequentia
 
 //NEW STUFF FOR CHECKING PRESENCE OF LANG FIELD + FINDING LOCATION OF GENRE & LANG
 var info_hdr_list = document.getElementsByClassName("info_hdr")

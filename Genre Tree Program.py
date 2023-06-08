@@ -197,6 +197,7 @@ def add_genre(name, sheetname, parents):
             # NOTE: Keep in mind that as of now, this ONLY updates the immediate parent
             # and does not update any grandparents.
             # I've decided this is a good arrangement for now.
+            # 6/7 NOTE: Actually, I'm not sure if the above statement is actually true
 
     elif f'{name}' in g:
         # The purpose of this is to make it possible to add a genre again
@@ -226,7 +227,7 @@ def add_genre(name, sheetname, parents):
 
         pass
 
-def add_genre_check(name, sheetname, parents):
+def add_genre_check(name, sheetname, parents, report_containments):
     # Checks a genre before adding it, returning all parents based on
     # only the immediate parents and looking through all existing genres
     # to see which ones are textually contained within it while also
@@ -235,21 +236,14 @@ def add_genre_check(name, sheetname, parents):
 
     # Eventually will use this example:
     # add_genre_check('Not Punk', 'Not Punk', ['Atmospheric Black Metal'])
-    
-    add_genre(name, sheetname, parents)
 
-    #if name == sheetname:
-        #print(f'Name of genre: {name}')
-    #else:
-        #print(f'Name of genre: {name} (Sheet Name: {sheetname})')
+    report = 'no'
+    if report_containments != '':
+        report = 'yes'
+
+    add_genre(name, sheetname, parents)
     
     genr = g[f'{name}']
-    #print(f'genre name: {genr.name}')
-    #print(f'genre parents: {parents}')
-    #if len(genr.parents)==1:
-        #print(f'genre object parents: {genr.parents[0].name}')
-    #elif len(genr.parents)>1:
-        #print(f'genre object parents: {genr.parents[0].name}, {genr.parents[1].name}')
 
     back_all_str = genr.back_all('str', 'name', 'comp_look')
     bas = back_all_str.split('; ')
@@ -266,24 +260,23 @@ def add_genre_check(name, sheetname, parents):
 
     print(name, sheetname, back_all_str, sep='; ')
 
-    ##print('All parents of genre:', genr.back_all('', '', 'comp_look'))
-    #all_parents_o = genr.back_all('obj', 'name', 'comp_look')
-    #all_parents_s = []
-    #for genre in all_parents_o:
-        #all_parents_s.append(genre.name)
+    if report == 'yes':
+        all_parents_o = genr.back_all('obj', 'name', 'comp_look')
+        all_parents_s = []
+        for genre in all_parents_o:
+            all_parents_s.append(genre.name)
 
-    #for genre in g: #Checks the entire dictionary
-        #if g[genre].name in name and g[genre].name not in all_parents_s and g[genre].name != name:
-            #print(f'>>> {g[genre].name} contained in {name}')
-        #if name in g[genre].name and g[genre].name not in all_parents_s and g[genre].name != name:
-            #print(f'>>> {name} contained in {g[genre].name}')
-        
-        ## TODO: (!) Make one for vice versa (if name is contained in genre name)
-        ## ^ Made but needs to check if right
+        for genre in g: #Checks the entire dictionary
+            if g[genre].name in name and g[genre].name not in all_parents_s and g[genre].name != name:
+                print(f'>>> {g[genre].name} contained in {name}')
+            if name in g[genre].name and g[genre].name not in all_parents_s and g[genre].name != name:
+                print(f'>>> {name} contained in {g[genre].name}')
+            
+            # TODO: (!) Make one for vice versa (if name is contained in genre name)
+            # ^ Made but needs to check if right
+        print('')
 
-    # TODO: (!) Review this again when I have more time
-
-    print('')
+        # TODO: (!) Review this again when I have more time
 
     pass
 
@@ -300,7 +293,86 @@ def csv_extract(filename): #Function to add genres from a csv file
                     par_gen.append(row[gnr]) #Append the genre to the par_gen list
             add_genre(row[0], sheetname, par_gen)
 
-def csv_extract_check(filename):
+def csv_blood_check_for_2(filename):
+    #checks a list of exactly two genres in a csv and sees if they have a
+    #parent-child relationship
+
+    with open(filename, encoding='utf-8') as file:
+        csvreader = csv.reader(file)
+        for row in csvreader:
+            genre1 = g[f'{row[0]}']
+            genre2 = g[f'{row[1]}']
+
+            with open('readme.txt', 'a') as f:
+                f.write(check_for_bloodline(genre1, genre2))
+                f.write('\n')
+    
+    #This function can be phased out once it's been archived
+
+def csv_blood_check_full(filename):
+    #checks a list of genres in a csv and sees if they have a
+    #parent-child relationship
+    #row must have two or more genres in it
+    #row[0] (the first cell in each row) must contain a count of the number
+    #of genres in the row
+
+    with open(filename, encoding='utf-8') as file:
+        csvreader = csv.reader(file)
+        for row in csvreader:
+            back_parents = ''
+            back_list = []
+            row_len = int(row[0])
+            for i in range(1, row_len+1):
+                for j in range(i, row_len+1):
+                    if i != j:
+                        #print(check_for_bloodline(g[f'{row[i]}'], g[f'{row[j]}'], 'relation'))
+                        #back_parents += check_for_bloodline(g[f'{row[i]}'], g[f'{row[j]}'], 'back parents')
+                        b_p = check_for_bloodline(g[f'{row[i]}'], g[f'{row[j]}'], 'back parents')
+                        if b_p == '' or b_p in back_list:
+                            pass
+                        else:
+                            back_list.append(b_p)
+                    elif i == j:
+                        pass
+            if len(back_list) > 0:
+                back_parents = back_list[0]
+            for genre in back_list[1:]:
+                back_parents += f'; {genre}'
+            print(back_parents) #Returns a list of the parent genres which should be deleted
+
+            #with open('readme.txt', 'a') as f:
+                #f.write('pass')
+                #f.write('\n')
+
+def check_for_bloodline(genre, other, mode):
+    #checks two genres and sees if they have a
+    #parent-child relationship
+    
+    if mode == '':
+        mode = 'relation'
+    else:
+        mode = mode
+        #'relation' (default) or 'back parents'
+
+    relation = '> '
+    back_parents = ''
+
+    for parent in genre.parents:
+        if parent == other:
+            relation += f'(!) {genre.name} is a child of {other.name} [ #1 ch of #2 ]'
+            back_parents += f'{other.name}'
+    
+    for parent in other.parents:
+        if parent == genre:
+            relation += f'(!) {other.name} is a child of {genre.name} [ #2 ch of #1 ]'
+            back_parents += f'{genre.name}'
+    
+    if mode == 'relation':
+        return relation
+    if mode == 'back parents':
+        return back_parents
+
+def csv_extract_check(filename, report_containments):
     with open(filename, encoding='utf-8') as file:
         csvreader = csv.reader(file)
         for row in csvreader:
@@ -311,7 +383,7 @@ def csv_extract_check(filename):
             for gnr in range(2,12): #This is for the columns that have the parent genres
                 if row[gnr] != '': #If it's not blank
                     par_gen.append(row[gnr]) #Append the genre to the par_gen list
-            add_genre_check(row[0], row[1], par_gen)
+            add_genre_check(row[0], row[1], par_gen, report_containments)
 
 def print_all_genres():
     #Algorithm to print all genres along with their parents
@@ -380,9 +452,12 @@ def back_main_multiple(genre_list):
 # there will have to be a list or dictionary with all of the sheetnames
 
 def main():
-    csv_extract('genres3.2.csv')
+    csv_extract('genres3.25.csv')
+    csv_blood_check_full('sheet152.csv')
+    #csv_blood_check_for_2('sheet151.csv')
+    #csv_blood_check_for_2('sheet151.2.csv')
 
-    #csv_extract_check('newgenrebatch.csv')
+    #csv_extract_check('newgenrebatch.csv', '')
 
     ##Testing
     #print(g['Spirituals'].back_main('str'))
@@ -391,7 +466,7 @@ def main():
     #print(back_main_multiple('Chillwave; Jangle Pop; Country Rock'))
     #print(back_main_multiple('Digital Dancehall'))
     #print('')
-    #print_subgenres('Caribbean Music')
+    #print_subgenres('Pop')
     #print('')
     #print(g['Delta Blues'].back_all('str', 'name', 'comp_look'))
     #print(g['Delta Blues'].back_main(''))
@@ -412,6 +487,9 @@ def main():
 # TODO: Deal with "red appendages" like Synthpop, Electropop, Britfunk, etc.
 # TODO: Maybe make an "immediate parents" list that starts out empty and is filled as
 #the genres are added like with "subgenres"
+    # TODO: Immediate parents functionality within the genres info sheet itself
+    # definitely feels like a 'genres5' kind of thing (current version is 'genres4')
+        # TODO: Defining immediate parents will require yet another manual session, just saying
 # TODO: Change all the genres you shortened ("Alt Dance", "Prog Rock", etc.) and make sure
 #every pure tag matches up to exactly what RYM calls it
 # TODO: Remove all the (!) from the TODOs
@@ -419,4 +497,5 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
+
+# TODO: Eventually clean up the code so it's not just functional but elegant as well
