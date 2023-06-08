@@ -338,11 +338,10 @@ def csv_blood_check_full(filename):
                 back_parents = back_list[0]
             for genre in back_list[1:]:
                 back_parents += f'; {genre}'
-            print(back_parents) #Returns a list of the parent genres which should be deleted
 
-            #with open('readme.txt', 'a') as f:
-                #f.write('pass')
-                #f.write('\n')
+            with open('sheetoutput.txt', 'a') as f:
+                f.write(back_parents) #Returns a list of the parent genres which should be deleted
+                f.write('\n')
 
 def check_for_bloodline(genre, other, mode):
     #checks two genres and sees if they have a
