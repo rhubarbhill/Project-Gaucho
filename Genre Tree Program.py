@@ -3,7 +3,11 @@ import csv
 g = {}
     # This is the genre dictionary. It's intentionally just called "g" because it
     # will be called often while adding genres.
-    # Testing
+gs = {}
+    # This is the genre sheet name dictionary. Any genres who have sheet names that
+    # are different from the regular name will be placed here *in addition* to being
+    # placed in the "g" dictionary. This allows the same object to be called and
+    # updated with either the name as a key or the sheet name
 
 class Genre:
     def __init__ (self, name, sheetname, parents, subgenres):
@@ -173,7 +177,7 @@ class Genre:
             return f'{self.name} (Sheet Name: {self.sheetname}) // Parents: {parent_strings}'
 
 def add_genre(name, sheetname, parents):
-    if sheetname.lower() == 'n/a':
+    if sheetname.lower() == 'n/a' or sheetname == '':
         sheetname = name
         # TODO: Make this simpler (make it so sheetname was already name to begin with if it
         # was already equal)
@@ -188,6 +192,8 @@ def add_genre(name, sheetname, parents):
         genr = Genre(name, sheetname, pare, subgenres)
         #print('Debug: ', genr.name)
         g[f'{name}'] = genr
+        if name != sheetname:
+            gs[f'{sheetname}'] = genr
 
         if parents != '': #This function is to update the Genre's subgenre list
             for par in genr.parents:
@@ -214,6 +220,8 @@ def add_genre(name, sheetname, parents):
         #print('Debugging Note: Duplicate')
 
         genr = g[f'{name}']
+        if name != sheetname:
+            gs[f'{sheetname}'] = genr
         #print('Debug: ', genr.name)
 
         for gnr in pare:
@@ -244,6 +252,8 @@ def add_genre_check(name, sheetname, parents, report_containments):
     add_genre(name, sheetname, parents)
     
     genr = g[f'{name}']
+    if name != sheetname:
+        gs[f'{sheetname}'] = genr
 
     back_all_str = genr.back_all('str', 'name', 'comp_look')
     bas = back_all_str.split('; ')
@@ -319,7 +329,6 @@ def csv_blood_check_full(filename):
     with open(filename, encoding='utf-8') as file:
         csvreader = csv.reader(file)
         for row in csvreader:
-            back_parents = ''
             back_list = []
             concat = ''
             concat_list = []
@@ -328,8 +337,6 @@ def csv_blood_check_full(filename):
                 concat_list.append(row[i])
                 for j in range(i, row_len+1):
                     if i != j:
-                        #print(check_for_bloodline(g[f'{row[i]}'], g[f'{row[j]}'], 'relation'))
-                        #back_parents += check_for_bloodline(g[f'{row[i]}'], g[f'{row[j]}'], 'back parents')
                         b_p = check_for_bloodline(g[f'{row[i]}'], g[f'{row[j]}'], 'back parents')
                         if b_p == '' or b_p in back_list:
                             pass
@@ -337,31 +344,23 @@ def csv_blood_check_full(filename):
                             back_list.append(b_p)
                     elif i == j:
                         pass
-            if len(back_list) > 0:
-                back_parents = back_list[0]
-            for genre in back_list[1:]:
-                back_parents += f'; {genre}'
-            #TODO: ^ Phase this ("if len(back_list) / for genre in back_list[1:]") out, no longer necessary
 
-            #print(row[1:])
-            #print('concat (before):', concat_list)
-            #print('back:', back_list)
+            concat_list_result = []
             i = -1
             for genre in concat_list:
                 i += 1
-                if genre in back_list:
-                    concat_list[i] = ''
-            #print('concat (after):', concat_list)
-            concat += concat_list[0]
-            if len(concat_list) > 1:
-                for genre in concat_list[1:]:
+                if genre not in back_list:
+                    concat_list_result.append(concat_list[i])
+            concat += concat_list_result[0]
+            if len(concat_list_result) > 1:
+                for genre in concat_list_result[1:]:
                     if genre != '':
                         concat += f'; {genre}'
-            print(concat)
-            #print('')
+            #print(concat)
 
-            with open('sheetoutput.txt', 'a') as f:
-                pass
+            with open('sheetoutput.txt', 'a', encoding="utf-8") as f:
+                f.write(concat)
+                f.write('\n')
                 
                 #Initial System
                 #f.write(back_parents) #Returns a list of the parent genres which should be deleted
@@ -476,7 +475,7 @@ def back_main_multiple(genre_list):
 
 def main():
     csv_extract('genres3.25.csv')
-    csv_blood_check_full('sheet152.1.csv')
+    #csv_blood_check_full('sheet152.2.csv')
     #csv_blood_check_full('sheet152.csv')
     #csv_blood_check_for_2('sheet151.csv')
     #csv_blood_check_for_2('sheet151.2.csv')
