@@ -14,7 +14,9 @@ div > table.album_info_outer > tbody > tr > td > table > tbody > tr:nth-child(3)
 year_name = year_field.innerText
 //TODO: This is a general thing, but account for edge cases where some fields may be empty
 //TODO: Account for cases where "Composer" rows push the Year field down, such as
-//Canticles of Ecstasy by Sequentia
+//Error Case: Canticles of Ecstasy by Sequentia
+//TODO: Account for cases where the year is not in blue
+//Error Case: Maggot Brained (Single) by Funkadelic
 
 //NEW STUFF FOR CHECKING PRESENCE OF LANG FIELD + FINDING LOCATION OF GENRE & LANG
 var info_hdr_list = document.getElementsByClassName("info_hdr")

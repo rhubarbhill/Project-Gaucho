@@ -321,8 +321,11 @@ def csv_blood_check_full(filename):
         for row in csvreader:
             back_parents = ''
             back_list = []
+            concat = ''
+            concat_list = []
             row_len = int(row[0])
             for i in range(1, row_len+1):
+                concat_list.append(row[i])
                 for j in range(i, row_len+1):
                     if i != j:
                         #print(check_for_bloodline(g[f'{row[i]}'], g[f'{row[j]}'], 'relation'))
@@ -338,10 +341,31 @@ def csv_blood_check_full(filename):
                 back_parents = back_list[0]
             for genre in back_list[1:]:
                 back_parents += f'; {genre}'
+            #TODO: ^ Phase this ("if len(back_list) / for genre in back_list[1:]") out, no longer necessary
+
+            #print(row[1:])
+            #print('concat (before):', concat_list)
+            #print('back:', back_list)
+            i = -1
+            for genre in concat_list:
+                i += 1
+                if genre in back_list:
+                    concat_list[i] = ''
+            #print('concat (after):', concat_list)
+            concat += concat_list[0]
+            if len(concat_list) > 1:
+                for genre in concat_list[1:]:
+                    if genre != '':
+                        concat += f'; {genre}'
+            print(concat)
+            #print('')
 
             with open('sheetoutput.txt', 'a') as f:
-                f.write(back_parents) #Returns a list of the parent genres which should be deleted
-                f.write('\n')
+                pass
+                
+                #Initial System
+                #f.write(back_parents) #Returns a list of the parent genres which should be deleted
+                #f.write('\n')
 
 def check_for_bloodline(genre, other, mode):
     #checks two genres and sees if they have a
@@ -452,7 +476,8 @@ def back_main_multiple(genre_list):
 
 def main():
     csv_extract('genres3.25.csv')
-    csv_blood_check_full('sheet152.csv')
+    csv_blood_check_full('sheet152.1.csv')
+    #csv_blood_check_full('sheet152.csv')
     #csv_blood_check_for_2('sheet151.csv')
     #csv_blood_check_for_2('sheet151.2.csv')
 
