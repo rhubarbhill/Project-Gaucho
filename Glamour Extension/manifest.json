@@ -22,6 +22,10 @@
         {
             "matches": ["https://rateyourmusic.com/release/*"],
             "js": ["scripts/content-script.js"]
+        },
+        {
+            "matches": ["https://rateyourmusic.com/rgenre/set?album_id=*"],
+            "js": ["scripts/genre-page-script.js"]
         }
     ]
 }  

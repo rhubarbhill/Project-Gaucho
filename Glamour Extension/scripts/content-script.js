@@ -79,8 +79,8 @@ var table = "<table style='text-align:left;'> \
     <td id='BLANK-topdesc-holder'></td> \
     <td id='BLANK-alldesc-holder'></td> \
     <td id='BLANK-comments-holder'></td> \
-    <td id='BLANK-comments-date-holder'></td> \
     <td id='BLANK-best-moment(s)-holder'></td> \
+    <td id='BLANK-comments-date-holder'></td> \
     <td id='BLANK-NRG-holder'></td> \
     <td id='lang-holder'></td> \
     <td id='BLANK-notes-holder'></td> \
