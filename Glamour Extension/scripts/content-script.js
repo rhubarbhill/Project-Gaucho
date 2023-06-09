@@ -140,12 +140,13 @@ for (let i = 0; i < all_tracks.length; i++) {
     this["btn_dclip"+i].innerText = '📋➕'
     this["btn_dclip"+i].onclick = function() {double_clipboard(artist_name, song_text)}
 
+    this["song"+i][0].insertAdjacentElement("afterend", this["btn_pencil"+i])
+    this["song"+i][0].insertAdjacentText("afterend", blank)
     this["song"+i][0].insertAdjacentElement("afterend", this["btn_dclip"+i])
     this["song"+i][0].insertAdjacentText("afterend", blank)
     this["song"+i][0].insertAdjacentElement("afterend", this["btn_clip"+i])
     this["song"+i][0].insertAdjacentText("afterend", blank)
-    this["song"+i][0].insertAdjacentElement("afterend", this["btn_pencil"+i])
-    this["song"+i][0].insertAdjacentText("afterend", blank)
+    
     console.log(song_text)
     }
 }
