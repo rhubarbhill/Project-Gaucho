@@ -326,6 +326,8 @@ def csv_blood_check_full(filename):
     #row[0] (the first cell in each row) must contain a count of the number
     #of genres in the row
 
+    #TODO: Make this out as its own function that can work on non-csv lists
+
     with open(filename, encoding='utf-8') as file:
         csvreader = csv.reader(file)
         for row in csvreader:
@@ -337,7 +339,20 @@ def csv_blood_check_full(filename):
                 concat_list.append(row[i])
                 for j in range(i, row_len+1):
                     if i != j:
-                        b_p = check_for_bloodline(g[f'{row[i]}'], g[f'{row[j]}'], 'back parents')
+                        row_i = row[i]
+                        row_j = row[j]
+
+                        if check_if_modified(row[i]) == False:
+                            row_i = g[f'{row[i]}']
+                        else:
+                            row_i = gs[f'{row[i]}']
+                        
+                        if check_if_modified(row[j]) == False:
+                            row_j = g[f'{row[j]}']
+                        else:
+                            row_j = gs[f'{row[j]}']
+
+                        b_p = check_for_bloodline(row_i, row_j, 'back parents')
                         if b_p == '' or b_p in back_list:
                             pass
                         else:
@@ -361,10 +376,18 @@ def csv_blood_check_full(filename):
             with open('sheetoutput.txt', 'a', encoding="utf-8") as f:
                 f.write(concat)
                 f.write('\n')
-                
+                pass
                 #Initial System
                 #f.write(back_parents) #Returns a list of the parent genres which should be deleted
                 #f.write('\n')
+
+def check_if_modified(genre):
+    #Accepts a string containing one genre, returns whether or not it's been modified
+
+    modified = False
+    if '~*' in genre or '0' in genre or '3' in genre or '@' in genre:
+        modified = True
+    return modified
 
 def check_for_bloodline(genre, other, mode):
     #checks two genres and sees if they have a
@@ -475,7 +498,8 @@ def back_main_multiple(genre_list):
 
 def main():
     csv_extract('genres3.25.csv')
-    #csv_blood_check_full('sheet152.2.csv')
+    #csv_blood_check_full('sheet152.4.csv')
+
     #csv_blood_check_full('sheet152.csv')
     #csv_blood_check_for_2('sheet151.csv')
     #csv_blood_check_for_2('sheet151.2.csv')
@@ -517,6 +541,7 @@ def main():
 #every pure tag matches up to exactly what RYM calls it
 # TODO: Remove all the (!) from the TODOs
 # TODO: Put EDM under Dance and Electronic, among other such necessary top-level under top-level things
+# TODO: Function to make a modified genre string into its non-modified version, and maybe vice versa if necessary
 
 if __name__ == "__main__":
     main()
