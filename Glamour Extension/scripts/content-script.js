@@ -16,7 +16,7 @@ year_name = year_field.innerText
 //TODO: Account for cases where "Composer" rows push the Year field down, such as
 //Error Case: Canticles of Ecstasy by Sequentia
 //TODO: Account for cases where the year is not in blue
-//Error Case: Maggot Brained (Single) by Funkadelic
+//Error Case: Maggot Brained (Single) by Funkadelic, Infinity Repeating (Additional release) by Daft Punk
 
 //NEW STUFF FOR CHECKING PRESENCE OF LANG FIELD + FINDING LOCATION OF GENRE & LANG
 var info_hdr_list = document.getElementsByClassName("info_hdr")
@@ -55,7 +55,8 @@ var table = "<table style='text-align:left;'> \
     <th>Artist</th> \
     <th>*</th> \
     <th>Year</th> \
-    <th>Genre(s)</th> \
+    <th>F. Genre(s)</th> \
+    <th>B. Genre(s)</th> \
     <th>*</th> \
     <th>*</th> \
     <th>*</th> \
@@ -75,7 +76,8 @@ var table = "<table style='text-align:left;'> \
     <td id='artist-holder'></td> \
     <td id='BLANK-score-holder'></td> \
     <td id='year-holder'></td> \
-    <td id='pgenres-holder'></td> \
+    <td id='fgenres-holder'></td> \
+    <td id='bgenres-holder'></td> \
     <td id='BLANK-topdesc-holder'></td> \
     <td id='BLANK-alldesc-holder'></td> \
     <td id='BLANK-comments-holder'></td> \
@@ -95,7 +97,8 @@ var table = "<table style='text-align:left;'> \
 var curr_song = "..."
 var curr_artist = "..."
 var curr_year = "..."
-var curr_pgenres = "..."
+var curr_fgenres = "..."
+var curr_bgenres = "..."
 var curr_lang = "..."
 var content = ""
 var holder = ""
@@ -171,7 +174,8 @@ function pencil(song_title) {
     write_cell(curr_song, song_title, "song-holder")
     write_cell(curr_artist, artist_name, "artist-holder")
     write_cell(curr_year, year_name, "year-holder")
-    //write_cell(curr_pgenres, pri_genres, "pgenres-holder")
+    //write_cell(curr_fgenres, f_genres, "fgenres-holder")
+    //write_cell(curr_bgenres, b_genres, "bgenres-holder")
     if (lang_row_num != -1) {write_cell(curr_lang, lang_name, "lang-holder")}
     write_cell(curr_date, curr_date, "date-added-holder")
 }
@@ -196,7 +200,7 @@ function table_clipboard () {
     language = document.getElementById("lang-holder").innerHTML
     the_date = document.getElementById("date-added-holder").innerHTML
 
-    the_row = `${song}${c}${artist}${c}${c}${year}${c}${c}${c}${c}${c}${c}${c}${c}${language}${c}${c}${c}${c}${c}${c}${the_date}`
+    the_row = `${song}${c}${artist}${c}${c}${year}${c}${c}${c}${c}${c}${c}${c}${c}${c}${language}${c}${c}${c}${c}${c}${c}${the_date}`
     navigator.clipboard.writeText(the_row)
 }
 
