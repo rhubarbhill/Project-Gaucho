@@ -246,7 +246,7 @@ def add_genre_check(name, sheetname, parents, report_containments):
     # add_genre_check('Not Punk', 'Not Punk', ['Atmospheric Black Metal'])
 
     report = 'no'
-    if report_containments != '':
+    if report_containments == 'yes' or report_containments == '':
         report = 'yes'
 
     add_genre(name, sheetname, parents)
@@ -425,7 +425,8 @@ def csv_extract_check(filename, report_containments):
             #sheetname = row[1]
             if row[0] != row[1]: #If the sheet name (row[1]) is different from the regular name (row[0])
                 sheetname = row[1] #Change the sheet name variable to the sheet name
-            for gnr in range(2,12): #This is for the columns that have the parent genres
+            for gnr in range(2,14): #This is for the columns that have the parent genres
+                # NOTE: Max increased from 12 to 14 on Jun. 14
                 if row[gnr] != '': #If it's not blank
                     par_gen.append(row[gnr]) #Append the genre to the par_gen list
             add_genre_check(row[0], row[1], par_gen, report_containments)
@@ -497,8 +498,8 @@ def back_main_multiple(genre_list):
 # there will have to be a list or dictionary with all of the sheetnames
 
 def main():
-    csv_extract('genres3.25.csv')
-    #csv_blood_check_full('sheet153.5.csv')
+    csv_extract('genres4.csv')
+    #csv_blood_check_full('test1.csv')
     #csv_blood_check_full('sheet152.csv')
     #csv_blood_check_for_2('sheet151.csv')
     #csv_blood_check_for_2('sheet151.2.csv')
@@ -511,12 +512,13 @@ def main():
     #print('')
     #print(back_main_multiple('Chillwave; Jangle Pop; Country Rock'))
     #print(back_main_multiple('Digital Dancehall'))
+    print(back_main_multiple('UK Funky; Afrobeats; Dance-Pop'))
     #print('')
-    #print_subgenres('Pop')
+    #print_subgenres('Country')
     #print('')
     #print(g['Delta Blues'].back_all('str', 'name', 'comp_look'))
-    #print(g['Delta Blues'].back_main(''))
-    #print(g['Bop'].back_all('str', 'name', 'comp_look'))
+    #print(g['Jazz-Rock'].back_main(''))
+    #print(g['Contemporary Country'].back_all('str', 'name', 'comp_look'))
     #print('Name (par list):', g['Delta Blues'].back_all('str', 'name', 'par_list'))
     #print('Sheet (par list):', g['Delta Blues'].back_all('str', 'sheet', 'par_list'))
     #print('Name (comp look):', g['Delta Blues'].back_all('str', 'name', 'comp_look'))
@@ -524,8 +526,6 @@ def main():
     #print('')
     #print('Default Filled:', g['Delta Blues'].back_all('str', 'name', 'par_list'))
     #print('Default Blank:', g['Delta Blues'].back_all('', '', ''))
-
-    #print(back_main_multiple('French Folk Music'))
 
     #add_genre_check('New Rave', 'New Rave', ['Alt Dance', 'Indie Rock'])
     #add_genre_check('Work Songs', 'Work Songs', ['Traditional Folk'])

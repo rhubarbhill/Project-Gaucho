@@ -9,18 +9,10 @@ artist_name = artist_field[0].innerText
 //TODO: Account for artist names that start with "The"
 //TODO: As well as artists with a non-Latin character as the first one
 
-var year_field = document.querySelector("#column_container_right > div.section_main_info.section_outer > \
-div > table.album_info_outer > tbody > tr > td > table > tbody > tr:nth-child(3) > td > a > b")
-year_name = year_field.innerText
-//TODO: This is a general thing, but account for edge cases where some fields may be empty
-//TODO: Account for cases where "Composer" rows push the Year field down, such as
-//Error Case: Canticles of Ecstasy by Sequentia
-//TODO: Account for cases where the year is not in blue
-//Error Case: Maggot Brained (Single) by Funkadelic, Infinity Repeating (Additional release) by Daft Punk
-
-//NEW STUFF FOR CHECKING PRESENCE OF LANG FIELD + FINDING LOCATION OF GENRE & LANG
 var info_hdr_list = document.getElementsByClassName("info_hdr")
+
 var lang_row_num = -1
+var year_row_num = 3
 
 for (let i = 0; i < info_hdr_list.length; i++) {
     //if ('Language' in info_hdr_list[i].html)
@@ -29,13 +21,22 @@ for (let i = 0; i < info_hdr_list.length; i++) {
         console.log(info_hdr_list[i].innerText)
         lang_row_num = i
     }
+    if(info_hdr_list[i].innerText == 'Released') {
+        year_row_num = i
+    }
 }
-//NEW STUFF FOR CHECKING PRESENCE OF LANG FIELD + FINDING LOCATION OF GENRE & LANG
+
+var year_field = document.querySelector("#column_container_right > div.section_main_info.section_outer > \
+div > table.album_info_outer > tbody > tr > td > table > tbody > tr:nth-child("+(year_row_num+1)+") > td > a > b")
+year_name = year_field.innerText
+//TODO: This is a general thing, but account for edge cases where some fields may be empty
+//TODO: Account for cases where the year is not in blue
+//Error Case: Maggot Brained (Single) by Funkadelic, Infinity Repeating (Additional release) by Daft Punk
 
 var pri_genres_field = document.querySelector("#column_container_right > div.section_main_info.section_outer > \
 div > table.album_info_outer > tbody > tr > td > table > tbody > tr.release_genres > td:nth-child(2) > \
 div > span.release_pri_genres")
-//pri_genres = pri_genres_field.innerText.replaceAll(",", ";")
+var pri_genres = pri_genres_field.innerText.replaceAll(",", ";")
 //
 //TODO: Eventually fix this to account for cases where some above rows are missing
 //TODO: This one's a long one, but integrate this with the Genre Tree Program
@@ -51,6 +52,7 @@ div > table.album_info_outer")
 
 var table = "<table style='text-align:left;'> \
 <tr> \
+    <th>✓</th> \
     <th>Song</th> \
     <th>Artist</th> \
     <th>*</th> \
@@ -62,9 +64,7 @@ var table = "<table style='text-align:left;'> \
     <th>*</th> \
     <th>*</th> \
     <th>*</th> \
-    <th>*</th> \
     <th>Language</th> \
-    <th>*</th> \
     <th>*</th> \
     <th>*</th> \
     <th>*</th> \
@@ -72,6 +72,7 @@ var table = "<table style='text-align:left;'> \
     <th>Date Added</th> \
 </tr> \
 <tr> \
+    <td id='check-holder'>✓</td> \
     <td id='song-holder'></td> \
     <td id='artist-holder'></td> \
     <td id='BLANK-score-holder'></td> \
@@ -83,12 +84,10 @@ var table = "<table style='text-align:left;'> \
     <td id='BLANK-comments-holder'></td> \
     <td id='BLANK-best-moment(s)-holder'></td> \
     <td id='BLANK-comments-date-holder'></td> \
-    <td id='BLANK-NRG-holder'></td> \
     <td id='lang-holder'></td> \
     <td id='BLANK-notes-holder'></td> \
     <td id='BLANK-attributes-holder'></td> \
     <td id='BLANK-owned-holder'></td> \
-    <td id='BLANK-firstheard-holder'></td> \
     <td id='BLANK-mixtapes-holder'></td> \
     <td id='date-added-holder'></td> \
 </tr> \
@@ -125,6 +124,8 @@ var cell_sep = "	"
 var song
 var blank = ' '
 
+const track_list = []
+
 //TODO: Account for releases that don't have a track listing, prevent error
 for (let i = 0; i < all_tracks.length; i++) {
     if (all_tracks[i].style.textAlign != 'right') {
@@ -150,24 +151,45 @@ for (let i = 0; i < all_tracks.length; i++) {
     this["song"+i][0].insertAdjacentElement("afterend", this["btn_clip"+i])
     this["song"+i][0].insertAdjacentText("afterend", blank)
     
-    console.log(song_text)
+    track_list.push(song_text)
     }
 }
 
+ld_btn = document.createElement("button")
+ld_btn.innerText = 'Import to Log 📋'
+ld_entry = "Track review: [spoiler] \
+"
+
+for (let i = 0; i < all_tracks.length; i++) {
+    if (all_tracks[i].style.textAlign != 'right') {
+    ld_entry += `\n${track_list[i]}`
+    }
+} //TODO: Figure out how to make this work because "\n" isn't working at all
+
+genre_btn = document.createElement("button")
+genre_btn.innerText = '📋'
+const genre_text = pri_genres
+pri_genres_field.insertAdjacentElement("afterend", genre_btn)
+pri_genres_field.insertAdjacentText("afterend", blank)
+genre_btn.onclick = function() {clipboard(genre_text)}
+
+genre_pencil = document.createElement("button")
+genre_pencil.innerText = '✏️'
+genre_pencil.onclick = function() {pencil_g(genre_text)}
+
 function pencil(song_title) {
     console.log(song_title)
-    /*chrome.runtime.sendMessage({
-        song: song_title,
-        artist: artist_name
-    })*/
-    //TODO: ^ Phase this out, it's kind of unnecessary now
     
     if (tableOn == 0) {album_info_end.insertAdjacentHTML("afterend", table)}
 
     table_clipboard_btn = document.createElement("button")
     table_clipboard_btn.innerText = '📊📋'
     table_clipboard_btn.onclick = function() {table_clipboard()}
-    if (tableOn == 0) {album_info_end.insertAdjacentElement("afterend", table_clipboard_btn)}
+    if (tableOn == 0) {
+        album_info_end.insertAdjacentElement("afterend", table_clipboard_btn)
+        genre_btn.insertAdjacentElement("afterend", genre_pencil)
+        genre_pencil.insertAdjacentText("beforebegin", blank)
+    }
 
     tableOn = 1
 
@@ -180,10 +202,27 @@ function pencil(song_title) {
     write_cell(curr_date, curr_date, "date-added-holder")
 }
 
-//TODO: Make a clipboard button for other parts of the page (Artist, Genres, etc.)
+function pencil_g(genre_list) {
+    write_cell(curr_fgenres, genre_list, "fgenres-holder")
+}
 
-function clipboard (song_title) {
-    navigator.clipboard.writeText(song_title)
+album_name_btn = document.createElement("button")
+album_name_btn.innerText = '📋'
+album_title = document.querySelector("#column_container_right > div.section_main_info.section_outer > div > div.album_title")
+const album_text = album_title.innerText
+//album_title.insertAdjacentElement("afterend", album_name_btn)
+album_name_btn.onclick = function() {clipboard(album_text)}
+//TODO: Reintroduce this button once you find a way to get the button right next to the album text itself
+
+artist_name_btn = document.createElement("button")
+artist_name_btn.innerText = '📋'
+const artist_text = artist_name
+artist_field[0].insertAdjacentElement("afterend", artist_name_btn)
+artist_field[0].insertAdjacentText("afterend", blank)
+artist_name_btn.onclick = function() {clipboard(artist_text)}
+
+function clipboard (title) {
+    navigator.clipboard.writeText(title)
 }
 
 function double_clipboard (artist, song) {
@@ -196,11 +235,11 @@ function table_clipboard () {
     song = document.getElementById("song-holder").innerHTML
     artist = document.getElementById("artist-holder").innerHTML
     year = document.getElementById("year-holder").innerHTML
-    //genres = do this later
+    fgenres = document.getElementById("fgenres-holder").innerHTML
     language = document.getElementById("lang-holder").innerHTML
     the_date = document.getElementById("date-added-holder").innerHTML
 
-    the_row = `${song}${c}${artist}${c}${c}${year}${c}${c}${c}${c}${c}${c}${c}${c}${c}${language}${c}${c}${c}${c}${c}${c}${the_date}`
+    the_row = `✓${c}${song}${c}${artist}${c}${c}${year}${c}${fgenres}${c}${c}${c}${c}${c}${c}${c}${language}${c}${c}${c}${c}${c}${the_date}`
     navigator.clipboard.writeText(the_row)
 }
 

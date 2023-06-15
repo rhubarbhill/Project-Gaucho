@@ -5,7 +5,7 @@ console.log('scripts/genre-page-script.js')
 primary_genres_text = document.querySelector("#content > table > tbody > tr > td:nth-child(2) > \
 table > tbody > tr:nth-child(1) > td > h3")
 pencil_ = document.createElement("button")
-pencil_.innerText = '✏️'
+pencil_.innerText = '✏️📋'
 pencil_.onclick = function() {summon()}
 primary_genres_text.insertAdjacentElement("afterend", pencil_)
 
@@ -49,6 +49,8 @@ function summon() {
     primary_genres_text.insertAdjacentHTML("afterend", table)
 
     document.getElementById('front-holder').innerHTML = front_genres_str
+
+    clipboard(front_genres_str) //Copies the front genre string at the same time the pencil is clicked
 
     genre_clip = document.createElement("button")
     genre_clip.innerText = '📋 (Front)'
