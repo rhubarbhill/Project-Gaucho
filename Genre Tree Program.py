@@ -20,9 +20,6 @@ class Genre:
             # In such a case, Ambient Pop's sheetname would be "Amb*ent Pop" (see the rules
             # for name modification elsewhere). If there is no modification, then the sheetname
             # should be the exact same as the name
-
-            # TODO: (!) You should have a function you use beforehand that detects the other genre
-            # names that are contained within a genre’s name
         self.parents = parents
             # This should always be a list of nodes, NOT name strings
             # This is a list of a genre’s parent genres.
@@ -32,7 +29,7 @@ class Genre:
             #
             # If it's NOT a top-level genre, you do not need to put "Top-level" as a parent
             # 
-            # TODO: (!) I don’t know how this will work yet, but you should also account for things
+            # TODO: I don’t know how this will work yet, but you should also account for things
             # like Metal and EDM which are both top-level genres while still having a parent
             # (Metal has Rock and EDM has Electronic)
         self.subgenres = subgenres 
@@ -51,10 +48,10 @@ class Genre:
         
         # Keep in mind that this function is just for finding the back main genres of a single genre.
 
-        # TODO: (!) Define “front genres” some other time for documentation purposes but you
+        # TODO: Define “front genres” some other time for documentation purposes but you
         # already know what they are
 
-        # TODO: (!) Make a name type parameter to toggle whether it returns names or sheet names
+        # TODO: Make a name type parameter to toggle whether it returns names or sheet names
 
         mode = mode
             # Whether it's an object or string
@@ -133,7 +130,7 @@ class Genre:
                     back_all_list.append(genr)
             return back_all_list
         if mode == 'str':
-            # TODO: (!) Fix the duplication issue ("Metal; Metal")
+            # TODO: Fix the duplication issue ("Metal; Metal")
             # The below solution fixes it but it's a little clunky and strange
             # 6/7/2023: Now it's even more clunky and strange
             # Possibly just a temporary fix
@@ -163,7 +160,7 @@ class Genre:
                     back_all_genres_s += f'; {genre_.sheetname}'
                 return back_all_genres_s
 
-    # TODO: (!) Make a function that returns the list of subgenres
+    # TODO: Make a function that returns the list of subgenres
 
     def __str__(self):
         parent_strings = []
@@ -282,11 +279,11 @@ def add_genre_check(name, sheetname, parents, report_containments):
             if name in g[genre].name and g[genre].name not in all_parents_s and g[genre].name != name:
                 print(f'>>> {name} contained in {g[genre].name}')
             
-            # TODO: (!) Make one for vice versa (if name is contained in genre name)
+            # TODO: Make one for vice versa (if name is contained in genre name)
             # ^ Made but needs to check if right
         print('')
 
-        # TODO: (!) Review this again when I have more time
+        # TODO: Review this again when I have more time
 
     pass
 
@@ -440,7 +437,7 @@ def print_all_genres():
         for subsubg in subg.subgenres:
             print('> ', subsubg.__str__())
 
-    # TODO: (!) Currently, this does technically not print all genres, as it does not
+    # TODO: Currently, this does technically not print all genres, as it does not
     # print anything with a depth* greater than 2 (like "Flamenco nuevo", which is
     # a subgenre of a subgenre of a subgenre of a... you get the point.) You must
     # eventually make it able to print all genres, which may likely involve recursion.
@@ -457,7 +454,7 @@ def print_subgenres(genre):
     for subgenre in g[f'{genre}'].subgenres:
         print(subgenre.__str__())
     
-    # TODO: (!) This needs to be able to print not just the subgenres, but the subgenres
+    # TODO: This needs to be able to print not just the subgenres, but the subgenres
     # of the subgenres and so on. Will likely involve recursion.
 
 def back_main_multiple(genre_list):
@@ -492,7 +489,7 @@ def back_main_multiple(genre_list):
 
     return back_main_genres
 
-# TODO: (!) A function that checks a back_main_genres string to make sure
+# TODO: A function that checks a back_main_genres string to make sure
 # that it's correct: all genres in the string need to exist and need to have
 # the correct parents. Because back_main_genres strings use the sheetnames,
 # there will have to be a list or dictionary with all of the sheetnames
@@ -532,16 +529,10 @@ def main():
     #add_genre_check('New Rave', 'New Rave', ['Alt Dance', 'Indie Rock'])
     #add_genre_check('Work Songs', 'Work Songs', ['Traditional Folk'])
 
-# TODO: Deal with "red appendages" like Synthpop, Electropop, Britfunk, etc.
 # TODO: Maybe make an "immediate parents" list that starts out empty and is filled as
 #the genres are added like with "subgenres"
     # TODO: Immediate parents functionality within the genres info sheet itself
     # definitely feels like a 'genres5' kind of thing (current version is 'genres4')
-        # TODO: Defining immediate parents will require yet another manual session, just saying
-# TODO: Change all the genres you shortened ("Alt Dance", "Prog Rock", etc.) and make sure
-#every pure tag matches up to exactly what RYM calls it
-# TODO: Remove all the (!) from the TODOs
-# TODO: Put EDM under Dance and Electronic, among other such necessary top-level under top-level things
 # TODO: Function to make a modified genre string into its non-modified version, and maybe vice versa if necessary
 
 if __name__ == "__main__":
