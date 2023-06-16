@@ -6,6 +6,9 @@ var all_tracks = tracklist.getElementsByClassName("track")
 var album_info = document.getElementsByClassName("album_info_outer")
 var artist_field = album_info[0].getElementsByClassName("artist")
 artist_name = artist_field[0].innerText
+if (artist_name.startsWith('The ')) {
+    artist_name_slice = artist_name.slice(4)
+}
 //TODO: Account for artist names that start with "The"
 //TODO: As well as artists with a non-Latin character as the first one
 
@@ -194,7 +197,11 @@ function pencil(song_title) {
     tableOn = 1
 
     write_cell(curr_song, song_title, "song-holder")
-    write_cell(curr_artist, artist_name, "artist-holder")
+    if (artist_name.startsWith('The ') == false) {
+        write_cell(curr_artist, artist_name, "artist-holder")
+    } else {
+        write_cell(curr_artist, artist_name_slice, "artist-holder")
+    }
     write_cell(curr_year, year_name, "year-holder")
     //write_cell(curr_fgenres, f_genres, "fgenres-holder")
     //write_cell(curr_bgenres, b_genres, "bgenres-holder")
@@ -250,4 +257,5 @@ function write_cell (curr_, message_, id) {
     holder.innerHTML = content
 }
 
+//TODO: Make the table cells editable
 //TODO: Clean this up. Like have more consistency with the variable names, etc.

@@ -499,6 +499,8 @@ def back_main_multiple(genre_list):
 
 def main():
     csv_extract('genres4.csv')
+    add_genre_check('Queercore', 'Queercore', ['Punk Rock'], 'yes')
+    add_genre_check('Indie Surf', 'Indie Surf', ['Indie Rock', 'Surf'], 'yes')
     #csv_blood_check_full('test1.csv')
     #csv_blood_check_full('sheet152.csv')
     #csv_blood_check_for_2('sheet151.csv')
@@ -512,7 +514,7 @@ def main():
     #print('')
     #print(back_main_multiple('Chillwave; Jangle Pop; Country Rock'))
     #print(back_main_multiple('Digital Dancehall'))
-    print(back_main_multiple('UK Funky; Afrobeats; Dance-Pop'))
+    #print(back_main_multiple('UK Funky; Afrobeats; Dance-Pop'))
     #print('')
     #print_subgenres('Country')
     #print('')
