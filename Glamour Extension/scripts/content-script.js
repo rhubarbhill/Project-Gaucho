@@ -67,6 +67,8 @@ var table = "<table style='text-align:left;'> \
     <th>*</th> \
     <th>*</th> \
     <th>Language</th> \
+    <th>Alt. S.</th> \
+    <th>Alt. A.</th> \
     <th>*</th> \
     <th>*</th> \
     <th>*</th> \
@@ -87,6 +89,8 @@ var table = "<table style='text-align:left;'> \
     <td id='BLANK-best-moment(s)-holder'></td> \
     <td id='BLANK-comments-date-holder'></td> \
     <td id='lang-holder'></td> \
+    <td id='alt-song-name-holder'></td> \
+    <td id='alt-artist-name-holder'></td> \
     <td id='BLANK-notes-holder'></td> \
     <td id='BLANK-attributes-holder'></td> \
     <td id='BLANK-owned-holder'></td> \
@@ -245,7 +249,9 @@ function table_clipboard () {
     language = document.getElementById("lang-holder").innerHTML
     the_date = document.getElementById("date-added-holder").innerHTML
 
-    the_row = `✓${c}${song}${c}${artist}${c}${c}${year}${c}${fgenres}${c}${c}${c}${c}${c}${c}${c}${language}${c}${c}${c}${c}${c}${the_date}`
+    //TODO: Eventually, "back genres", "alt. name", and "alt. artist" will all be needed
+
+    the_row = `✓${c}${song}${c}${artist}${c}${c}${year}${c}${fgenres}${c}${c}${c}${c}${c}${c}${c}${language}${c}${c}${c}${c}${c}${c}${c}${the_date}`
     navigator.clipboard.writeText(the_row)
 }
 
