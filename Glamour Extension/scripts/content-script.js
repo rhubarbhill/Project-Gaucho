@@ -9,7 +9,6 @@ artist_name = artist_field[0].innerText
 if (artist_name.startsWith('The ')) {
     artist_name_slice = artist_name.slice(4)
 }
-//TODO: Account for artist names that start with "The"
 //TODO: As well as artists with a non-Latin character as the first one
 
 var info_hdr_list = document.getElementsByClassName("info_hdr")

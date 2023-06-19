@@ -1,4 +1,5 @@
 import csv
+import pickle
 
 g = {}
     # This is the genre dictionary. It's intentionally just called "g" because it
@@ -28,10 +29,6 @@ class Genre:
             # “[Top-level]” (again)
             #
             # If it's NOT a top-level genre, you do not need to put "Top-level" as a parent
-            # 
-            # TODO: I don’t know how this will work yet, but you should also account for things
-            # like Metal and EDM which are both top-level genres while still having a parent
-            # (Metal has Rock and EDM has Electronic)
         self.subgenres = subgenres 
             # This should always be a list of nodes, NOT name strings
             # This is a list of a genre's child genres (a.k.a. "subgenres")
@@ -288,8 +285,11 @@ def add_genre_check(name, sheetname, parents, report_containments):
     pass
 
 def csv_extract(filename): #Function to add genres from a csv file
+    # TODO: Make it so you can split semicolon lists, allowing for only two necessary cells
+    # after the modified name
     with open(filename, encoding='utf-8') as file:
         csvreader = csv.reader(file)
+        next(csvreader)
         for row in csvreader:
             par_gen = [] #To make the list of parent genres
             sheetname = 'n/a'
@@ -471,6 +471,8 @@ def back_main_multiple(genre_list):
     for genre in g_list_str:
         genr = g[f'{genre}']
         g_list_obj.append(genr)
+    
+    # TODO: Make this work for sheet names as well (incorporate 'gs')
 
     if len(g_list_str) == 1: #If only one genre is inputted
         back_main_genres = g_list_obj[0].back_main('str')
@@ -494,10 +496,26 @@ def back_main_multiple(genre_list):
 # the correct parents. Because back_main_genres strings use the sheetnames,
 # there will have to be a list or dictionary with all of the sheetnames
 
+def save_dict(dict):
+    with open("genres.pickle", "wb") as f:
+        pickle.dump(dict, f, protocol=pickle.HIGHEST_PROTOCOL)
+
+def save_dict_2(dict):
+    with open("genres_sheet.pickle", "wb") as f:
+        pickle.dump(dict, f, protocol=pickle.HIGHEST_PROTOCOL)
+
+def load_dict(dict):
+    with open(dict, "rb") as f:
+        return pickle.load(f)
+
 def main():
-    csv_extract('genres4.csv')
-    add_genre_check('Queercore', 'Queercore', ['Punk Rock'], 'yes')
-    add_genre_check('Indie Surf', 'Indie Surf', ['Indie Rock', 'Surf'], 'yes')
+    #csv_extract('genres4.5.csv')
+    g = load_dict("genres.pickle")
+    gs = load_dict("genres_sheet.pickle")
+    print(g['Delta Blues'].back_all('str', 'name', 'comp_look'))
+    #save_dict(g) #g is the main genre dictionary
+    #save_dict_2(gs) #gs is the genre dictionary with all of the sheetnames
+    
     #csv_blood_check_full('test1.csv')
     #csv_blood_check_full('sheet152.csv')
     #csv_blood_check_for_2('sheet151.csv')
@@ -516,6 +534,8 @@ def main():
     #print_subgenres('Country')
     #print('')
     #print(g['Delta Blues'].back_all('str', 'name', 'comp_look'))
+    #print(g['Nothing'].back_all('str', 'name', 'comp_look'))
+        #^ Should not work
     #print(g['Jazz-Rock'].back_main(''))
     #print(g['Contemporary Country'].back_all('str', 'name', 'comp_look'))
     #print('Name (par list):', g['Delta Blues'].back_all('str', 'name', 'par_list'))
@@ -530,9 +550,7 @@ def main():
     #add_genre_check('Work Songs', 'Work Songs', ['Traditional Folk'])
 
 # TODO: Maybe make an "immediate parents" list that starts out empty and is filled as
-#the genres are added like with "subgenres"
-    # TODO: Immediate parents functionality within the genres info sheet itself
-    # definitely feels like a 'genres5' kind of thing (current version is 'genres4')
+# the genres are added like with "subgenres"
 # TODO: Function to make a modified genre string into its non-modified version, and maybe vice versa if necessary
 
 if __name__ == "__main__":
