@@ -508,11 +508,15 @@ def load_dict(dict):
     with open(dict, "rb") as f:
         return pickle.load(f)
 
+g = load_dict("genres.pickle")
+gs = load_dict("genres_sheet.pickle")
+
 def main():
+    back_main_input = input('Input a list of genres, separated by semicolons: ')
+    print(back_main_multiple(str(back_main_input)))
+    
     #csv_extract('genres4.5.csv')
-    g = load_dict("genres.pickle")
-    gs = load_dict("genres_sheet.pickle")
-    print(g['Delta Blues'].back_all('str', 'name', 'comp_look'))
+    #print(g['Delta Blues'].back_all('str', 'name', 'comp_look'))
     #save_dict(g) #g is the main genre dictionary
     #save_dict_2(gs) #gs is the genre dictionary with all of the sheetnames
     
