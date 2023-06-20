@@ -317,8 +317,17 @@ def csv_blood_check_for_2(filename):
     #This function can be phased out once it's been archived
 
 def csv_blood_check_full(filename):
-    #checks a list of genres in a csv and sees if they have a
-    #parent-child relationship
+    #checks a list of genres in a csv and sees if they each have a
+    #parent-child relationship with one another
+
+    #More importantly: takes a list of genres and cuts it down to only
+    #the genres who do not have children within the list
+    #e.g. "Indie Rock; Alt Rock; Pop Rock" would be cut down to "Indie Rock; Pop Rock"
+    #because "Indie Rock" is a subgenre of "Alt Rock", and all the other genres
+    #do not have any other children within the list
+
+        #TODO: This function may end up being renamed to purify_front or something
+
     #row must have two or more genres in it
     #row[0] (the first cell in each row) must contain a count of the number
     #of genres in the row
@@ -373,7 +382,7 @@ def csv_blood_check_full(filename):
             with open('sheetoutput.txt', 'a', encoding="utf-8") as f:
                 f.write(concat)
                 f.write('\n')
-                pass
+
                 #Initial System
                 #f.write(back_parents) #Returns a list of the parent genres which should be deleted
                 #f.write('\n')
@@ -382,7 +391,7 @@ def check_if_modified(genre):
     #Accepts a string containing one genre, returns whether or not it's been modified
 
     modified = False
-    if '~*' in genre or '0' in genre or '3' in genre or '@' in genre:
+    if '–' in genre or '0' in genre or '3' in genre or '@' in genre or '1' in genre:
         modified = True
     return modified
 
@@ -469,7 +478,10 @@ def back_main_multiple(genre_list):
     back_main_genres = ''
 
     for genre in g_list_str:
-        genr = g[f'{genre}']
+        if check_if_modified(genre) == False:
+            genr = g[f'{genre}']
+        else:
+            genr = gs[f'{genre}']
         g_list_obj.append(genr)
     
     # TODO: Make this work for sheet names as well (incorporate 'gs')
@@ -490,6 +502,20 @@ def back_main_multiple(genre_list):
                     back_main_genres += f'; {genr.sheetname}'
 
     return back_main_genres
+
+#TODO: Make a try/except for back_main_multiple
+
+def csv_back_main_multi(filename):
+    with open(filename, encoding='utf-8') as file:
+        csvreader = csv.reader(file)
+        for row in csvreader:
+            string = back_main_multiple(str(row[0]))
+            with open('sheetoutput.txt', 'a', encoding="utf-8") as f:
+                f.write(string)
+                f.write('\n')
+
+# TODO: Figure out how to make with open() overwrite everything in sheetoutput.txt
+# instead of just adding to it
 
 # TODO: A function that checks a back_main_genres string to make sure
 # that it's correct: all genres in the string need to exist and need to have
@@ -515,11 +541,14 @@ def main():
     back_main_input = input('Input a list of genres, separated by semicolons: ')
     print(back_main_multiple(str(back_main_input)))
     
+    ##KEEP the below three comments for convenience
     #csv_extract('genres4.5.csv')
-    #print(g['Delta Blues'].back_all('str', 'name', 'comp_look'))
     #save_dict(g) #g is the main genre dictionary
     #save_dict_2(gs) #gs is the genre dictionary with all of the sheetnames
-    
+    ##KEEP the above three comments for convenience
+
+    #csv_back_main_multi("sheet159.csv")
+
     #csv_blood_check_full('test1.csv')
     #csv_blood_check_full('sheet152.csv')
     #csv_blood_check_for_2('sheet151.csv')
@@ -561,3 +590,4 @@ if __name__ == "__main__":
     main()
 
 # TODO: Eventually clean up the code so it's not just functional but elegant as well
+    # TODO: Consistency with single quotes and double quotes
