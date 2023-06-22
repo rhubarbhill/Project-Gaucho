@@ -11,10 +11,13 @@ if (artist_name.startsWith('The ')) {
 }
 //TODO: As well as artists with a non-Latin character as the first one
 
+var album_name = document.querySelector("#column_container_right > div.section_main_info.section_outer > div > div.album_title").innerText
+
 var info_hdr_list = document.getElementsByClassName("info_hdr")
 
 var lang_row_num = -1
 var year_row_num = 3
+var share_row_num = -1
 
 for (let i = 0; i < info_hdr_list.length; i++) {
     //if ('Language' in info_hdr_list[i].html)
@@ -25,6 +28,9 @@ for (let i = 0; i < info_hdr_list.length; i++) {
     }
     if(info_hdr_list[i].innerText == 'Released') {
         year_row_num = i
+    }
+    if(info_hdr_list[i].innerText == 'Share') {
+        share_row_num = i
     }
 }
 
@@ -42,6 +48,9 @@ var pri_genres = pri_genres_field.innerText.replaceAll(",", ";")
 //
 //TODO: Eventually fix this to account for cases where some above rows are missing
 //TODO: This one's a long one, but integrate this with the Genre Tree Program
+
+var share_tweet = document.querySelector("#column_container_right > div.section_main_info.section_outer > \
+div > table.album_info_outer > tbody > tr > td > table > tbody > tr:nth-child("+(share_row_num+1)+") > td > div:nth-child(1)")
 
 if (lang_row_num != -1) {
     var lang_field = document.querySelector("#column_container_right > div.section_main_info.section_outer > \
@@ -136,6 +145,17 @@ const track_list = []
 for (let i = 0; i < all_tracks.length; i++) {
     if (all_tracks[i].style.textAlign != 'right') {
     this["song"+i] = all_tracks[i].getElementsByClassName("rendered_text")
+    this["ft_list"+i] = []
+    this["ft_credit"+i] = all_tracks[i].getElementsByClassName("featured_credit")
+
+    if (this["ft_credit"+i].length > 0) {
+        this["ft_type"+i] = this["ft_credit"+i][0].innerText.slice(0,4)
+        this["feature"+i] = this["ft_credit"+i][0].getElementsByClassName("artist")
+    
+        for (let j = 0; j < this["feature"+i].length; j++) {
+            this["ft_list"+i].push(this["feature"+i][j].innerText)
+        }
+    }
 
     this["btn_pencil"+i] = document.createElement("button")
     this["btn_pencil"+i].innerText = '✏️'
@@ -161,6 +181,25 @@ for (let i = 0; i < all_tracks.length; i++) {
     }
 }
 
+notion_btn = document.createElement("button")
+notion_btn.innerText = 'Notion 📋'
+notion_btn.onclick = function() {notion_share()}
+artist_album_btn = document.createElement("button")
+artist_album_btn.innerText = 'Artist - Album Title 📋'
+artist_album_btn.onclick = function() {ar_al_share()}
+share_tweet.insertAdjacentElement("afterend", notion_btn)
+share_tweet.insertAdjacentElement("afterend", artist_album_btn)
+
+function notion_share() {
+    artist_album_link = `${artist_name} - [${album_name}](${window.location.href})`
+    navigator.clipboard.writeText(artist_album_link)
+}
+function ar_al_share() {
+    artist_album = `${artist_name} - ${album_name}`
+    navigator.clipboard.writeText(artist_album)
+}
+
+//The following button still hasn't been implemented
 ld_btn = document.createElement("button")
 ld_btn.innerText = 'Import to Log 📋'
 ld_entry = "[b]DATE[/b] \
