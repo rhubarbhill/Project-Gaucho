@@ -163,14 +163,22 @@ for (let i = 0; i < all_tracks.length; i++) {
 
 ld_btn = document.createElement("button")
 ld_btn.innerText = 'Import to Log 📋'
-ld_entry = "Track review: [spoiler] \
+ld_entry = "[b]DATE[/b] \
+\n\n- \
+\n\nTrack review: [spoiler] \
 "
-
 for (let i = 0; i < all_tracks.length; i++) {
     if (all_tracks[i].style.textAlign != 'right') {
-    ld_entry += `\n${track_list[i]}`
+    ld_entry += `\n\n"${track_list[i]}" `
     }
 } //TODO: Figure out how to make this work because "\n" isn't working at all
+ld_entry += "[/spoiler]"
+
+console.log(ld_entry)
+
+function ld_e() {
+    console.log(ld_entry)
+}
 
 genre_btn = document.createElement("button")
 genre_btn.innerText = '📋'
