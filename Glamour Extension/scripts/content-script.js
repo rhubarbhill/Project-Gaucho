@@ -185,7 +185,7 @@ notion_btn = document.createElement("button")
 notion_btn.innerText = 'Notion 📋'
 notion_btn.onclick = function() {notion_share()}
 artist_album_btn = document.createElement("button")
-artist_album_btn.innerText = 'Artist - Album Title 📋'
+artist_album_btn.innerText = '📋➕'
 artist_album_btn.onclick = function() {ar_al_share()}
 share_tweet.insertAdjacentElement("afterend", notion_btn)
 share_tweet.insertAdjacentElement("afterend", artist_album_btn)
