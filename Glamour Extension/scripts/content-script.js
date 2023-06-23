@@ -1,7 +1,9 @@
 console.log('scripts/content-script.js')
 
 var tracklist = document.getElementById("tracks")
-var all_tracks = tracklist.getElementsByClassName("track")
+if (tracklist != undefined) {
+    var all_tracks = tracklist.getElementsByClassName("track")
+}
 
 var album_info = document.getElementsByClassName("album_info_outer")
 var artist_field = album_info[0].getElementsByClassName("artist")
@@ -142,42 +144,44 @@ var blank = ' '
 const track_list = []
 
 //TODO: Account for releases that don't have a track listing, prevent error
-for (let i = 0; i < all_tracks.length; i++) {
-    if (all_tracks[i].style.textAlign != 'right') {
-    this["song"+i] = all_tracks[i].getElementsByClassName("rendered_text")
-    this["ft_list"+i] = []
-    this["ft_credit"+i] = all_tracks[i].getElementsByClassName("featured_credit")
+if (tracklist != undefined) {
+    for (let i = 0; i < all_tracks.length; i++) {
+        if (all_tracks[i].style.textAlign != 'right') {
+        this["song"+i] = all_tracks[i].getElementsByClassName("rendered_text")
+        this["ft_list"+i] = []
+        this["ft_credit"+i] = all_tracks[i].getElementsByClassName("featured_credit")
 
-    if (this["ft_credit"+i].length > 0) {
-        this["ft_type"+i] = this["ft_credit"+i][0].innerText.slice(0,4)
-        this["feature"+i] = this["ft_credit"+i][0].getElementsByClassName("artist")
-    
-        for (let j = 0; j < this["feature"+i].length; j++) {
-            this["ft_list"+i].push(this["feature"+i][j].innerText)
+        if (this["ft_credit"+i].length > 0) {
+            this["ft_type"+i] = this["ft_credit"+i][0].innerText.slice(0,4)
+            this["feature"+i] = this["ft_credit"+i][0].getElementsByClassName("artist")
+        
+            for (let j = 0; j < this["feature"+i].length; j++) {
+                this["ft_list"+i].push(this["feature"+i][j].innerText)
+            }
         }
-    }
 
-    this["btn_pencil"+i] = document.createElement("button")
-    this["btn_pencil"+i].innerText = '✏️'
-    const song_text = this["song"+i][0].innerText
-    this["btn_pencil"+i].onclick = function() {pencil(song_text)}
+        this["btn_pencil"+i] = document.createElement("button")
+        this["btn_pencil"+i].innerText = '✏️'
+        const song_text = this["song"+i][0].innerText
+        this["btn_pencil"+i].onclick = function() {pencil(song_text)}
 
-    this["btn_clip"+i] = document.createElement("button")
-    this["btn_clip"+i].innerText = '📋'
-    this["btn_clip"+i].onclick = function() {clipboard(song_text)}
+        this["btn_clip"+i] = document.createElement("button")
+        this["btn_clip"+i].innerText = '📋'
+        this["btn_clip"+i].onclick = function() {clipboard(song_text)}
 
-    this["btn_dclip"+i] = document.createElement("button")
-    this["btn_dclip"+i].innerText = '📋➕'
-    this["btn_dclip"+i].onclick = function() {double_clipboard(artist_name, song_text)}
+        this["btn_dclip"+i] = document.createElement("button")
+        this["btn_dclip"+i].innerText = '📋➕'
+        this["btn_dclip"+i].onclick = function() {double_clipboard(artist_name, song_text)}
 
-    this["song"+i][0].insertAdjacentElement("afterend", this["btn_pencil"+i])
-    this["song"+i][0].insertAdjacentText("afterend", blank)
-    this["song"+i][0].insertAdjacentElement("afterend", this["btn_dclip"+i])
-    this["song"+i][0].insertAdjacentText("afterend", blank)
-    this["song"+i][0].insertAdjacentElement("afterend", this["btn_clip"+i])
-    this["song"+i][0].insertAdjacentText("afterend", blank)
-    
-    track_list.push(song_text)
+        this["song"+i][0].insertAdjacentElement("afterend", this["btn_pencil"+i])
+        this["song"+i][0].insertAdjacentText("afterend", blank)
+        this["song"+i][0].insertAdjacentElement("afterend", this["btn_dclip"+i])
+        this["song"+i][0].insertAdjacentText("afterend", blank)
+        this["song"+i][0].insertAdjacentElement("afterend", this["btn_clip"+i])
+        this["song"+i][0].insertAdjacentText("afterend", blank)
+        
+        track_list.push(song_text)
+        }
     }
 }
 
@@ -202,18 +206,20 @@ function ar_al_share() {
 //The following button still hasn't been implemented
 ld_btn = document.createElement("button")
 ld_btn.innerText = 'Import to Log 📋'
-ld_entry = "[b]DATE[/b] \
-\n\n- \
-\n\nTrack review: [spoiler] \
-"
-for (let i = 0; i < all_tracks.length; i++) {
-    if (all_tracks[i].style.textAlign != 'right') {
-    ld_entry += `\n\n"${track_list[i]}" `
-    }
-} //TODO: Figure out how to make this work because "\n" isn't working at all
-ld_entry += "[/spoiler]"
+if (tracklist != undefined) {
+    ld_entry = "[b]DATE[/b] \
+    \n\n- \
+    \n\nTrack review: [spoiler] \
+    "
+    for (let i = 0; i < all_tracks.length; i++) {
+        if (all_tracks[i].style.textAlign != 'right') {
+        ld_entry += `\n\n"${track_list[i]}" `
+        }
+    } //TODO: Figure out how to make this work because "\n" isn't working at all
+    ld_entry += "[/spoiler]"
 
-console.log(ld_entry)
+    console.log(ld_entry)
+}
 
 function ld_e() {
     console.log(ld_entry)
