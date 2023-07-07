@@ -38,7 +38,9 @@ for (let i = 0; i < info_hdr_list.length; i++) {
 
 var year_field = document.querySelector("#column_container_right > div.section_main_info.section_outer > \
 div > table.album_info_outer > tbody > tr > td > table > tbody > tr:nth-child("+(year_row_num+1)+") > td > a > b")
-year_name = year_field.innerText
+if (year_field != null) {
+    year_name = year_field.innerText
+} else {year_name = 'N/A'} //This is just a temporary solution
 //TODO: This is a general thing, but account for edge cases where some fields may be empty
 //TODO: Account for cases where the year is not in blue
 //Error Case: Maggot Brained (Single) by Funkadelic, Infinity Repeating (Additional release) by Daft Punk
@@ -299,6 +301,7 @@ function table_clipboard () {
     artist = document.getElementById("artist-holder").innerHTML
     year = document.getElementById("year-holder").innerHTML
     fgenres = document.getElementById("fgenres-holder").innerHTML
+    //TODO: Prevent the "&amp;" thing from showing up for genres with ampersands in the name
     language = document.getElementById("lang-holder").innerHTML
     the_date = document.getElementById("date-added-holder").innerHTML
 
