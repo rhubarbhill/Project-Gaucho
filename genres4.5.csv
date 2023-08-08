@@ -496,7 +496,7 @@ Outsider House,Outsider House,EDM,House,Dance,Electronic,,,,,,,,,494
 Powerviolence,Powerviolence,Hardcore Punk,Punk Rock,Rock,Punk,Hardcore [Punk],,,,,,,,495
 Ragga Jungle,R@gga Jungle,Drum and Bass,EDM,Jungle,Dance,Electronic,,,,,,,,496
 Reggae,Reggae,Jamaican Music,Caribbean Music,Regional Music,,,,,,,,,,497
-Reggaeton,R3ggaeton,Hispanic American Music,Hispanic Music,Regional Music,,,,,,,,,,498
+Reggaetón,R3ggaetón,Hispanic American Music,Hispanic Music,Regional Music,,,,,,,,,,498
 Rocksteady,R0cksteady,Jamaican Music,Caribbean Music,Regional Music,,,,,,,,,,499
 Samba de roda,Samba de roda,Brazilian Music,Samba,Regional Music,,,,,,,,,,500
 Samba-canção,Samba-canção,Brazilian Music,Samba,Regional Music,,,,,,,,,,501
@@ -515,7 +515,7 @@ Dub,D–b,Jamaican Music,Caribbean Music,Reggae,Regional Music,,,,,,,,,513
 Footwork,Footwork,EDM,House,Dance,Electronic,,,,,,,,,514
 Irish Folk Music,Irish Folk Music,Celtic Folk Music,European Folk Music,Traditional Folk,Folk,Regional Music,European Music,,,,,,,515
 Lovers Rock,Lovers R0ck,Reggae,Jamaican Music,Caribbean Music,Regional Music,,,,,,,,,516
-Neoperreo,Neoperreo,Reggaeton,Hispanic American Music,Hispanic Music,Regional Music,,,,,,,,,517
+Neoperreo,Neoperreo,Reggaetón,Hispanic American Music,Hispanic Music,Regional Music,,,,,,,,,517
 Pop Reggae,P0p Reggae,Jamaican Music,Caribbean Music,Reggae,Regional Music,,,,,,,,,518
 Ragga,Ragga,Dancehall,Jamaican Music,Caribbean Music,Regional Music,,,,,,,,,519
 Roots Reggae,Roots Reggae,Jamaican Music,Caribbean Music,Reggae,Regional Music,,,,,,,,,520
@@ -786,3 +786,7 @@ Slushwave,Slushwave,Vaporwave,Electronic,Vapor,,,,,,,,,,785
 Queercore,Queercore,Rock,Punk,,,,,,,,,,,786
 Indie Surf,Indie Surf,Indie Rock,Alternative Rock,Rock,Surf Music,,,,,,,,,787
 Go-Go,Go-Go,Funk,R&B,,,,,,,,,,,788
+Samba-jazz,S@mba-jazz,Jazz,Brazilian Music,Regional Music,,,,,,,,,,789
+Funk proibidão,F–nk proibidão,Funk brasileiro,Brazilian Music,Regional Music,,,,,,,,,,790
+Cyber Metal,Cyber Metal,Industrial Metal,Post-Industrial,Industrial Music,Rock,,,,,,,,,791
+Western,Western,Country,Northern American Music,Regional Music,,,,,,,,,,792

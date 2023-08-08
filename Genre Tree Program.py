@@ -513,6 +513,9 @@ def csv_back_main_multi(filename):
             with open('sheetoutput.txt', 'a', encoding="utf-8") as f:
                 f.write(string)
                 f.write('\n')
+    # TODO: Include an error check where if a genre doesn't exist, it just writes
+    # "ERROR: Not a registered genre" instead of stopping the whole thing
+    # try / except, probably
 
 # TODO: Figure out how to make with open() overwrite everything in sheetoutput.txt
 # instead of just adding to it
