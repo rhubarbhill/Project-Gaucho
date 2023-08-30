@@ -278,7 +278,8 @@ def add_genre_check(name, sheetname, parents, report_containments):
             
             # TODO: Make one for vice versa (if name is contained in genre name)
             # ^ Made but needs to check if right
-        print('')
+        #print('')
+        # 8/29/2023 Note: Took this extra print space out
 
         # TODO: Review this again when I have more time
 
@@ -560,7 +561,7 @@ def main():
     #csv_blood_check_for_2('sheet151.csv')
     #csv_blood_check_for_2('sheet151.2.csv')
 
-    #csv_extract_check('newgenrebatch.csv', '')
+    csv_extract_check('newgenrebatch.csv', '')
 
     ##Testing
     #print(g['Spirituals'].back_main('str'))
