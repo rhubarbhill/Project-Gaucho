@@ -20,6 +20,7 @@ var info_hdr_list = document.getElementsByClassName("info_hdr")
 var lang_row_num = -1
 var year_row_num = 3
 var share_row_num = -1
+//TODO: Phase out "share_row_num" because the Share row is gone now
 
 for (let i = 0; i < info_hdr_list.length; i++) {
     //if ('Language' in info_hdr_list[i].html)
@@ -31,7 +32,7 @@ for (let i = 0; i < info_hdr_list.length; i++) {
     if(info_hdr_list[i].innerText == 'Released') {
         year_row_num = i
     }
-    if(info_hdr_list[i].innerText == 'Share') {
+    if(info_hdr_list[i].innerText == 'Descriptors') {
         share_row_num = i
     }
 }
@@ -193,8 +194,8 @@ notion_btn.onclick = function() {notion_share()}
 artist_album_btn = document.createElement("button")
 artist_album_btn.innerText = '📋➕'
 artist_album_btn.onclick = function() {ar_al_share()}
-share_tweet.insertAdjacentElement("afterend", notion_btn)
-share_tweet.insertAdjacentElement("afterend", artist_album_btn)
+album_info_end.insertAdjacentElement("afterend", notion_btn)
+album_info_end.insertAdjacentElement("afterend", artist_album_btn)
 
 function notion_share() {
     artist_album_link = `${artist_name} - [${album_name}](${window.location.href})`
