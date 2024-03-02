@@ -480,9 +480,15 @@ def back_main_multiple(genre_list):
 
     for genre in g_list_str:
         if check_if_modified(genre) == False:
-            genr = g[f'{genre}']
+            try:
+                genr = g[f'{genre}']
+            except KeyError:
+                genr = g['No Genre']
         else:
-            genr = gs[f'{genre}']
+            try:
+                genr = gs[f'{genre}']
+            except KeyError:
+                genr = g['No Genre']
         g_list_obj.append(genr)
     
     # TODO: Make this work for sheet names as well (incorporate 'gs')
@@ -514,9 +520,6 @@ def csv_back_main_multi(filename):
             with open('sheetoutput.txt', 'a', encoding="utf-8") as f:
                 f.write(string)
                 f.write('\n')
-    # TODO: Include an error check where if a genre doesn't exist, it just writes
-    # "ERROR: Not a registered genre" instead of stopping the whole thing
-    # try / except, probably
 
 # TODO: Figure out how to make with open() overwrite everything in sheetoutput.txt
 # instead of just adding to it
@@ -561,7 +564,7 @@ def main():
     #csv_blood_check_for_2('sheet151.csv')
     #csv_blood_check_for_2('sheet151.2.csv')
 
-    csv_extract_check('newgenrebatch.csv', '')
+    #csv_extract_check('newgenrebatch.csv', '')
 
     ##Testing
     #print(g['Spirituals'].back_main('str'))

@@ -688,7 +688,7 @@ Yacht Rock,Yacht Rock,Soft Rock,Pop Rock,Pop,Rock,,,,,,,,,686
 Work Songs,Work Songs,Traditional Folk,Folk,Regional Music,,,,,,,,,,687
 Boogie Woogie,B00gie Woogie,Northern American Music,Regional Music,,,,,,,,,,,688
 Armenian Music,Armenian Music,West Asian Music,Regional Music,,,,,,,,,,,689
-Skate Punk,Sk*te Punk,Punk Rock,Rock,Punk,,,,,,,,,,690
+Skate Punk,Sk–te Punk,Punk Rock,Rock,Punk,,,,,,,,,,690
 Countrypolitan,Countrypolitan,Nashville Sound,Country Pop,Country,Pop,Northern American Music,Regional Music,,,,,,,691
 Idol kayō,Idol kayō,Kayōkyoku,Japanese Music,East Asian Music,Regional Music,,,,,,,,,692
 Chipmunk Soul,Chipmunk S0ul,Hip Hop,,,,,,,,,,,,693
@@ -719,7 +719,7 @@ UK Hardcore,UK Hardcore,Happy Hardcore,Hardcore [EDM],EDM,Hard Dance,Dance,Elect
 Brazilian Classical Music,Brazilian Classical Music,Brazilian Music,Regional Music,Western Classical,Classical,,,,,,,,,718
 Flashcore,Flashcore,Electronic,,,,,,,,,,,,719
 Tropical Rock,Tropical Rock,Soft Rock,Pop Rock,Pop,Rock,,,,,,,,,720
-Classical Crossover,Cl*ssical Crossover,Pop,,,,,,,,,,,,721
+Classical Crossover,Cl–ssical Crossover,Pop,,,,,,,,,,,,721
 Drumless,Drumless,Hip Hop,,,,,,,,,,,,722
 Glam Metal,Glam M3tal,Hard Rock,Rock,,,,,,,,,,,723
 Classical March,Classical March,Western Classical,Classical,,,,,,,,,,,724
@@ -790,3 +790,29 @@ Samba-jazz,S@mba-jazz,Jazz,Brazilian Music,Regional Music,,,,,,,,,,789
 Funk proibidão,F–nk proibidão,Funk brasileiro,Brazilian Music,Regional Music,,,,,,,,,,790
 Cyber Metal,Cyber Metal,Industrial Metal,Post-Industrial,Industrial Music,Rock,,,,,,,,,791
 Western,Western,Country,Northern American Music,Regional Music,,,,,,,,,,792
+Old-Time,Old-Time,Appalachian Folk Music,American Folk Music,Traditional Folk,Folk,Regional Music,,,,,,,,793
+Swancore,Swancore,Post-Hardcore,Punk,Hardcore [Punk],Rock,,,,,,,,,794
+Epic Doom Metal,Epic Doom Metal,Traditional Doom Metal,Doom Metal,Metal,Rock,,,,,,,,,795
+US Power Metal,US P0wer Metal,Heavy Metal,Metal,Rock,,,,,,,,,,796
+Technical Thrash Metal,Technical Thrash Metal,Thrash Metal,Metal,Rock,,,,,,,,,,797
+Crossover Thrash,Crossover Thrash,Thrash Metal,Metal,Rock,Hardcore Punk,Punk Rock,Punk,Hardcore [Punk],,,,,,798
+Space Rock Revival,Space Rock Revival,Neo-Psychedelia,Psych,Space Rock,Psychedelic Rock,Rock,,,,,,,,799
+Mutant Disco,Mutant Disco,Disco,Dance,,,,,,,,,,,800
+Songhai Music,Songhai Music,West African Music,African Music,Regional Music,,,,,,,,,,801
+Speedcore,Speedcore,Hardcore [EDM],EDM,Dance,Electronic,,,,,,,,,802
+J-core,J-core,Hardcore [EDM],EDM,Dance,Electronic,,,,,,,,,803
+Mid-School Hip Hop,Mid-School Hip Hop,Hardcore Hip Hop,Hip Hop,,,,,,,,,,,804
+Denpa,Denpa,Pop,,,,,,,,,,,,805
+MIDI Music,MIDI Music,Bit Music,Electronic,,,,,,,,,,,806
+Extratone,Extratone,Speedcore,Hardcore [EDM],EDM,Dance,Electronic,,,,,,,,807
+Trap Soul,Trap S0ul,Trap,Hip Hop,Contemporary R&B,R&B,,,,,,,,,808
+South American Music,South American Music,Regional Music,,,,,,,,,,,,809
+Chilean Music,Chilean Music,South American Music,Regional Music,,,,,,,,,,,810
+Nueva canción chilena,Nueva canción chilena,Nueva canción latinoamericana,Contemporary Folk,Folk,Singer-Songwriter,Hispanic American Music,Hispanic Music,Regional Music,Nueva canción,Chilean Music,South American Music,,,811
+Urban Cowboy,Urban C0wboy,Country Pop,Country,Northern American Music,Regional Music,Pop,,,,,,,,812
+Canadian Folk Music,Canadian Folk Music,Traditional Folk,Folk,Regional Music,Northern American Music,,,,,,,,,813
+Canadian Maritime Folk,Canadian Maritime Folk,Canadian Folk Music,Traditional Folk,Folk,Regional Music,Northern American Music,,,,,,,,814
+Moogsploitation,Moogsploitation,Electronic,,,,,,,,,,,,815
+Chillout,Chillout,Electronic,,,,,,,,,,,,816
+Midtempo Bass,Midtempo Bass,EDM,Dance,Electronic,,,,,,,,,,817
+Melodic Hardcore,Melodic Hardcore,Hardcore Punk,Punk Rock,Rock,Punk,Hardcore [Punk],,,,,,,,818
