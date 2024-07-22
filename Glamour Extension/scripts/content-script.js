@@ -66,7 +66,7 @@ if (lang_row_num != -1) {
 var album_info_end = document.querySelector("#column_container_right > div.section_main_info.section_outer > \
 div > table.album_info_outer")
 
-var table = "<table style='text-align:left;'> \
+var table = "<table id='custom-table' style='text-align:left;'> \
 <tr> \
     <th>✓</th> \
     <th>Song</th> \
@@ -239,6 +239,12 @@ genre_pencil = document.createElement("button")
 genre_pencil.innerText = '✏️'
 genre_pencil.onclick = function() {pencil_g(genre_text)}
 
+tracklist_pencil = document.createElement("button")
+tracklist_pencil.innerText = '✏️'
+var tracklist_block = document.getElementById("tracks")
+tracklist_block.insertAdjacentElement("beforebegin", tracklist_pencil)
+tracklist_pencil.onclick = function() {tracklist_p()}
+
 function pencil(song_title) {
     console.log(song_title)
     
@@ -270,6 +276,34 @@ function pencil(song_title) {
 
 function pencil_g(genre_list) {
     write_cell(curr_fgenres, genre_list, "fgenres-holder")
+}
+
+function tracklist_p() {
+    if (tableOn == 0) {album_info_end.insertAdjacentHTML("afterend", table)}
+
+    for (let i = 0; i < track_list.length; i++) {
+        add_row("custom-table", track_list[i])
+    }
+}
+
+function add_row(table_id, song_name) {
+    var table = document.getElementById(table_id); //Still a work in progress
+
+    var row = table.insertRow(-1);
+
+    var cell0 = row.insertCell(0);
+    var cell1 = row.insertCell(1);
+    var cell2 = row.insertCell(2);
+    var cell3 = row.insertCell(3);
+    var cell4 = row.insertCell(4);
+    var cell5 = row.insertCell(5);
+    
+    cell0.innerHTML = "✓"
+    cell1.innerHTML = song_name
+    cell2.innerHTML = artist_name
+    cell3.innerHTML = cell_sep
+    cell4.innerHTML = year_name
+    cell5.innerHTML = genre_text
 }
 
 album_name_btn = document.createElement("button")

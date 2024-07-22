@@ -541,23 +541,26 @@ def load_dict(dict):
     with open(dict, "rb") as f:
         return pickle.load(f)
 
-g = load_dict("genres.pickle")
-gs = load_dict("genres_sheet.pickle")
+#g = load_dict("genres.pickle")
+#gs = load_dict("genres_sheet.pickle")
+#If using the pickle, don't comment these out. If not, comment them out
 
 def print_testing():
     return "Hello from Python! (Testing)"
 
 def main():
+    csv_extract('Genre Tree Program\genres5.csv')
+
     back_main_input = input('Input a list of genres, separated by semicolons: ')
     print(back_main_multiple(str(back_main_input)))
     
     ##KEEP the below three comments for convenience
-    #csv_extract('genres4.5.csv')
+    #csv_extract('genres5.csv')
     #save_dict(g) #g is the main genre dictionary
     #save_dict_2(gs) #gs is the genre dictionary with all of the sheetnames
     ##KEEP the above three comments for convenience
 
-    csv_back_main_multi("sheetinput.csv")
+    csv_back_main_multi("Genre Tree Program\sheetinput.csv")
 
     #csv_blood_check_full('test1.csv')
     #csv_blood_check_full('sheet152.csv')

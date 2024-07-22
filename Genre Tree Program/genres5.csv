@@ -1,0 +1,857 @@
+Pure Tag,Edited Version (if appl.) –,A1,A2,A3,A4,A5,A6,A7,A8,A9,A10,A11,A12,EO
+Top-level,Top-level,,,,,,,,,,,,,1
+Ambient,Ambient,Top-level,,,,,,,,,,,,2
+Blues,Blues,Top-level,,,,,,,,,,,,3
+Classical,Classical,Top-level,,,,,,,,,,,,4
+Comedy,Comedy,Top-level,,,,,,,,,,,,5
+Dance,Dance,Top-level,,,,,,,,,,,,6
+Darkwave,Darkwave,Top-level,,,,,,,,,,,,7
+Descriptor Genres,Descriptor Genres,Top-level,,,,,,,,,,,,8
+Electronic,Electronic,Top-level,,,,,,,,,,,,9
+EDM,EDM,Dance,Electronic,Top-level,,,,,,,,,,10
+Experimental,Experimental,Top-level,,,,,,,,,,,,11
+Field Recordings,Field Recordings,Top-level,,,,,,,,,,,,12
+Folk,Folk,Top-level,,,,,,,,,,,,13
+Hip Hop,Hip Hop,Top-level,,,,,,,,,,,,14
+Industrial & Noise,Industrial & Noise,Top-level,,,,,,,,,,,,15
+Jazz,Jazz,Top-level,,,,,,,,,,,,16
+Rock,Rock,Top-level,,,,,,,,,,,,17
+Metal,Metal,Rock,Top-level,,,,,,,,,,,18
+Musical Theatre,Musical Theatre,Top-level,,,,,,,,,,,,19
+New Age,New Age,Top-level,,,,,,,,,,,,20
+No Genre,No Genre,Top-level,,,,,,,,,,,,21
+Pop,Pop,Top-level,,,,,,,,,,,,22
+Psych,Psych,Top-level,,,,,,,,,,,,23
+Punk,Punk,Top-level,,,,,,,,,,,,24
+R&B,R&B,Top-level,,,,,,,,,,,,25
+Funk,Funk,R&B,Top-level,,,,,,,,,,,26
+Soul,Soul,R&B,Top-level,,,,,,,,,,,27
+Regional Music,Regional Music,Top-level,,,,,,,,,,,,28
+Northern American Music,Northern American Music,Regional Music,,,,,,,,,,,,29
+South American Music,South American Music,Regional Music,,,,,,,,,,,,30
+Reggae / Ska / Dancehall,Reg / Sk / Dan,Top-level,,,,,,,,,,,,31
+Country,Country,Northern American Music,Regional Music,Top-level,,,,,,,,,,32
+Singer-Songwriter,Singer-Songwriter,Top-level,,,,,,,,,,,,33
+Ska,Ska,Reggae / Ska / Dancehall,,,,,,,,,,,,34
+Ambient Pop,Amb–ent P0p,Top-level,,,,,,,,,,,,35
+Dark Cabaret,Dark C–baret,Top-level,,,,,,,,,,,,36
+Easy Listening,Easy Listening,Top-level,,,,,,,,,,,,37
+Mashup,Mashup,Top-level,,,,,,,,,,,,38
+Visual kei,Visual kei,Top-level,,,,,,,,,,,,39
+Shibuya-kei,Shibuya-kei,Top-level,,,,,,,,,,,,40
+European Music,European Music,Regional Music,,,,,,,,,,,,41
+Dance-Pop,Dance-Pop,Dance,Pop,,,,,,,,,,,42
+2 Tone,2 Tone,Ska,Reggae / Ska / Dancehall,,,,,,,,,,,43
+A cappella,A cappella,Descriptor Genres,,,,,,,,,,,,44
+Abstract Hip Hop,Abstract Hip Hop,Hip Hop,,,,,,,,,,,,45
+Acoustic Blues,Acoustic Blues,Blues,,,,,,,,,,,,46
+Acoustic Rock,Acoustic Rock,Rock,,,,,,,,,,,,47
+Adult Contemporary,Adult Contemporary,Pop,,,,,,,,,,,,48
+African Music,African Music,Regional Music,,,,,,,,,,,,49
+Alternative Metal,Alternative Metal,Metal,Rock,,,,,,,,,,,50
+Alternative Rock,Alternative Rock,Rock,,,,,,,,,,,,51
+Alt-Country,Alt-Country,Country,Northern American Music,Regional Music,,,,,,,,,,52
+Alt-Pop,Alt-Pop,Pop,,,,,,,,,,,,53
+Americana,Americana,Northern American Music,Regional Music,,,,,,,,,,,54
+Andean New Age,Andean New Age,New Age,,,,,,,,,,,,55
+AOR,AOR,Rock,,,,,,,,,,,,56
+Arabic Music,Arabic Music,Regional Music,,,,,,,,,,,,57
+Art Pop,Art Pop,Pop,,,,,,,,,,,,58
+Art Punk,Art Punk,Punk,,,,,,,,,,,,59
+Art Rock,Art Rock,Rock,,,,,,,,,,,,60
+Avant-Garde Jazz,Avant-Garde Jazz,Jazz,,,,,,,,,,,,61
+Avant-Garde Metal,Avant-Garde Metal,Metal,Rock,,,,,,,,,,,62
+Balkan Music,Balkan Music,Regional Music,European Music,,,,,,,,,,,63
+Baroque Pop,Baroque Pop,Pop,,,,,,,,,,,,64
+Bebop,Bebop,Jazz,,,,,,,,,,,,65
+Big Band,Big Band,Jazz,,,,,,,,,,,,66
+Bit Music,Bit Music,Electronic,,,,,,,,,,,,67
+Black Metal,Black Metal,Metal,Rock,,,,,,,,,,,68
+Blue-Eyed Soul,Blue-Eyed S0ul,Pop,,,,,,,,,,,,69
+Blues Rock,Bl–es Rock,Rock,,,,,,,,,,,,70
+Boy Band,Boy Band,Pop,,,,,,,,,,,,71
+Brazilian Music,Brazilian Music,South American Music,Regional Music,,,,,,,,,,,72
+Breakbeat,Breakbeat,EDM,Dance,Electronic,,,,,,,,,,73
+Brill Building,Brill Building,Pop,,,,,,,,,,,,74
+Bubblegum,B–bblegum,Pop,,,,,,,,,,,,75
+Bubblegum Bass,Bubblegum Bass,EDM,Dance,Electronic,,,,,,,,,,76
+C-Pop,C-Pop,Pop,,,,,,,,,,,,77
+Caribbean Music,Caribbean Music,Regional Music,,,,,,,,,,,,78
+Cartoon Music,Cartoon Music,Jazz,,,,,,,,,,,,79
+Celtic New Age,Celtic New Age,New Age,European Music,Regional Music,,,,,,,,,,80
+Chamber Jazz,Chamber Jazz,Jazz,,,,,,,,,,,,81
+Chanson,Chanson,Regional Music,European Music,,,,,,,,,,,82
+Children's Music,Children's Music,Descriptor Genres,,,,,,,,,,,,83
+Christian Hip Hop,Christian Hip Hop,Hip Hop,,,,,,,,,,,,84
+Christian Rock,Christian Rock,Rock,,,,,,,,,,,,85
+Cinematic Classical,Cinematic Classical,Classical,,,,,,,,,,,,86
+Cloud Rap,Cloud Rap,Hip Hop,,,,,,,,,,,,87
+Conscious Hip Hop,Conscious Hip Hop,Hip Hop,,,,,,,,,,,,88
+Contemporary Country,Contemporary Country,Country,Northern American Music,Regional Music,,,,,,,,,,89
+Contemporary Folk,Contemporary Folk,Folk,,,,,,,,,,,,90
+Contemporary R&B,Contemporary R&B,R&B,,,,,,,,,,,,91
+Cool Jazz,Cool Jazz,Jazz,,,,,,,,,,,,92
+Country Rock,C0untry Rock,Rock,,,,,,,,,,,,93
+Crunk,Crunk,Hip Hop,,,,,,,,,,,,94
+Dark Jazz,Dark Jazz,Jazz,,,,,,,,,,,,95
+Death Metal,Death Metal,Metal,Rock,,,,,,,,,,,96
+Dirty South,Dirty South,Hip Hop,,,,,,,,,,,,97
+Disco,Disco,Dance,,,,,,,,,,,,98
+Disco Rap,D–sco Rap,Hip Hop,,,,,,,,,,,,99
+Dixieland,Dixieland,Jazz,,,,,,,,,,,,100
+Doo-Wop,Doo-Wop,R&B,,,,,,,,,,,,101
+Doom Metal,Doom Metal,Metal,Rock,,,,,,,,,,,102
+Downtempo,Downtempo,Electronic,,,,,,,,,,,,103
+Drone,Drone,Experimental,,,,,,,,,,,,104
+Drone Metal,Dr0ne Metal,Metal,Rock,,,,,,,,,,,105
+Drum and Bass,Drum and Bass,EDM,Dance,Electronic,,,,,,,,,,106
+Dubstep,Dubstep,EDM,Dance,Electronic,,,,,,,,,,107
+East Asian Music,East Asian Music,Regional Music,,,,,,,,,,,,108
+East Coast Hip Hop,East Coast Hip Hop,Hip Hop,,,,,,,,,,,,109
+ECM Style Jazz,ECM Style Jazz,Jazz,,,,,,,,,,,,110
+Electric Blues,Electric Blues,Blues,,,,,,,,,,,,111
+Electro,Electr0,EDM,Dance,Electronic,,,,,,,,,,112
+Electroclash,Electroclash,EDM,Dance,Electronic,,,,,,,,,,113
+Emo,Emo,Punk,,,,,,,,,,,,114
+Emo Rap,Em0 Rap,Hip Hop,,,,,,,,,,,,115
+Ethereal Wave,Ethereal Wave,Darkwave,,,,,,,,,,,,116
+Europop,Europop,Pop,,,,,,,,,,,,117
+Experimental Hip Hop,Exp–rimental Hip Hop,Hip Hop,,,,,,,,,,,,118
+Experimental Rock,Exp–rimental Rock,Rock,,,,,,,,,,,,119
+Folk Metal,F0lk Metal,Metal,Rock,,,,,,,,,,,120
+Folk Rock,F0lk Rock,Rock,,,,,,,,,,,,121
+Folktronica,F0lktronica,Electronic,,,,,,,,,,,,122
+Free Improvisation,Free Improvisation,Experimental,,,,,,,,,,,,123
+French Pop,French Pop,Pop,,,,,,,,,,,,124
+Acid Jazz,Acid Jazz,Funk,R&B,,,,,,,,,,,125
+Funk Rock,F–nk Rock,Rock,,,,,,,,,,,,126
+Funktronica,F–nktronica,EDM,Dance,Electronic,,,,,,,,,,127
+Future Bass,Future Bass,EDM,Dance,Electronic,,,,,,,,,,128
+G-Funk,G-F–nk,Hip Hop,,,,,,,,,,,,129
+Garage Rock,Garage Rock,Rock,,,,,,,,,,,,130
+Girl Group,Girl Group,Pop,,,,,,,,,,,,131
+Glam Rock,Glam Rock,Rock,,,,,,,,,,,,132
+Glitch Hop,Glitch Hop,Electronic,,,,,,,,,,,,133
+Greek Music,Greek Music,Regional Music,European Music,,,,,,,,,,,134
+Grime,Grime,EDM,Dance,Electronic,,,,,,,,,,135
+Groove Metal,Groove Metal,Metal,Rock,,,,,,,,,,,136
+Hard Rock,Hard Rock,Rock,,,,,,,,,,,,137
+Hardcore [EDM],Hardcore [EDM],EDM,Dance,Electronic,,,,,,,,,,138
+Hardcore [Punk],Hardcore [Punk],Punk,Rock,,,,,,,,,,,139
+Hardcore Hip Hop,Hardcore Hip Hop,Hip Hop,,,,,,,,,,,,140
+Heartland Rock,Heartland Rock,Rock,,,,,,,,,,,,141
+Heavy Metal,Heavy Metal,Metal,Rock,,,,,,,,,,,142
+HexD,HexD,Electronic,,,,,,,,,,,,143
+Hispanic Music,Hispanic Music,Regional Music,,,,,,,,,,,,144
+Holiday Music,Holiday Music,Descriptor Genres,,,,,,,,,,,,145
+Honky Tonk,Honky Tonk,Country,Northern American Music,Regional Music,,,,,,,,,,146
+House,House,EDM,Dance,Electronic,,,,,,,,,,147
+Hyphy,Hyphy,Hip Hop,,,,,,,,,,,,148
+IDM,IDM,Electronic,,,,,,,,,,,,149
+Illbient,Illbient,Electronic,,,,,,,,,,,,150
+Indie Pop,Indie Pop,Pop,,,,,,,,,,,,151
+Indietronica,Indietronica,Electronic,,,,,,,,,,,,152
+Instrumental Hip Hop,Instrumental Hip Hop,Hip Hop,,,,,,,,,,,,153
+J-Pop,J-Pop,Pop,,,,,,,,,,,,154
+Japanese Hip Hop,Japanese Hip Hop,Hip Hop,,,,,,,,,,,,155
+Jazz Fusion,Jazz Fusion,Jazz,,,,,,,,,,,,156
+Jazz Pop,J–zz Pop,Pop,,,,,,,,,,,,157
+Jazz Rap,J–zz Rap,Hip Hop,,,,,,,,,,,,158
+Jazz-Rock,J–zz-Rock,Rock,,,,,,,,,,,,159
+K-Pop,K-Pop,Pop,,,,,,,,,,,,160
+Latin Rap,Latin Rap,Hip Hop,,,,,,,,,,,,161
+Math Rock,Math Rock,Rock,,,,,,,,,,,,162
+Miami Bass,Miami Bass,Hip Hop,Dance,,,,,,,,,,,163
+Minimal Wave,Minimal Wave,Electronic,,,,,,,,,,,,164
+Mobb Music,Mobb Music,Hip Hop,,,,,,,,,,,,165
+Mod,M0d,Rock,,,,,,,,,,,,166
+Modal Jazz,Modal Jazz,Jazz,,,,,,,,,,,,167
+Modern Classical,Modern Classical,Classical,,,,,,,,,,,,168
+Moombahton,Moombahton,EDM,Dance,Electronic,,,,,,,,,,169
+Musical Comedy,Musical Comedy,Comedy,,,,,,,,,,,,170
+Musical Parody,Musical Parody,Descriptor Genres,,,,,,,,,,,,171
+Nature Recordings,Nature Recordings,Field Recordings,,,,,,,,,,,,172
+Neo-Psychedelia,Neo-Psychedelia,Psych,,,,,,,,,,,,173
+Neoclassical Darkwave,Neocl–ssical Darkwave,Darkwave,,,,,,,,,,,,174
+Neoclassical New Age,Neocl–ssical New Age,New Age,,,,,,,,,,,,175
+Nerdcore Hip Hop,Nerdcore Hip Hop,Hip Hop,,,,,,,,,,,,176
+New Orleans Blues,New Orleans Blues,Blues,,,,,,,,,,,,177
+New Orleans R&B,New Orleans R&B,R&B,,,,,,,,,,,,178
+New Wave,New Wave,Rock,,,,,,,,,,,,179
+Nightcore,Nightcore,Electronic,,,,,,,,,,,,180
+Noise,Noise,Experimental,Industrial & Noise,,,,,,,,,,,181
+Noise Rock,N0ise Rock,Rock,,,,,,,,,,,,182
+Novelty,Novelty,Descriptor Genres,,,,,,,,,,,,183
+Nu Jazz,Nu J–zz,Electronic,,,,,,,,,,,,184
+Palingsound,Palingsound,Pop,,,,,,,,,,,,185
+Piano Blues,Piano Blues,Blues,,,,,,,,,,,,186
+Plunderphonics,Plunderphonics,Experimental,,,,,,,,,,,,187
+Political Hip Hop,Political Hip Hop,Hip Hop,,,,,,,,,,,,188
+Polynesian Music,Polynesian Music,Regional Music,,,,,,,,,,,,189
+Pop Rap,P0p Rap,Hip Hop,,,,,,,,,,,,190
+Post-Bop,Post-Bop,Jazz,,,,,,,,,,,,191
+Post-Hardcore,Post-Hardcore,Punk,Hardcore [Punk],Rock,,,,,,,,,,192
+Post-Industrial,Post-Industrial,Industrial & Noise,,,,,,,,,,,,193
+Post-Metal,Post-Metal,Metal,Rock,,,,,,,,,,,194
+Post-Punk,Post-Punk,Punk,,,,,,,,,,,,195
+Post-Rock,Post-Rock,Rock,,,,,,,,,,,,196
+Power Metal,Power Metal,Metal,Rock,,,,,,,,,,,197
+Progressive Rock,Progressive Rock,Rock,,,,,,,,,,,,198
+Progressive Country,Progressive Country,Country,Northern American Music,Regional Music,,,,,,,,,,199
+Progressive Electronic,Progressive Electronic,Electronic,,,,,,,,,,,,200
+Progressive Metal,Progressive Metal,Metal,Rock,,,,,,,,,,,201
+Progressive Pop,Progressive Pop,Pop,,,,,,,,,,,,202
+Proto-Punk,Proto-Punk,Punk,,,,,,,,,,,,203
+Psybient,Psybient,Electronic,,,,,,,,,,,,204
+Pub Rock,Pub Rock,Rock,,,,,,,,,,,,205
+Rap Rock,Rap Rock,Rock,,,,,,,,,,,,206
+Reductionism,Reductionism,Experimental,,,,,,,,,,,,207
+Rhythm & Blues,Rhythm & Bl–es,R&B,,,,,,,,,,,,208
+Rock & Roll,Rock & Roll,Rock,,,,,,,,,,,,209
+Roots Rock,Roots Rock,Rock,,,,,,,,,,,,210
+Satire,Satire,Descriptor Genres,,,,,,,,,,,,211
+Show Tunes,Show Tunes,Musical Theatre,,,,,,,,,,,,212
+Sketch Comedy,Sketch Comedy,Comedy,,,,,,,,,,,,213
+Sludge Metal,Sludge Metal,Metal,Rock,,,,,,,,,,,214
+Smooth Jazz,Smooth Jazz,Jazz,,,,,,,,,,,,215
+Snap,Snap,Hip Hop,,,,,,,,,,,,216
+Sophisti-Pop,Sophisti-Pop,Pop,,,,,,,,,,,,217
+Soul Blues,S0ul Blues,Blues,,,,,,,,,,,,218
+Soul Jazz,S0ul Jazz,Jazz,,,,,,,,,,,,219
+Sound Collage,Sound Collage,Experimental,,,,,,,,,,,,220
+Soundtrack,Soundtrack,Descriptor Genres,,,,,,,,,,,,221
+South Asian Music,South Asian Music,Regional Music,,,,,,,,,,,,222
+Southeast Asian Music,Southeast Asian Music,Regional Music,,,,,,,,,,,,223
+Southern Hip Hop,Southern Hip Hop,Hip Hop,,,,,,,,,,,,224
+Southern Metal,Southern Metal,Metal,Rock,,,,,,,,,,,225
+Southern Rock,Southern Rock,Rock,,,,,,,,,,,,226
+Space Ambient,Space Ambient,Ambient,,,,,,,,,,,,227
+Spacesynth,Spacesynth,EDM,Dance,Electronic,,,,,,,,,,228
+Speed Metal,Speed Metal,Metal,Rock,,,,,,,,,,,229
+Spoken Word,Spoken Word,Descriptor Genres,,,,,,,,,,,,230
+Stoner Metal,Stoner Metal,Metal,Rock,,,,,,,,,,,231
+Sunshine Pop,Sunshine Pop,Pop,,,,,,,,,,,,232
+Surf Music,Surf Music,Rock,,,,,,,,,,,,233
+Swing,Sw–ng,Jazz,,,,,,,,,,,,234
+Symphonic Metal,Symphonic Metal,Metal,Rock,,,,,,,,,,,235
+Symphonic Rock,Symphonic Rock,Rock,,,,,,,,,,,,236
+Synthwave,Synthwave,Electronic,,,,,,,,,,,,237
+Tape Music,Tape Music,Experimental,,,,,,,,,,,,238
+Techno,Techno,EDM,Dance,Electronic,,,,,,,,,,239
+Teen Pop,Teen Pop,Pop,,,,,,,,,,,,240
+Third Stream,Third Stream,Jazz,,,,,,,,,,,,241
+Third Wave Ska,Third Wave Ska,Ska,Reggae / Ska / Dancehall,,,,,,,,,,,242
+Thrash Metal,Thrash Metal,Metal,Rock,,,,,,,,,,,243
+Traditional Pop,Traditional Pop,Pop,,,,,,,,,,,,244
+Trance,Trance,EDM,Dance,Electronic,,,,,,,,,,245
+Trap [EDM],Tr@p [EDM],EDM,Dance,Electronic,,,,,,,,,,246
+Trap,Trap,Hip Hop,,,,,,,,,,,,247
+Tribal Ambient,Tribal Ambient,Ambient,,,,,,,,,,,,248
+Turntable Music,Turntable Music,Experimental,,,,,,,,,,,,249
+Turntablism,Turntablism,Hip Hop,,,,,,,,,,,,250
+UK Bass,UK Bass,EDM,Dance,Electronic,,,,,,,,,,251
+UK Garage,UK Garage,EDM,Dance,Electronic,,,,,,,,,,252
+UK Hip Hop,UK Hip Hop,Hip Hop,,,,,,,,,,,,253
+Vapor,Vapor,Electronic,,,,,,,,,,,,254
+Vaporwave,Vaporwave,Electronic,Vapor,,,,,,,,,,,255
+Vaudeville Blues,Vaudeville Blues,Blues,,,,,,,,,,,,256
+Vocal Jazz,Vocal Jazz,Jazz,,,,,,,,,,,,257
+West Asian Music,West Asian Music,Regional Music,,,,,,,,,,,,258
+West Coast Hip Hop,West Coast Hip Hop,Hip Hop,,,,,,,,,,,,259
+Western Classical,Western Classical,Classical,,,,,,,,,,,,260
+Wonky,Wonky,EDM,Dance,Electronic,,,,,,,,,,261
+Yé-yé,Yé-yé,Pop,,,,,,,,,,,,262
+Traditional Folk,Traditional Folk,Folk,Regional Music,,,,,,,,,,,263
+Punk Rock,Punk Rock,Rock,Punk,,,,,,,,,,,264
+Psychedelic Rock,Psychedelic Rock,Rock,Psych,,,,,,,,,,,265
+Pop Rock,Pop Rock,Pop,Rock,,,,,,,,,,,266
+Psychedelic Folk,Psychedelic Folk,Contemporary Folk,Folk,Psych,Folk,,,,,,,,,267
+Eurodance,Eurodance,EDM,Dance-Pop,Pop,Dance,Electronic,,,,,,,,268
+Synthpop,Synthpop,Electronic,Pop,,,,,,,,,,,269
+Pop Soul,Pop Soul,R&B,Pop,Soul,,,,,,,,,,270
+Hardcore Punk,Hardcore Punk,Punk Rock,Rock,Punk,Hardcore [Punk],,,,,,,,,271
+European Folk Music,European Folk Music,Traditional Folk,Folk,Regional Music,European Music,,,,,,,,,272
+2-Step,2-Step,UK Garage,EDM,Dance,Electronic,,,,,,,,,273
+Acid House,Acid House,EDM,House,Dance,Electronic,,,,,,,,,274
+Acid Techno,Acid Techno,EDM,Techno,Dance,Electronic,,,,,,,,,275
+Acid Trance,Acid Trance,EDM,Trance,Dance,Electronic,,,,,,,,,276
+Acidcore,Acidcore,Hardcore [EDM],EDM,Dance,Electronic,,,,,,,,,277
+Afro-House,Afro-House,EDM,House,Dance,Electronic,,,,,,,,,278
+Alternative R&B,Alternative R&B,Contemporary R&B,R&B,,,,,,,,,,,279
+Ambient House,Amb–ent House,EDM,House,Dance,Electronic,,,,,,,,,280
+Ambient Techno,Amb–ent Techno,EDM,Techno,Dance,Electronic,,,,,,,,,281
+Ambient Trance,Amb–ent Trance,EDM,Trance,Dance,Electronic,,,,,,,,,282
+American Primitivism,American Primitivism,Contemporary Folk,Folk,,,,,,,,,,,283
+Anti-Folk,Anti-Folk,Contemporary Folk,Folk,,,,,,,,,,,284
+Atlanta Bass,Atlanta Bass,Miami Bass,Hip Hop,,,,,,,,,,,285
+Atmospheric Black Metal,Atmospheric Black Metal,Black Metal,Metal,Rock,,,,,,,,,,286
+Atmospheric Drum and Bass,Atmospheric Drum and Bass,EDM,Drum and Bass,Dance,Electronic,,,,,,,,,287
+Atmospheric Sludge Metal,Atmospheric Sludge Metal,Sludge Metal,Metal,Rock,,,,,,,,,,288
+Avant-Folk,Avant-Folk,Contemporary Folk,Folk,,,,,,,,,,,289
+Baggy,Baggy,Alternative Rock,Rock,,,,,,,,,,,290
+Balearic Beat,Balearic Beat,EDM,Dance,Electronic,,,,,,,,,,291
+Baroque Music,Baroque Music,Western Classical,Classical,European Music,Regional Music,,,,,,,,,292
+Bassline,Bassline,UK Garage,EDM,Dance,Electronic,,,,,,,,,293
+Bedroom Pop,Bedroom Pop,Indie Pop,Pop,,,,,,,,,,,294
+Berlin School,Berlin School,Progressive Electronic,Electronic,,,,,,,,,,,295
+Big Beat,Big Beat,Breakbeat,EDM,Dance,Electronic,,,,,,,,,296
+Black 'n' Roll,Black 'n' Roll,Black Metal,Metal,Rock,,,,,,,,,,297
+Bleep Techno,Bleep Techno,EDM,Techno,Dance,Electronic,,,,,,,,,298
+Boom Bap,Boom Bap,Hip Hop,,,,,,,,,,,,299
+Bossa nova,Bossa nova,Brazilian Music,South American Music,Regional Music,,,,,,,,,,300
+Breakcore,Breakcore,Hardcore [EDM],EDM,Dance,Electronic,,,,,,,,,301
+British Music,British Music,European Music,Regional Music,,,,,,,,,,,302
+British Folk Rock,British F0lk Rock,Folk Rock,Rock,British Music,European Music,Regional Music,,,,,,,,303
+Brostep,Brostep,Dubstep,EDM,Dance,Electronic,,,,,,,,,304
+Brutal Death Metal,Brutal Death Metal,Death Metal,Metal,Rock,,,,,,,,,,305
+Carols,Carols,Holiday Music,Descriptor Genres,,,,,,,,,,,306
+Celtic Rock,Celtic Rock,Folk Rock,Rock,European Music,Regional Music,,,,,,,,,307
+Central African Music,Central African Music,African Music,Regional Music,,,,,,,,,,,308
+Chamber Folk,Chamber Folk,Contemporary Folk,Folk,,,,,,,,,,,309
+Chamber Music,Chamber Music,Western Classical,Classical,,,,,,,,,,,310
+Chamber Pop,Chamber Pop,Indie Pop,Pop,,,,,,,,,,,311
+Chicago Blues,Chicago Blues,Electric Blues,Blues,,,,,,,,,,,312
+Chicago House,Chicago House,EDM,House,Dance,Electronic,,,,,,,,,313
+Chicago Soul,Chicago Soul,R&B,Soul,,,,,,,,,,,314
+Chillstep,Chillstep,Dubstep,EDM,Dance,Electronic,,,,,,,,,315
+Chillwave,Chillwave,Indietronica,Electronic,,,,,,,,,,,316
+Chiptune,Chiptune,Bit Music,Electronic,,,,,,,,,,,317
+City Pop,City Pop,Pop,,,,,,,,,,,,318
+Classical Period,Classical Period,Western Classical,Classical,European Music,Regional Music,,,,,,,,,319
+Waltz,Waltz,European Music,Regional Music,,,,,,,,,,,320
+Comedy Rock,Comedy Rock,Musical Comedy,Comedy,,,,,,,,,,,321
+Country Soul,C0untry Soul,R&B,Soul,,,,,,,,,,,322
+Crunkcore,Crunkcore,Hip Hop,Crunk,,,,,,,,,,,323
+Dancefloor Drum and Bass,Dancefloor Drum and Bass,EDM,Drum and Bass,Dance,Electronic,,,,,,,,,324
+Deep Funk,Deep Funk,R&B,Funk,,,,,,,,,,,325
+Deep House,Deep House,EDM,House,Dance,Electronic,,,,,,,,,326
+Deep Soul,Deep Soul,R&B,Soul,,,,,,,,,,,327
+Depressive Black Metal,Depressive Black Metal,Black Metal,Metal,Rock,,,,,,,,,,328
+Detroit Techno,Detroit Techno,EDM,Techno,Dance,Electronic,,,,,,,,,329
+Dream Pop,Dream P0p,Alternative Rock,Rock,,,,,,,,,,,330
+Dream Trance,Dream Trance,EDM,Trance,Dance,Electronic,,,,,,,,,331
+Drill and Bass,Drill and Bass,IDM,Electronic,,,,,,,,,,,332
+Dutch House,Dutch House,EDM,House,Dance,Electronic,,,,,,,,,333
+East African Music,East African Music,African Music,Regional Music,,,,,,,,,,,334
+Electric Texas Blues,Electric Texas Blues,Electric Blues,Blues,,,,,,,,,,,335
+Electro House,Electro House,EDM,House,Dance,Electronic,,,,,,,,,336
+Emo-Pop,Emo-P0p,Punk,Emo,,,,,,,,,,,337
+Euro House,Euro House,EDM,House,Dance,Electronic,,,,,,,,,338
+Euro-Disco,Euro-Disco,Dance,Disco,,,,,,,,,,,339
+Euro-Trance,Euro-Trance,EDM,Trance,Dance,Electronic,,,,,,,,,340
+Film Soundtrack,Film Soundtrack,Soundtrack,Descriptor Genres,,,,,,,,,,,341
+Folk Baroque,Folk Baroque,Contemporary Folk,Folk,,,,,,,,,,,342
+Free Jazz,Free Jazz,Avant-Garde Jazz,Jazz,,,,,,,,,,,343
+French House,French House,EDM,House,Dance,Electronic,,,,,,,,,344
+Funky House,F–nky House,EDM,House,Dance,Electronic,,,,,,,,,345
+Future Garage,Future Garage,UK Garage,EDM,Dance,Electronic,,,,,,,,,346
+Future House,Future House,EDM,House,Dance,Electronic,,,,,,,,,347
+Gabber,Gabber,Hardcore [EDM],EDM,Dance,Electronic,,,,,,,,,348
+Gangsta Rap,Gangsta Rap,Hardcore Hip Hop,Hip Hop,,,,,,,,,,,349
+Garage House,Garage House,EDM,House,Dance,Electronic,,,,,,,,,350
+Garage Rock Revival,Garage Rock Revival,Garage Rock,Rock,,,,,,,,,,,351
+Ghetto House,Ghetto House,EDM,House,Dance,Electronic,,,,,,,,,352
+Goa Trance,Goa Trance,EDM,Trance,Dance,Electronic,,,,,,,,,353
+Gothic Country,Gothic Country,Alt-Country,Country,Northern American Music,Regional Music,,,,,,,,,354
+Grunge,Grunge,Alternative Rock,Rock,,,,,,,,,,,355
+Halftime,Halftime,Drum and Bass,EDM,Dance,Electronic,,,,,,,,,356
+Hard Bop,Hard Bop,Bebop,Jazz,,,,,,,,,,,357
+Hard Trance,Hard Trance,EDM,Trance,Dance,Electronic,,,,,,,,,358
+Hardstep,Hardstep,Drum and Bass,EDM,Dance,Electronic,,,,,,,,,359
+Harsh Noise,Harsh Noise,Experimental,Noise,Industrial & Noise,,,,,,,,,,360
+Hawaiian Music,Hawaiian Music,Polynesian Music,Regional Music,,,,,,,,,,,361
+Hip House,Hip House,EDM,House,Dance,Electronic,,,,,,,,,362
+Horrorcore,Horrorcore,Hardcore Hip Hop,Hip Hop,,,,,,,,,,,363
+Hypnagogic Pop,Hypnagogic Pop,Neo-Psychedelia,Psych,,,,,,,,,,,364
+Ibiza Trance,Ibiza Trance,EDM,Trance,Dance,Electronic,,,,,,,,,365
+Impressionism,Impressionism,Western Classical,Classical,,,,,,,,,,,366
+Indie Folk,Indie Folk,Contemporary Folk,Folk,,,,,,,,,,,367
+Indie Rock,Indie Rock,Alternative Rock,Rock,,,,,,,,,,,368
+Industrial Hip Hop,Industrial Hip Hop,Experimental Hip Hop,Hip Hop,,,,,,,,,,,369
+Italo House,Italo House,EDM,House,Dance,Electronic,,,,,,,,,370
+Jamaican Music,Jamaican Music,Caribbean Music,Regional Music,,,,,,,,,,,371
+Japanese Music,Japanese Music,East Asian Music,Regional Music,,,,,,,,,,,372
+Jazzstep,J–zzstep,Drum and Bass,EDM,Dance,Electronic,,,,,,,,,373
+Jump-Up,Jump-Up,Drum and Bass,EDM,Dance,Electronic,,,,,,,,,374
+Jungle,Jungle,Drum and Bass,EDM,Dance,Electronic,,,,,,,,,375
+Hispanic American Music,Hispanic American Music,Hispanic Music,Regional Music,,,,,,,,,,,376
+Library Music,Library Music,Soundtrack,Descriptor Genres,,,,,,,,,,,377
+Liquid Drum and Bass,Liquid Drum and Bass,Drum and Bass,EDM,Dance,Electronic,,,,,,,,,378
+Lounge,Lounge,Easy Listening,,,,,,,,,,,,379
+Mandopop,Mandopop,C-Pop,Pop,,,,,,,,,,,380
+Melodic Death Metal,Melodic Death Metal,Death Metal,Metal,Rock,,,,,,,,,,381
+Melodic Dubstep,Melodic Dubstep,EDM,Drum and Bass,Dance,Electronic,,,,,,,,,382
+Memphis Rap,Memphis Rap,Hardcore Hip Hop,Hip Hop,,,,,,,,,,,383
+Microhouse,Microhouse,EDM,House,Dance,Electronic,,,,,,,,,384
+Microtonal,Microtonal,Modern Classical,Classical,,,,,,,,,,,385
+Minimal Drum and Bass,Minimal Drum and Bass,EDM,Drum and Bass,Dance,Electronic,,,,,,,,,386
+Minimal Synth,Minimal Synth,Minimal Wave,Electronic,,,,,,,,,,,387
+Minimal Techno,Minimal Techno,EDM,Techno,Dance,Electronic,,,,,,,,,388
+Minimalism,Minimalism,Modern Classical,Classical,,,,,,,,,,,389
+Mod Revival,M0d Revival,Rock,Mod,,,,,,,,,,,390
+Moombahcore,Moombahcore,Moombahton,EDM,Dance,Electronic,,,,,,,,,391
+MPB,MPB,Brazilian Music,South American Music,Regional Music,,,,,,,,,,392
+Native American Music,Native American Music,Traditional Folk,Folk,,,,,,,,,,,393
+Neo-Soul,Neo-Soul,R&B,Soul,,,,,,,,,,,394
+Neofolk,Neofolk,Contemporary Folk,Folk,,,,,,,,,,,395
+Neue Deutsche Welle,Neue Deutsche Welle,New Wave,Rock,,,,,,,,,,,396
+New Jack Swing,New Jack Swing,Contemporary R&B,R&B,,,,,,,,,,,397
+Noise Pop,N0ise P0p,Alternative Rock,Indie Rock,Rock,,,,,,,,,,398
+North African Music,North African Music,African Music,Regional Music,,,,,,,,,,,399
+Northeastern African Music,Northeastern African Music,African Music,Regional Music,,,,,,,,,,,400
+Northern Soul,Northern Soul,R&B,Soul,,,,,,,,,,,401
+Nu Metal,Nu Metal,Alternative Metal,Metal,Rock,,,,,,,,,,402
+NWOBHM,NWOBHM,Heavy Metal,Metal,Rock,,,,,,,,,,403
+Onkyo,Onkyo,Reductionism,Experimental,,,,,,,,,,,404
+Orchestral,Orchestral,Western Classical,Classical,,,,,,,,,,,405
+Outlaw Country,Outlaw Country,Progressive Country,Country,Northern American Music,Regional Music,,,,,,,,,406
+P-Funk,P-Funk,R&B,Funk,,,,,,,,,,,407
+Pagan Black Metal,Pagan Black Metal,Black Metal,Metal,Rock,,,,,,,,,,408
+Philly Soul,Philly Soul,R&B,Soul,,,,,,,,,,,409
+Poetry,Poetry,Spoken Word,Descriptor Genres,,,,,,,,,,,410
+Pop Punk,P0p Punk,Punk Rock,Punk,,,,,,,,,,,411
+Post-Grunge,Post-Gr–nge,Alternative Rock,Rock,,,,,,,,,,,412
+Post-Minimalism,Post-M–nimalism,Modern Classical,Classical,,,,,,,,,,,413
+Progressive Big Band,Progressive Big Band,Jazz,Big Band,,,,,,,,,,,414
+Progressive Folk,Progressive Folk,Contemporary Folk,Folk,,,,,,,,,,,415
+Progressive House,Progressive House,EDM,House,Dance,Electronic,,,,,,,,,416
+Progressive Trance,Progressive Trance,EDM,Trance,Dance,Electronic,,,,,,,,,417
+Psytrance,Psytrance,EDM,Trance,Dance,Electronic,,,,,,,,,418
+Punk Blues,Punk Bl–es,Punk Rock,Punk,,,,,,,,,,,419
+Purple Sound,Purple Sound,Dubstep,EDM,Dance,Electronic,,,,,,,,,420
+Rap Metal,Rap Metal,Alternative Metal,Metal,Rock,,,,,,,,,,421
+Riot Grrrl,Riot Grrrl,Punk Rock,Punk,,,,,,,,,,,422
+Rockabilly,Rockabilly,Rock & Roll,Rock,,,,,,,,,,,423
+Romanticism,Romanticism,Western Classical,Classical,,,,,,,,,,,424
+Samba,Samba,Brazilian Music,South American Music,Regional Music,,,,,,,,,,425
+Sequencer & Tracker,Sequencer & Tracker,Bit Music,Electronic,,,,,,,,,,,426
+Shoegaze,Shoegaze,Alternative Rock,Rock,,,,,,,,,,,427
+Skiffle,Skiffle,Contemporary Folk,Folk,,,,,,,,,,,428
+Smooth Soul,Smooth Soul,R&B,Soul,,,,,,,,,,,429
+Sonorism,Sonorism,Modern Classical,Classical,,,,,,,,,,,430
+Southern African Music,Southern African Music,African Music,Regional Music,,,,,,,,,,,431
+Southern Soul,Southern Soul,R&B,Soul,,,,,,,,,,,432
+Space Age Pop,Space Age P0p,Easy Listening,,,,,,,,,,,,433
+Spaghetti Western,Spaghetti Western,Modern Classical,Classical,,,,,,,,,,,434
+Spanish Music,Spanish Music,Hispanic Music,Regional Music,European Music,,,,,,,,,,435
+Speed Garage,Speed Garage,UK Garage,EDM,Dance,Electronic,,,,,,,,,436
+Spiritual Jazz,Spiritual Jazz,Avant-Garde Jazz,Jazz,,,,,,,,,,,437
+Standards,Standards,Traditional Pop,Pop,,,,,,,,,,,438
+Stoner Rock,Stoner Rock,Hard Rock,Rock,,,,,,,,,,,439
+Surf Rock,Surf Rock,Surf Music,Rock,,,,,,,,,,,440
+Swamp Rock,Swamp Rock,Roots Rock,Rock,,,,,,,,,,,441
+Swing Revival,Sw–ng Revival,Jazz,Swing,,,,,,,,,,,442
+Symphonic Black Metal,Symphonic Black Metal,Black Metal,Metal,Rock,,,,,,,,,,443
+Symphonic Prog,Symphonic Prog,Progressive Rock,Rock,,,,,,,,,,,444
+Synth Funk,Synth Funk,R&B,Funk,,,,,,,,,,,445
+Tech Trance,Tech Trance,EDM,Trance,Dance,Electronic,,,,,,,,,446
+Technical Death Metal,Technical Death Metal,Death Metal,Metal,Rock,,,,,,,,,,447
+Techstep,Techstep,Drum and Bass,EDM,Dance,Electronic,,,,,,,,,448
+Television Music,Television Music,Soundtrack,Descriptor Genres,,,,,,,,,,,449
+Throat Singing,Throat Singing,Traditional Folk,Folk,,,,,,,,,,,450
+Traditional Doom Metal,Traditional Doom Metal,Doom Metal,Metal,Rock,,,,,,,,,,451
+Tribal House,Tribal House,EDM,House,Dance,Electronic,,,,,,,,,452
+Trip Hop,Trip Hop,Downtempo,Electronic,,,,,,,,,,,453
+Tropical House,Tropical House,EDM,House,Dance,Electronic,,,,,,,,,454
+Trot,Trot,East Asian Music,Regional Music,,,,,,,,,,,455
+Twee Pop,Twee Pop,Indie Pop,Pop Rock,Indie Rock,Alternative Rock,Pop,,,,,,,,456
+Twerk,Twerk,Trap [EDM],EDM,Dance,Electronic,,,,,,,,,457
+UK Funky,UK F–nky,UK Garage,EDM,Dance,Electronic,,,,,,,,,458
+UK Hard House,UK Hard House,EDM,House,Dance,Electronic,,,,,,,,,459
+Uplifting Trance,Uplifting Trance,EDM,Trance,Dance,Electronic,,,,,,,,,460
+Video Game Music,Video Game Music,Soundtrack,Descriptor Genres,,,,,,,,,,,461
+Vocal Trance,Vocal Trance,EDM,Trance,Dance,Electronic,,,,,,,,,462
+West African Music,West African Music,African Music,Regional Music,,,,,,,,,,,463
+Batucada,Batucada,Samba,Brazilian Music,South American Music,Regional Music,,,,,,,,,464
+Beat Poetry,Beat Poetry,Spoken Word,Poetry,Descriptor Genres,,,,,,,,,,465
+Blackgaze,Blackgaze,Atmospheric Black Metal,Black Metal,Metal,Rock,,,,,,,,,466
+Bolero,Bolero,Hispanic American Music,Hispanic Music,Regional Music,,,,,,,,,,467
+Celtic Folk Music,Celtic Folk Music,European Folk Music,Traditional Folk,Folk,Regional Music,European Music,,,,,,,,468
+Complextro,Complextro,Electro House,EDM,House,Dance,Electronic,,,,,,,,469
+Cuban Music,Cuban Music,Hispanic American Music,Hispanic Music,Regional Music,Caribbean Music,,,,,,,,,470
+Dancehall,Danc3hall,Jamaican Music,Caribbean Music,Regional Music,Reggae / Ska / Dancehall,,,,,,,,,471
+Dark Folk,Dark Folk,Neofolk,Contemporary Folk,Folk,,,,,,,,,,472
+Dub Techno,Dub Techno,Minimal Techno,EDM,Techno,Dance,Electronic,,,,,,,,473
+Dunedin Sound,Dunedin Sound,Indie Rock,Alternative Rock,Rock,,,,,,,,,,474
+English Folk Music,English Folk Music,European Folk Music,Traditional Folk,Folk,Regional Music,British Music,European Music,,,,,,,475
+Fanfare,Fanfare,European Folk Music,Traditional Folk,Folk,Regional Music,European Music,,,,,,,,476
+Film Score,Film Score,Film Soundtrack,Soundtrack,Descriptor Genres,,,,,,,,,,477
+French Folk Music,French Folk Music,European Folk Music,Traditional Folk,Folk,Regional Music,European Music,,,,,,,,478
+Future Bounce,Future Bounce,Future House,EDM,House,Dance,Electronic,,,,,,,,479
+Ghettotech,Ghettotech,Ghetto House,EDM,House,Dance,Electronic,,,,,,,,480
+Gumbe,Gumbe,West African Music,African Music,Regional Music,,,,,,,,,,481
+Hands Up,Hands Up,Euro-Trance,EDM,Trance,Dance,Electronic,,,,,,,,482
+Highlife,Highlife,West African Music,African Music,Regional Music,,,,,,,,,,483
+Inuit Music,Inuit Music,Native American Music,Traditional Folk,Folk,,,,,,,,,,484
+Japanese Hardcore,Japanese Hardcore,Punk Rock,Hardcore Punk,Punk,,,,,,,,,,485
+Juke,Juke,Ghetto House,EDM,House,Dance,Electronic,,,,,,,,486
+Kayōkyoku,Kayōkyoku,Japanese Music,East Asian Music,Regional Music,,,,,,,,,,487
+Latin Alternative,Latin Alternative,Hispanic American Music,Hispanic Music,Regional Music,,,,,,,,,,488
+Slacker Rock,Slacker Rock,Indie Rock,Alternative Rock,Rock,,,,,,,,,,489
+Makossa,Makossa,Central African Music,African Music,Regional Music,,,,,,,,,,490
+Mande Music,Mande Music,West African Music,African Music,Regional Music,,,,,,,,,,491
+Melbourne Bounce,Melbourne B0unce,Electro House,EDM,House,Dance,Electronic,,,,,,,,492
+Mexican Music,Mexican Music,Hispanic American Music,Hispanic Music,Regional Music,,,,,,,,,,493
+Noisecore,N0isecore,Hardcore Punk,Punk Rock,Rock,Punk,Hardcore [Punk],,,,,,,,494
+Nu Style Gabber,Nu Style Gabber,Hardcore [EDM],Gabber,EDM,Dance,Electronic,,,,,,,,495
+Nyahbinghi,Nyahbinghi,Jamaican Music,Caribbean Music,Regional Music,,,,,,,,,,496
+Outsider House,Outsider House,EDM,House,Dance,Electronic,,,,,,,,,497
+Powerviolence,Powerviolence,Hardcore Punk,Punk Rock,Rock,Punk,Hardcore [Punk],,,,,,,,498
+Ragga Jungle,R@gga Jungle,Drum and Bass,EDM,Jungle,Dance,Electronic,,,,,,,,499
+Reggae,Reggae,Jamaican Music,Caribbean Music,Regional Music,Reggae / Ska / Dancehall,,,,,,,,,500
+Reggaetón,R3ggaetón,Hispanic American Music,Hispanic Music,Regional Music,,,,,,,,,,501
+Rocksteady,R0cksteady,Jamaican Music,Caribbean Music,Regional Music,Reggae / Ska / Dancehall,,,,,,,,,502
+Samba de roda,Samba de roda,Brazilian Music,Samba,South American Music,Regional Music,,,,,,,,,503
+Samba-canção,Samba-canção,Brazilian Music,Samba,South American Music,Regional Music,,,,,,,,,504
+Samba-Rock,Samba-R0ck,Brazilian Music,Samba,South American Music,Regional Music,,,,,,,,,505
+Slowcore,Slowcore,Indie Rock,Alternative Rock,Rock,,,,,,,,,,506
+Symphony,Symphony,Orchestral,Western Classical,Classical,,,,,,,,,,507
+Tizita,Tizita,Northeastern African Music,African Music,Regional Music,,,,,,,,,,508
+Tone Poem,Tone Poem,Orchestral,Western Classical,Classical,,,,,,,,,,509
+Tropicália,Tropicália,MPB,Brazilian Music,South American Music,Regional Music,,,,,,,,,510
+Wolof Music,Wolof Music,West African Music,African Music,Regional Music,,,,,,,,,,511
+Yoruba Music,Yoruba Music,West African Music,African Music,Regional Music,,,,,,,,,,512
+Brass Band,Brass Band,Fanfare,European Folk Music,Traditional Folk,Folk,,,,,,,,,513
+Breton Folk Music,Breton Folk Music,French Folk Music,European Folk Music,Traditional Folk,Folk,Regional Music,European Music,,,,,,,514
+Dub,D–b,Jamaican Music,Caribbean Music,Reggae,Regional Music,Reggae / Ska / Dancehall,,,,,,,,515
+Footwork,Footwork,EDM,House,Dance,Electronic,,,,,,,,,516
+Irish Folk Music,Irish Folk Music,Celtic Folk Music,European Folk Music,Traditional Folk,Folk,Regional Music,European Music,,,,,,,517
+Lovers Rock,Lovers R0ck,Reggae,Jamaican Music,Caribbean Music,Regional Music,Reggae / Ska / Dancehall,,,,,,,,518
+Neoperreo,Neoperreo,Reggaetón,Hispanic American Music,Hispanic Music,Regional Music,,,,,,,,,519
+Pop Reggae,P0p Reggae,Jamaican Music,Caribbean Music,Reggae,Regional Music,Reggae / Ska / Dancehall,,,,,,,,520
+Ragga,Ragga,Dancehall,Jamaican Music,Caribbean Music,Regional Music,Reggae / Ska / Dancehall,,,,,,,,521
+Roots Reggae,Roots Reggae,Jamaican Music,Caribbean Music,Reggae,Regional Music,Reggae / Ska / Dancehall,,,,,,,,522
+Son Cubano,Son Cubano,Cuban Music,Hispanic American Music,Hispanic Music,Regional Music,Caribbean Music,,,,,,,,523
+Tassu,Tassu,Wolof Music,West African Music,African Music,Regional Music,,,,,,,,,524
+Trova,Trova,Cuban Music,Hispanic American Music,Hispanic Music,Regional Music,Caribbean Music,,,,,,,,525
+Acid Rock,Acid Rock,Psychedelic Rock,Psych,Rock,Rock,,,,,,,,,526
+Afro-Funk,Afro-Funk,R&B,Funk,West African Music,African Music,Regional Music,,,,,,,,527
+Afro-Rock,Afro-Rock,Rock,West African Music,African Music,Regional Music,,,,,,,,,528
+Afrobeat,Afrobeat,Funk,R&B,Yoruba Music,West African Music,African Music,Regional Music,,,,,,,529
+Alternative Dance,Alternative Dance,Alternative Rock,Dance,Rock,Rock,,,,,,,,,530
+Amapiano,Amapiano,House,EDM,Southern African Music,African Music,Regional Music,Dance,Electronic,,,,,,531
+Ambient Dub,Ambient Dub,Electronic,Ambient,,,,,,,,,,,532
+American Folk Music,American Folk Music,Traditional Folk,Folk,Regional Music,Folk,,,,,,,,,533
+Andalusian Rock,Andalusian Rock,Progressive Rock,Folk Rock,Spanish Music,Hispanic Music,Rock,Regional Music,,,,,,,534
+Appalachian Folk Music,Appalachian Folk Music,American Folk Music,Traditional Folk,Folk,Regional Music,,,,,,,,,535
+Avant-Prog,Avant-Prog,Experimental Rock,Progressive Rock,Rock,,,,,,,,,,536
+Baltimore Club,Baltimore Club,Breakbeat,House,EDM,Dance,Electronic,,,,,,,,537
+Beat Music,Beat Music,Pop Rock,Pop,Rock,,,,,,,,,,538
+Big Room,Big Room,Progressive House,Electro House,EDM,House,Dance,Electronic,,,,,,,539
+Bitpop,Bitpop,Electronic,Pop,,,,,,,,,,,540
+Bolero son,Bolero son,Son Cubano,Cuban Music,Hispanic American Music,Hispanic Music,Regional Music,Caribbean Music,Bolero,,,,,,541
+Boogie,Boogie,Disco,R&B,Dance,,,,,,,,,,542
+Breakbeat Hardcore,Breakbeat Hardcore,Breakbeat,Hardcore [EDM],EDM,Dance,Electronic,,,,,,,,543
+British Dance Band,British Danc3 Band,Jazz,Traditional Pop,Pop,British Music,European Music,Regional Music,,,,,,,544
+British Rhythm & Blues,British Rhythm & Bl–es,R&B,Rock,Rhythm & Blues,,,,,,,,,,545
+Britpop,Britpop,Pop Rock,Alternative Rock,Pop,Rock,Pop,,,,,,,,546
+Brutal Prog,Brutal Prog,Experimental Rock,Progressive Rock,Rock,,,,,,,,,,547
+Bubblegum Dance,Bubblegum Dance,Eurodance,EDM,Dance-Pop,Pop,Dance,Electronic,,,,,,,548
+C86,C86,Indie Pop,Indie Rock,Alternative Rock,Pop,Rock,Pop,,,,,,,549
+Caribbean Folk Music,Caribbean Folk Music,Caribbean Music,Traditional Folk,Folk,Regional Music,Folk,,,,,,,,550
+Chanson à texte,Chanson à texte,Singer-Songwriter,Chanson,Regional Music,European Music,,,,,,,,,551
+Christmas Music,Christmas Music,Holiday Music,Descriptor Genres,,,,,,,,,,,552
+Comedy Rap,Comedy Rap,Musical Comedy,Hip Hop,Comedy,,,,,,,,,,553
+Country Blues,C0untry Blues,American Folk Music,Traditional Folk,Acoustic Blues,Blues,Folk,Regional Music,,,,,,,554
+Country Pop,Country Pop,Country,Pop,Northern American Music,Regional Music,,,,,,,,,555
+Bro-Country,Bro-Country,Country Pop,Country,Pop,Northern American Music,Regional Music,,,,,,,,556
+Country Rap,Country Rap,,,,,,,,,,,,,557
+Cowpunk,Cowpunk,Punk Rock,Country Rock,Punk,Rock,,,,,,,,,558
+Dabke,Dabke,Arabic Music,West Asian Music,Regional Music,,,,,,,,,,559
+Afrobeats,Afr0beats,Dance-Pop,Pop,,,,,,,,,,,560
+Dance-Punk,Danc3-Punk,Post-Punk,Punk,,,,,,,,,,,561
+Dark Ambient,Dark Ambient,Post-Industrial,Ambient,Industrial & Noise,,,,,,,,,,562
+Darkside Hardcore,Darkside Hardcore,Breakbeat Hardcore,Breakbeat,Hardcore [EDM],EDM,Dance,Electronic,,,,,,,563
+Deconstructed Club,Deconstructed Club,EDM,Post-Industrial,Industrial & Noise,Dance,Electronic,,,,,,,,564
+Delta Blues,Delta Blues,Country Blues,American Folk Music,Traditional Folk,Acoustic Blues,Blues,Regional Music,,,,,,,565
+Digital Dancehall,Digital Danc3hall,Reggae,Jamaican Music,Caribbean Music,Dancehall,Regional Music,Reggae / Ska / Dancehall,,,,,,,566
+Digital Hardcore,Digital Hardcore,Punk,Hardcore [EDM],EDM,Dance,Electronic,,,,,,,,567
+Drill,Dr–ll,Trap,Hip Hop,,,,,,,,,,,568
+Bop,B0p,Pop Rap,Drill,Gangsta Rap,Hardcore Hip Hop,Trap,Hip Hop,,,,,,,569
+Drumstep,Drumstep,Drum and Bass,Brostep,Dubstep,EDM,Dance,Electronic,,,,,,,570
+EBM,EBM,EDM,Post-Industrial,Industrial & Noise,Dance,Electronic,,,,,,,,571
+Electro Swing,Electro Swing,Nu Jazz,EDM,Electronic,Dance,Electronic,,,,,,,,572
+Electro-Disco,Electro-Disco,EDM,Dance,Disco,Electronic,,,,,,,,,573
+Electro-Industrial,Electro-Industrial,Post-Industrial,Electronic,Industrial & Noise,,,,,,,,,,574
+Electroacoustic,Electroacoustic,Electronic,Experimental,,,,,,,,,,,575
+Electropop,Electropop,Electronic,Pop,,,,,,,,,,,576
+Emocore,Emocore,Post-Hardcore,Punk,Hardcore [Punk],Rock,Emo,,,,,,,,577
+Entechna,Entechna,Balkan Music,Regional Music,European Music,Greek Music,,,,,,,,,578
+Experimental Big Band,Exp–rimental Big Band,Avant-Garde Jazz,Big Band,Jazz,,,,,,,,,,579
+Flamenco Pop,Fl–menco Pop,Spanish Music,Hispanic Music,Regional Music,European Music,Pop,,,,,,,,580
+Folk Pop,Folk Pop,Contemporary Folk,Folk,Pop,,,,,,,,,,581
+Freak Folk,Freak Folk,Psychedelic Folk,Contemporary Folk,Folk,Psych,,,,,,,,,582
+Freakbeat,Freakbeat,Beat Music,Pop Rock,Garage Rock,Pop,Rock,,,,,,,,583
+Free Folk,Free Folk,Psychedelic Folk,Contemporary Folk,Folk,Psych,,,,,,,,,584
+Freestyle,Freestyle,EDM,Dance-Pop,Pop,Dance,Electronic,,,,,,,,585
+Futurepop,Futurepop,Synthpop,EBM,EDM,Post-Industrial,Electronic,Industrial & Noise,Pop,Dance,Electronic,,,,586
+Garage Punk,Garage Punk,Garage Rock,Punk Rock,Punk,Rock,,,,,,,,,587
+Glitch,Gl–tch,Electronic,Experimental,,,,,,,,,,,588
+Glitch Pop,Glitch Pop,Electronic,Pop,Indietronica,,,,,,,,,,589
+Gospel,Gospel,Top-level,,,,,,,,,,,,590
+Gothic Rock,Gothic Rock,Post-Punk,Rock,Punk,,,,,,,,,,591
+Halloween Music,Halloween Music,Holiday Music,Descriptor Genres,,,,,,,,,,,592
+Hardcore Breaks,Hardcore Breaks,Breakbeat Hardcore,Breakbeat,Hardcore [EDM],EDM,Dance,Electronic,,,,,,,593
+Heavy Psych,Heavy Psych,Hard Rock,Psychedelic Rock,Psych,Rock,,,,,,,,,594
+Hi-NRG,Hi-NRG,Electro-Disco,EDM,Dance,Disco,Electronic,,,,,,,,595
+Hiplife,Hiplife,Highlife,West African Music,Hip Hop,African Music,Regional Music,,,,,,,,596
+Hyperpop,Hyperpop,Electronic,Pop,,,,,,,,,,,597
+Indeterminacy,Indeterminacy,Experimental,Modern Classical,Classical,,,,,,,,,,598
+Indian Pop,Indian Pop,South Asian Music,Pop,Regional Music,,,,,,,,,,599
+Industrial,Ind–strial,Industrial & Noise,Experimental,,,,,,,,,,,600
+Industrial Metal,Industrial Metal,Post-Industrial,Metal,Industrial & Noise,Rock,,,,,,,,,601
+Industrial Rock,Industrial Rock,Post-Industrial,Industrial & Noise,Rock,,,,,,,,,,602
+Industrial Techno,Industrial Techno,Post-Industrial,EDM,Techno,Industrial & Noise,Dance,Electronic,,,,,,,603
+Italo Dance,Italo Dance,Eurodance,EDM,Dance-Pop,Pop,Dance,Electronic,,,,,,,604
+Italo-Disco,Italo-Disco,Electro-Disco,EDM,Dance,Disco,Dance,Electronic,,,,,,,605
+Eurobeat,Eurobeat,Italo-Disco,Electro-Disco,EDM,Dance,Disco,Electronic,,,,,,,606
+Jamaican Ska,Jamaican Ska,Jamaican Music,Caribbean Music,Ska,Regional Music,Reggae / Ska / Dancehall,,,,,,,,607
+Jangle Pop,Jangle Pop,Pop Rock,Alternative Rock,Pop,Rock,,,,,,,,,608
+Jazz Poetry,Jazz Poetry,Spoken Word,Poetry,Jazz,Descriptor Genres,,,,,,,,,609
+Jazz-Funk,Jazz-Funk,R&B,Funk,Jazz,,,,,,,,,,610
+Junkanoo,Junkanoo,Caribbean Folk Music,Caribbean Music,Traditional Folk,Folk,Regional Music,,,,,,,,611
+Krautrock,Krautrock,Progressive Rock,Experimental Rock,Rock,,,,,,,,,,612
+Kwaito,Kwaito,House,EDM,Southern African Music,African Music,Regional Music,Dance,Electronic,,,,,,613
+Latin Disco,Latin Disco,Dance,Hispanic American Music,Hispanic Music,Regional Music,Disco,,,,,,,,614
+Latin Electronic,Latin Electronic,Hispanic American Music,Hispanic Music,Regional Music,Electronic,,,,,,,,,615
+Latin Funk,Latin Funk,R&B,Hispanic American Music,Hispanic Music,Regional Music,Funk,,,,,,,,616
+Latin Jazz,Latin Jazz,Hispanic American Music,Hispanic Music,Regional Music,Jazz,,,,,,,,,617
+Afro-Cuban Jazz,Afro-Cuban Jazz,Latin Jazz,Hispanic American Music,Hispanic Music,Jazz,Regional Music,,,,,,,,618
+Latin Pop,Latin Pop,Hispanic American Music,Hispanic Music,Regional Music,Pop,,,,,,,,,619
+Latin Rock,Latin Rock,Hispanic American Music,Hispanic Music,Regional Music,Rock,,,,,,,,,620
+Merseybeat,Merseybeat,Beat Music,Pop Rock,Pop,Rock,,,,,,,,,621
+Metalcore,Metalcore,Hardcore Punk,Punk Rock,Rock,Punk,Hardcore [Punk],Metal,Rock,,,,,,622
+Mathcore,Mathcore,Metalcore,Hardcore Punk,Punk Rock,Rock,Punk,Hardcore [Punk],Metal,Rock,,,,,623
+Hispanic American Folk Music,Hispanic American Folk Music,Traditional Folk,Folk,Regional Music,Hispanic American Music,Hispanic Music,,,,,,,,624
+Mexican Folk Music,Mexican Folk Music,Traditional Folk,Folk,Regional Music,Mexican Music,Hispanic American Music,Hispanic Music,Hispanic American Folk Music,,,,,,625
+Microsound,Microsound,Sound Collage,Experimental,Electronic,,,,,,,,,,626
+Midwest Emo,Midwest Emo,Indie Rock,Alternative Rock,Punk,Emo,Rock,,,,,,,,627
+Motown Sound,Motown Sound,Pop Soul,R&B,Soul,Pop,,,,,,,,,628
+Murga,Murga,Hispanic Music,Musical Theatre,Regional Music,Regional Music,,,,,,,,,629
+Musique concrète,Musique concrète,Electroacoustic,Electronic,Experimental,,,,,,,,,,630
+Nashville Sound,Nashville Sound,Country Pop,Country,Pop,Northern American Music,Regional Music,,,,,,,,631
+Nederbeat,Nederbeat,Beat Music,Pop Rock,Pop,Rock,,,,,,,,,632
+New Romantic,New Romantic,New Wave,Rock,Pop,,,,,,,,,,633
+No Wave,No Wave,Post-Punk,Experimental Rock,Punk,,,,,,,,,,634
+Nu-Disco,Nu-Disco,EDM,Dance,Disco,Electronic,,,,,,,,,635
+Future Funk,Future F–nk,Vapor,House,EDM,Electronic,Dance,Electronic,,,,,,,636
+Nueva canción,Nueva canción,Contemporary Folk,Folk,Singer-Songwriter,Hispanic Music,Regional Music,,,,,,,,637
+Nueva canción española,Nueva canción española,Contemporary Folk,Folk,Singer-Songwriter,Spanish Music,Hispanic Music,Regional Music,European Music,Nueva canción,,,,,638
+Nueva canción latinoamericana,Nueva canción latinoam–ricana,Contemporary Folk,Folk,Singer-Songwriter,Hispanic American Music,Hispanic Music,Regional Music,Nueva canción,,,,,,639
+Nueva trova,Nueva trova,Nueva canción latinoamericana,Contemporary Folk,Folk,Singer-Songwriter,Hispanic American Music,Hispanic Music,Regional Music,Nueva canción,Trova,Cuban Music,Caribbean Music,,640
+Piano Rock,Piano Rock,Pop Rock,Pop,Rock,,,,,,,,,,641
+Piedmont Blues,Pi3dmont Blues,Country Blues,American Folk Music,Traditional Folk,Acoustic Blues,Blues,Regional Music,,,,,,,642
+Pop Raï,Pop Raï,Arabic Music,North African Music,African Music,Pop,Regional Music,,,,,,,,643
+Post-Punk Revival,Post-Punk Revival,Indie Rock,Alternative Rock,Post-Punk,Punk,Rock,,,,,,,,644
+Power Electronics,Power Electronics,Industrial,Industrial & Noise,Experimental,,,,,,,,,,645
+Death Industrial,Death Ind–strial,Power Electronics,Industrial,Industrial & Noise,Experimental,Experimental,,,,,,,,646
+Power Pop,Power Pop,Pop Rock,Pop,Rock,,,,,,,,,,647
+Progressive Breaks,Progressive Breaks,Progressive House,Breakbeat,EDM,House,Dance,Electronic,,,,,,,648
+Psychedelic Pop,Psychedelic Pop,Pop,Psych,,,,,,,,,,,649
+Psychedelic Soul,Psychedelic Soul,R&B,Psych,Soul,,,,,,,,,,650
+Psychobilly,Psychobilly,Rockabilly,Rock & Roll,Punk Rock,Punk,Rock,,,,,,,,651
+Folk Punk,F0lk Punk,Punk Rock,Punk,,,,,,,,,,,652
+Celtic Punk,Celtic Punk,Folk Punk,Punk Rock,Rock,Punk,,,,,,,,,653
+Gypsy Punk,Gypsy Punk,Folk Punk,Punk Rock,Punk,,,,,,,,,,654
+Horror Punk,Horror Punk,Punk Rock,Punk,,,,,,,,,,,655
+Ragtime,Ragtime,American Folk Music,Traditional Folk,Folk,Regional Music,,,,,,,,,656
+Rock Opera,Rock 0pera,Rock,Descriptor Genres,,,,,,,,,,,657
+Romanian Popcorn,Romanian Popcorn,EDM,Dance-Pop,Pop,Dance,Electronic,,,,,,,,658
+Samba Soul,Samba Soul,R&B,Brazilian Music,Samba,Soul,South American Music,Regional Music,,,,,,,659
+Screamo,Screamo,Emo,Punk,Post-Hardcore,Hardcore [Punk],Rock,,,,,,,,660
+Emoviolence,Emoviolence,Powerviolence,Hardcore Punk,Punk Rock,Rock,Punk,Hardcore [Punk],Screamo,Emo,Post-Hardcore,,,,661
+Singeli,Singeli,EDM,East African Music,African Music,Regional Music,Dance,Electronic,,,,,,,662
+Ska Punk,Ska Punk,Third Wave Ska,Punk Rock,Punk,Ska,Reggae / Ska / Dancehall,,,,,,,,663
+Soft Rock,Soft Rock,Pop Rock,Pop,Rock,Pop,,,,,,,,,664
+South Asian Classical Music,South Asian Classical Music,South Asian Music,Classical,Regional Music,,,,,,,,,,665
+Hindustani Classical Music,Hindustani Classical Music,South Asian Classical Music,South Asian Music,Classical,Regional Music,,,,,,,,,666
+Southeast Asian Folk Music,Southeast Asian Folk Music,Traditional Folk,Southeast Asian Music,Folk,Regional Music,,,,,,,,,667
+Space Disco,Space Disco,Electro-Disco,EDM,Dance,Disco,Electronic,,,,,,,,668
+Space Rock,Space Rock,Psychedelic Rock,Psych,Rock,,,,,,,,,,669
+Spanish Folk Music,Spanish Folk Music,Traditional Folk,Folk,Regional Music,European Folk Music,European Music,Spanish Music,Hispanic Music,,,,,,670
+Spirituals,Spirituals,American Folk Music,Traditional Folk,Folk,Regional Music,,,,,,,,,671
+Surf Punk,Surf Punk,Punk Rock,Surf Music,Rock,Punk,,,,,,,,,672
+Synth Punk,Synth Punk,Electronic,Punk,,,,,,,,,,,673
+Tech House,Tech House,EDM,House,Dance,Electronic,,,,,,,,,674
+Traditional Black Gospel,Traditional Black Gospel,American Folk Music,Traditional Folk,Gospel,Folk,Northern American Music,Regional Music,,,,,,,675
+Traditional Country,Traditional Country,American Folk Music,Traditional Folk,Folk,Country,Northern American Music,Regional Music,,,,,,,676
+Country Boogie,Country B00gie,Traditional Country,American Folk Music,Traditional Folk,Folk,Country,Northern American Music,Regional Music,,,,,,677
+Country Gospel,Country Gospel,Traditional Country,American Folk Music,Traditional Folk,Gospel,Folk,Country,Northern American Music,Regional Music,,,,,678
+Close Harmony,Close Harmony,Traditional Country,American Folk Music,Traditional Folk,Folk,Country,Northern American Music,Regional Music,,,,,,679
+Cowboy,Cowboy,Traditional Country,American Folk Music,Traditional Folk,Folk,Country,Regional Music,,,,,,,680
+Acoustic Texas Blues,Acoustic Texas Blues,Country Blues,American Folk Music,Traditional Folk,Acoustic Blues,Folk,Blues,Regional Music,,,,,,681
+Molam,Molam,Traditional Folk,Southeast Asian Folk Music,Southeast Asian Music,Folk,Regional Music,,,,,,,,682
+Trap Metal,Trap M3tal,Trap,Hardcore Hip Hop,Hip Hop,,,,,,,,,,683
+UK Drill,UK Dr–ll,Gangsta Rap,Hardcore Hip Hop,Trap,Drill,Hip Hop,,,,,,,,684
+Flamenco,Flamenco,Traditional Folk,Folk,Regional Music,Spanish Folk Music,European Folk Music,Spanish Music,Hispanic Music,European Music,,,,,685
+Flamenco nuevo,Flamenco nuevo,Traditional Folk,Folk,Regional Music,Spanish Folk Music,European Folk Music,Spanish Music,Hispanic Music,European Music,Flamenco,,,,686
+Vocal Surf,Vocal Surf,Pop Rock,Surf Music,Pop,Rock,,,,,,,,,687
+Yacht Rock,Yacht Rock,Soft Rock,Pop Rock,Pop,Rock,,,,,,,,,688
+Work Songs,Work Songs,Traditional Folk,Folk,Regional Music,,,,,,,,,,689
+Boogie Woogie,B00gie Woogie,Northern American Music,Regional Music,,,,,,,,,,,690
+Armenian Music,Armenian Music,West Asian Music,Regional Music,,,,,,,,,,,691
+Skate Punk,Sk–te Punk,Punk Rock,Rock,Punk,,,,,,,,,,692
+Countrypolitan,Countrypolitan,Nashville Sound,Country Pop,Country,Pop,Northern American Music,Regional Music,,,,,,,693
+Idol kayō,Idol kayō,Kayōkyoku,Japanese Music,East Asian Music,Regional Music,,,,,,,,,694
+Chipmunk Soul,Chipmunk S0ul,Hip Hop,,,,,,,,,,,,695
+Latin Soul,Latin Soul,Soul,R&B,Hispanic American Music,Hispanic Music,Regional Music,,,,,,,,696
+Plugg,Plugg,Trap,Hip Hop,,,,,,,,,,,697
+PluggnB,PluggnB,Plugg,Trap,Hip Hop,,,,,,,,,,698
+Festival Progressive House,Festival Pr0gressive House,House,EDM,Dance,Electronic,,,,,,,,,699
+Utopian Virtual,Utopian Virtual,Vapor,Electronic,,,,,,,,,,,700
+Britfunk,Britfunk,Funk,R&B,,,,,,,,,,,701
+Epic Music,Epic Music,Cinematic Classical,Classical,,,,,,,,,,,702
+Brazilian Bass,Brazilian Bass,House,EDM,Dance,Electronic,,,,,,,,,703
+Slap House,Slap House,Brazilian Bass,House,EDM,Dance,Electronic,,,,,,,,704
+Flamenco Jazz,Flamenco Jazz,Jazz,Flamenco nuevo,Traditional Folk,Folk,Regional Music,Spanish Folk Music,European Folk Music,European Music,Spanish Music,Hispanic Music,Flamenco,,705
+Power Noise,Power Noise,Noise,Experimental,Post-Industrial,Industrial & Noise,,,,,,,,,706
+Medieval Classical Music,Medieval Classical Music,Western Classical,Classical,European Music,Regional Music,,,,,,,,,707
+Christian Liturgical Music,Christian Liturgical Music,Regional Music,,,,,,,,,,,,708
+Plainsong,Plainsong,Medieval Classical Music,Western Classical,Classical,European Music,Regional Music,Christian Liturgical Music,,,,,,,709
+Gregorian Chant,Gregorian Chant,Plainsong,Medieval Classical Music,Western Classical,Classical,European Music,Regional Music,Christian Liturgical Music,,,,,,710
+Latin House,Latin House,House,EDM,Dance,Electronic,,,,,,,,,711
+Truck Driving Country,Truck Driving Country,Honky Tonk,Country,Northern American Music,Regional Music,,,,,,,,,712
+Bakersfield Sound,Bakersfield Sound,Honky Tonk,Country,Northern American Music,Regional Music,,,,,,,,,713
+Afro-Jazz,Afro-Jazz,Jazz,African Music,Regional Music,,,,,,,,,,714
+New Rave,New Rave,Alternative Dance,Alternative Rock,Rock,Dance,Indie Rock,,,,,,,,715
+J-Rock,J-Rock,Alternative Rock,Rock,,,,,,,,,,,716
+Happy Hardcore,Happy Hardcore,Hardcore [EDM],EDM,Dance,Electronic,,,,,,,,,717
+Hard Dance,Hard Dance,EDM,Dance,Electronic,,,,,,,,,,718
+UK Hardcore,UK Hardcore,Happy Hardcore,Hardcore [EDM],EDM,Hard Dance,Dance,Electronic,,,,,,,719
+Brazilian Classical Music,Brazilian Classical Music,Brazilian Music,South American Music,Regional Music,Western Classical,Classical,,,,,,,,720
+Flashcore,Flashcore,Electronic,,,,,,,,,,,,721
+Tropical Rock,Tropical Rock,Soft Rock,Pop Rock,Pop,Rock,,,,,,,,,722
+Classical Crossover,Cl–ssical Crossover,Pop,,,,,,,,,,,,723
+Drumless,Drumless,Hip Hop,,,,,,,,,,,,724
+Glam Metal,Glam M3tal,Hard Rock,Rock,,,,,,,,,,,725
+Classical March,Classical March,Western Classical,Classical,,,,,,,,,,,726
+Modern Creative,Modern Creative,Experimental,,,,,,,,,,,,727
+Chopped and Screwed,Chopped and Screwed,Hip Hop,,,,,,,,,,,,728
+New Music,New Music,Pop,,,,,,,,,,,,729
+Salsa,Salsa,Hispanic American Music,Hispanic Music,Regional Music,,,,,,,,,,730
+Salsa dura,Salsa dura,Salsa,Hispanic American Music,Hispanic Music,Regional Music,,,,,,,,,731
+Descarga,Descarga,Cuban Music,Hispanic American Music,Hispanic Music,Regional Music,Caribbean Music,,,,,,,,732
+Zolo,Zolo,Rock,,,,,,,,,,,,733
+Marabi,Marabi,Southern African Music,African Music,Regional Music,Jazz,,,,,,,,,734
+Louisiana Music,Louisiana Music,Northern American Music,Regional Music,,,,,,,,,,,735
+Mbaqanga,Mbaqanga,Marabi,Southern African Music,African Music,Regional Music,Jazz,,,,,,,,736
+Zydeco,Zydeco,Louisiana Music,Northern American Music,Regional Music,,,,,,,,,,737
+Korean Ballad,Korean Ballad,Pop,,,,,,,,,,,,738
+Rage,R@ge,Trap,Hip Hop,,,,,,,,,,,739
+Witch House,Witch H0use,Electronic,,,,,,,,,,,,740
+Tread,Tread,Trap,Hip Hop,,,,,,,,,,,741
+Vanguarda paulista,Vanguarda paulista,Brazilian Music,South American Music,Regional Music,,,,,,,,,,742
+Bluegrass,Bluegrass,Country,Northern American Music,Regional Music,,,,,,,,,,743
+Hip Hop Soul,Hip H0p S0ul,Contemporary R&B,R&B,,,,,,,,,,,744
+Soukous,Soukous,Central African Music,African Music,Regional Music,,,,,,,,,,745
+Fon Music,Fon Music,West African Music,African Music,Regional Music,,,,,,,,,,746
+Spanish Classical Music,Spanish Classical Music,Spanish Music,Hispanic Music,Regional Music,European Music,Western Classical,Classical,,,,,,,747
+Horror Synth,Horror Synth,Electronic,,,,,,,,,,,,748
+Big Music,Big Music,Pop Rock,Pop,Rock,,,,,,,,,,749
+Deep Tech,Deep Tech,Tech House,House,EDM,Dance,Electronic,,,,,,,,750
+Spy Music,Spy Music,Jazz,Cinematic Classical,Classical,,,,,,,,,,751
+Post-Britpop,Post-Britp0p,Alternative Rock,Rock,Pop Rock,Pop,,,,,,,,,752
+French Electro,French Electro,Electro House,EDM,House,Dance,Electronic,,,,,,,,753
+Ballroom,Ballroom,House,EDM,Dance,Electronic,,,,,,,,,754
+Diva House,Diva House,House,EDM,Dance,Electronic,,,,,,,,,755
+Ambient Americana,Ambient Am–ricana,Ambient,Northern American Music,Regional Music,,,,,,,,,,756
+Math Pop,Math P0p,Indie Rock,Alternative Rock,Rock,Math Rock,,,,,,,,,757
+Akishibu-kei,Akishibu-kei,Shibuya-kei,Pop,J-Pop,,,,,,,,,,758
+Lo-Fi House,Lo-Fi House,Outsider House,EDM,House,Dance,Electronic,,,,,,,,759
+Funk brasileiro,F–nk brasileiro,Brazilian Music,South American Music,Regional Music,,,,,,,,,,760
+Funk mandelão,F–nk mandelão,Brazilian Music,South American Music,Regional Music,Funk brasileiro,,,,,,,,,761
+Melodic Black Metal,Melodic Black Metal,Black Metal,Metal,Rock,,,,,,,,,,762
+Easycore,Easycore,Pop Punk,Punk Rock,Rock,Punk,Hardcore [Punk],,,,,,,,763
+Grebo,Grebo,Alternative Dance,Alternative Rock,Rock,Dance,,,,,,,,,764
+Deathcore,Deathcore,Metalcore,Hardcore Punk,Punk Rock,Rock,Punk,Hardcore [Punk],Metal,Rock,,,,,765
+Hybrid Trap,Hybrid Trap,Trap [EDM],EDM,Dance,Electronic,,,,,,,,,766
+Yakousei,Yakousei,J-Rock,Alternative Rock,Rock,,,,,,,,,,767
+Breakstep,Breakstep,UK Garage,EDM,Dance,Electronic,,,,,,,,,768
+Dembow,Dembow,Hispanic American Music,Hispanic Music,Regional Music,Caribbean Music,,,,,,,,,769
+Merengue,Merengue,Hispanic American Music,Hispanic Music,Regional Music,Caribbean Music,,,,,,,,,770
+Mambo urbano,Mambo urbano,Merengue,Hispanic American Music,Hispanic Music,Regional Music,Caribbean Music,,,,,,,,771
+Opera,Opera,Western Classical,Classical,,,,,,,,,,,772
+Trancecore,Tr–ncecore,Hardcore [Punk],Punk,Rock,,,,,,,,,,773
+Neo-Acoustic,Neo-Acoustic,Indie Pop,Pop,Jangle Pop,Pop Rock,Rock,Alternative Rock,,,,,,,774
+Ballet,Ballet,Western Classical,Classical,,,,,,,,,,,775
+Totalism,Totalism,Post-Minimalism,Modern Classical,Classical,,,,,,,,,,776
+Hardbag,Hardbag,Diva House,House,EDM,Euro House,Dance,Electronic,,,,,,,777
+Rumba flamenca,Rumba flamenca,Flamenco,Traditional Folk,Folk,Regional Music,Spanish Folk Music,European Folk Music,Spanish Music,Hispanic Music,European Music,,,,778
+Rock andaluz,Rock andaluz,Rock,Spanish Music,Hispanic Music,Regional Music,European Music,,,,,,,,779
+Music Hall,Music Hall,Musical Theatre,British Music,European Music,Regional Music,,,,,,,,,780
+Nouvelle chanson française,Nouvelle chanson française,Chanson,Regional Music,European Music,,,,,,,,,,781
+White Voice,White Voice,European Folk Music,Traditional Folk,Folk,Regional Music,European Music,,,,,,,,782
+Occitan Folk Music,Occitan Folk Music,French Folk Music,European Folk Music,Traditional Folk,Folk,Regional Music,European Music,,,,,,,783
+Auvergnat Folk Music,Auvergnat Folk Music,Occitan Folk Music,French Folk Music,European Folk Music,Traditional Folk,Folk,Regional Music,European Music,,,,,,784
+Dreampunk,Dreamp–nk,Vapor,Electronic,,,,,,,,,,,785
+Slushwave,Slushwave,Vaporwave,Electronic,Vapor,,,,,,,,,,786
+Queercore,Queercore,Rock,Punk,,,,,,,,,,,787
+Indie Surf,Indie Surf,Indie Rock,Alternative Rock,Rock,Surf Music,,,,,,,,,788
+Go-Go,Go-Go,Funk,R&B,,,,,,,,,,,789
+Samba-jazz,S@mba-jazz,Jazz,Brazilian Music,South American Music,Regional Music,,,,,,,,,790
+Funk proibidão,F–nk proibidão,Funk brasileiro,Brazilian Music,South American Music,Regional Music,,,,,,,,,791
+Cyber Metal,Cyber Metal,Industrial Metal,Post-Industrial,Industrial & Noise,Rock,,,,,,,,,792
+Western,Western,Country,Northern American Music,Regional Music,,,,,,,,,,793
+Old-Time,Old-Time,Appalachian Folk Music,American Folk Music,Traditional Folk,Folk,Regional Music,,,,,,,,794
+Swancore,Swancore,Post-Hardcore,Punk,Hardcore [Punk],Rock,,,,,,,,,795
+Epic Doom Metal,Epic Doom Metal,Traditional Doom Metal,Doom Metal,Metal,Rock,,,,,,,,,796
+US Power Metal,US P0wer Metal,Heavy Metal,Metal,Rock,,,,,,,,,,797
+Technical Thrash Metal,Technical Thrash Metal,Thrash Metal,Metal,Rock,,,,,,,,,,798
+Crossover Thrash,Crossover Thrash,Thrash Metal,Metal,Rock,Hardcore Punk,Punk Rock,Punk,Hardcore [Punk],,,,,,799
+Space Rock Revival,Space Rock Revival,Neo-Psychedelia,Psych,Space Rock,Psychedelic Rock,Rock,,,,,,,,800
+Mutant Disco,Mutant Disco,Disco,Dance,,,,,,,,,,,801
+Songhai Music,Songhai Music,West African Music,African Music,Regional Music,,,,,,,,,,802
+Speedcore,Speedcore,Hardcore [EDM],EDM,Dance,Electronic,,,,,,,,,803
+J-core,J-core,Hardcore [EDM],EDM,Dance,Electronic,,,,,,,,,804
+Mid-School Hip Hop,Mid-School Hip Hop,Hardcore Hip Hop,Hip Hop,,,,,,,,,,,805
+Denpa,Denpa,Pop,,,,,,,,,,,,806
+MIDI Music,MIDI Music,Bit Music,Electronic,,,,,,,,,,,807
+Extratone,Extratone,Speedcore,Hardcore [EDM],EDM,Dance,Electronic,,,,,,,,808
+Trap Soul,Trap S0ul,Trap,Hip Hop,Contemporary R&B,R&B,,,,,,,,,809
+Chilean Music,Chilean Music,South American Music,Regional Music,,,,,,,,,,,810
+Nueva canción chilena,Nueva canción chilena,Nueva canción latinoamericana,Contemporary Folk,Folk,Singer-Songwriter,Hispanic American Music,Hispanic Music,Regional Music,Nueva canción,Chilean Music,South American Music,,,811
+Urban Cowboy,Urban C0wboy,Country Pop,Country,Northern American Music,Regional Music,Pop,,,,,,,,812
+Canadian Folk Music,Canadian Folk Music,Traditional Folk,Folk,Regional Music,Northern American Music,,,,,,,,,813
+Canadian Maritime Folk,Canadian Maritime Folk,Canadian Folk Music,Traditional Folk,Folk,Regional Music,Northern American Music,,,,,,,,814
+Moogsploitation,Moogsploitation,Electronic,,,,,,,,,,,,815
+Chillout,Chillout,Electronic,,,,,,,,,,,,816
+Midtempo Bass,Midtempo Bass,EDM,Dance,Electronic,,,,,,,,,,817
+Melodic Hardcore,Melodic Hardcore,Hardcore Punk,Punk Rock,Rock,Punk,Hardcore [Punk],,,,,,,,818
+Denpa,Denpa,Pop,,,,,,,,,,,,819
+MIDI Music,MIDI Music,Bit Music,Electronic,,,,,,,,,,,820
+Red Dirt,Red Dirt,Country,Americana,Northern American Music,Regional Music,,,,,,,,,821
+Beatboxing,Beatboxing,Top-level,,,,,,,,,,,,822
+Industrial Hardcore,Industrial Hardcore,Post-Industrial,Hardcore [EDM],Industrial & Noise,Dance,Electronic,,,,,,,,823
+Afroswing,Afroswing,Hip Hop,,,,,,,,,,,,824
+Progressive Bluegrass,Progressive Bluegrass,Bluegrass,Country,Northern American Music,Regional Music,,,,,,,,,825
+Chachachá,Chachachá,Cuban Music,Hispanic American Music,Hispanic Music,Regional Music,Caribbean Music,,,,,,,,826
+Stomp and Holler,Stomp and Holler,Indie Folk,Folk Pop,Contemporary Folk,,,,,,,,,,827
+Trance Metal,Tr@nce Metal,Metal,Rock,,,,,,,,,,,828
+Kawaii Metal,Kawaii Metal,Metal,Rock,,,,,,,,,,,829
+Tracker Music,Tracker Music,Sequencer & Tracker,Bit Music,Electronic,,,,,,,,,,830
+Doskpop,Doskpop,Sequencer & Tracker,Bit Music,Spacesynth,EDM,Dance,Electronic,,,,,,,831
+Yodeling,Yodeling,Traditional Folk,Regional Music,,,,,,,,,,,832
+Country Yodeling,Country Yodeling,Traditional Country,American Folk Music,Traditional Folk,Northern American Music,Regional Music,,,,,,,,833
+Melodic Black Metal,Melodic Black Metal,Black Metal,Rock,,,,,,,,,,,834
+Mariachi,Mariachi,Mexican Music,Hispanic American Music,Hispanic Music,Regional Music,,,,,,,,,835
+Canción melódica,Canción melódica,Pop,Hispanic Music,Regional Music,,,,,,,,,,836
+Neurofunk,Neurof–nk,Drum and Bass,EDM,Dance,Electronic,,,,,,,,,837
+Cumbia,Cumbia,Hispanic American Music,Hispanic Music,Regional Music,,,,,,,,,,838
+Cumbia colombiana,Cumbia colombiana,Hispanic American Music,Hispanic Music,South American Music,Caribbean Music,Regional Music,,,,,,,,839
+Amazigh Music,Amazigh Music,North African Music,Regional Music,,,,,,,,,,,840
+Tuareg Music,Tuareg Music,Amazigh Music,North African Music,Regional Music,,,,,,,,,,841
+Tishoumaren,Tishoumaren,Tuareg Music,Amazigh Music,North African Music,Regional Music,,,,,,,,,842
+YTPMV,YTPMV,Top-level,,,,,,,,,,,,843
+Jump Blues,Jump Blues,Blues,,,,,,,,,,,,844
+Briddim,Briddim,Brostep,Dubstep,EDM,Dance,Electronic,,,,,,,,845
+Tearout [Brostep],Tearout [Brostep],Brostep,Dubstep,EDM,Dance,Electronic,,,,,,,,846
+Rock Musical,Rock Musical,Rock,Musical Theatre,,,,,,,,,,,847
+Neo-Traditionalist Country,Neo-Traditionalist Country,Contemporary Country,Northern American Music,Regional Music,,,,,,,,,,848
+Ratchet Music,Ratchet Music,Hip Hop,,,,,,,,,,,,849
+Geek Rock,Geek Rock,Alternative Rock,,,,,,,,,,,,850
+Rioplatense Music,Rioplatense Music,South American Music,Hispanic American Music,Regional Music,Hispanic Music,,,,,,,,,851
+Tango,Tango,Rioplatense Music,South American Music,Hispanic American Music,Regional Music,Hispanic Music,,,,,,,,852
+Tango nuevo,Tango nuevo,Tango,Rioplatense Music,South American Music,Hispanic American Music,Regional Music,Hispanic Music,,,,,,,853
+Djent,Djent,Progressive Metal,Rock,,,,,,,,,,,854
+G-House,G-House,House,EDM,Dance,Electronic,,,,,,,,,855
+Choral,Choral,Western Classical,Classical,Descriptor Genres,,,,,,,,,,856
