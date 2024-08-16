@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "jquery-csv": "^1.0.40",
+    "papaparse": "^5.4.1"
+  }
+}

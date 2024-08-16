@@ -14,6 +14,7 @@ if (artist_name.startsWith('The ')) {
 //TODO: As well as artists with a non-Latin character as the first one
 
 var album_name = document.querySelector("#column_container_right > div.section_main_info.section_outer > div > div.album_title").innerText
+var release_type = document.querySelector("#column_container_right > div.section_main_info.section_outer > div > table.album_info_outer > tbody > tr > td > table > tbody > tr:nth-child(2) > td").innerText
 
 var info_hdr_list = document.getElementsByClassName("info_hdr")
 
@@ -61,6 +62,8 @@ if (lang_row_num != -1) {
     var lang_field = document.querySelector("#column_container_right > div.section_main_info.section_outer > \
     div > table.album_info_outer > tbody > tr > td > table > tbody > tr:nth-child("+(lang_row_num+1)+") > td")
     lang_name = lang_field.innerText.replaceAll(",", ";")
+} else {
+    lang_name = "Blank"
 }
 
 var album_info_end = document.querySelector("#column_container_right > div.section_main_info.section_outer > \
@@ -149,8 +152,22 @@ const track_list = []
 //TODO: Account for releases that don't have a track listing, prevent error
 if (tracklist != undefined) {
     for (let i = 0; i < all_tracks.length; i++) {
-        if (all_tracks[i].style.textAlign != 'right') {
-        this["song"+i] = all_tracks[i].getElementsByClassName("rendered_text")
+        text_holder = 'N/A'
+        if (all_tracks[i].getElementsByClassName("rendered_text").length != 0) {
+            this["song"+i] = all_tracks[i].getElementsByClassName("rendered_text")
+            text_holder = this["song"+i][0].innerText
+        } else {
+            if (i < all_tracks.length) {
+                j = i+1 
+            } else {
+                continue
+            }
+            this["song"+i] = document.querySelector(`#tracks > li:nth-child(${j}) > div > span.tracklist_title > a`)
+            if (this["song"+i] == null) {
+                continue
+            }
+            text_holder = this["song"+i].innerText
+        }
         this["ft_list"+i] = []
         this["ft_credit"+i] = all_tracks[i].getElementsByClassName("featured_credit")
 
@@ -165,7 +182,7 @@ if (tracklist != undefined) {
 
         this["btn_pencil"+i] = document.createElement("button")
         this["btn_pencil"+i].innerText = '✏️'
-        const song_text = this["song"+i][0].innerText
+        const song_text = text_holder
         this["btn_pencil"+i].onclick = function() {pencil(song_text)}
 
         this["btn_clip"+i] = document.createElement("button")
@@ -176,18 +193,29 @@ if (tracklist != undefined) {
         this["btn_dclip"+i].innerText = '📋➕'
         this["btn_dclip"+i].onclick = function() {double_clipboard(artist_name, song_text)}
 
-        this["song"+i][0].insertAdjacentElement("afterend", this["btn_pencil"+i])
-        this["song"+i][0].insertAdjacentText("afterend", blank)
-        this["song"+i][0].insertAdjacentElement("afterend", this["btn_dclip"+i])
-        this["song"+i][0].insertAdjacentText("afterend", blank)
-        this["song"+i][0].insertAdjacentElement("afterend", this["btn_clip"+i])
-        this["song"+i][0].insertAdjacentText("afterend", blank)
+        if(all_tracks[i].getElementsByClassName("rendered_text").length != 0) {
+            this["song"+i][0].insertAdjacentElement("afterend", this["btn_pencil"+i])
+            this["song"+i][0].insertAdjacentText("afterend", blank)
+            this["song"+i][0].insertAdjacentElement("afterend", this["btn_dclip"+i])
+            this["song"+i][0].insertAdjacentText("afterend", blank)
+            this["song"+i][0].insertAdjacentElement("afterend", this["btn_clip"+i])
+            this["song"+i][0].insertAdjacentText("afterend", blank)
+        } else {
+            this["song"+i].insertAdjacentElement("afterend", this["btn_pencil"+i])
+            this["song"+i].insertAdjacentText("afterend", blank)
+            this["song"+i].insertAdjacentElement("afterend", this["btn_dclip"+i])
+            this["song"+i].insertAdjacentText("afterend", blank)
+            this["song"+i].insertAdjacentElement("afterend", this["btn_clip"+i])
+            this["song"+i].insertAdjacentText("afterend", blank)
+        }
         
         track_list.push(song_text)
-        }
     }
 }
 
+album_row_btn = document.createElement("button")
+album_row_btn.innerText = '📊📋➕'
+album_row_btn.onclick = function() {album_row()}
 notion_btn = document.createElement("button")
 notion_btn.innerText = 'Notion 📋'
 notion_btn.onclick = function() {notion_share()}
@@ -196,7 +224,14 @@ artist_album_btn.innerText = '📋➕'
 artist_album_btn.onclick = function() {ar_al_share()}
 album_info_end.insertAdjacentElement("afterend", notion_btn)
 album_info_end.insertAdjacentElement("afterend", artist_album_btn)
+album_info_end.insertAdjacentElement("afterend", album_row_btn)
 
+function album_row() {
+    c = cell_sep
+
+    a_row = `-${c}${artist_name} - ${album_name}${c}${year_name}${c}${release_type}${c}${c}${c}${pri_genres}${c}${c}${c}${c}${c}${lang_name}${c}${c}${curr_date}`
+    navigator.clipboard.writeText(a_row)
+}
 function notion_share() {
     artist_album_link = `${artist_name} - [${album_name}](${window.location.href})`
     navigator.clipboard.writeText(artist_album_link)
@@ -297,6 +332,20 @@ function add_row(table_id, song_name) {
     var cell3 = row.insertCell(3);
     var cell4 = row.insertCell(4);
     var cell5 = row.insertCell(5);
+    var cell6 = row.insertCell(6);
+    var cell7 = row.insertCell(7);
+    var cell8 = row.insertCell(8);
+    var cell9 = row.insertCell(9);
+    var cell10 = row.insertCell(10);
+    var cell11 = row.insertCell(11);
+    var cell12 = row.insertCell(12); //Language
+    var cell13 = row.insertCell(13);
+    var cell14 = row.insertCell(14);
+    var cell15 = row.insertCell(15);
+    var cell16 = row.insertCell(16);
+    var cell17 = row.insertCell(17);
+    var cell18 = row.insertCell(18);
+    var cell19 = row.insertCell(19); //Added
     
     cell0.innerHTML = "✓"
     cell1.innerHTML = song_name
@@ -304,6 +353,20 @@ function add_row(table_id, song_name) {
     cell3.innerHTML = cell_sep
     cell4.innerHTML = year_name
     cell5.innerHTML = genre_text
+    cell6.innerHTML = cell_sep
+    cell7.innerHTML = cell_sep
+    cell8.innerHTML = cell_sep
+    cell9.innerHTML = cell_sep
+    cell10.innerHTML = cell_sep
+    cell11.innerHTML = cell_sep
+    cell12.innerHTML = lang_name
+    cell13.innerHTML = cell_sep
+    cell14.innerHTML = cell_sep
+    cell15.innerHTML = cell_sep
+    cell16.innerHTML = cell_sep
+    cell17.innerHTML = cell_sep
+    cell18.innerHTML = cell_sep
+    cell19.innerHTML = curr_date
 }
 
 album_name_btn = document.createElement("button")
