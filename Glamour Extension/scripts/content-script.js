@@ -154,15 +154,24 @@ if (tracklist != undefined) {
     for (let i = 0; i < all_tracks.length; i++) {
         text_holder = 'N/A'
         if (all_tracks[i].getElementsByClassName("rendered_text").length != 0) {
-            this["song"+i] = all_tracks[i].getElementsByClassName("rendered_text")
-            text_holder = this["song"+i][0].innerText
+            let ref = document.querySelector(`#tracks > li:nth-child(${i+1}) > div.tracklist_line > span.tracklist_title > span:nth-child(1) > span > a`)
+            if (ref !== null && ref.className === "artist") {
+                songElements = all_tracks[i].getElementsByClassName("song")
+                this["song"+i] = songElements
+                // TODO: Eventually, figure out how to get this to apply to the final song element rather than just the first
+                text_holder = this["song"+i][songElements.length-1].innerText.substring(3)
+            } else {
+                this["song"+i] = all_tracks[i].getElementsByClassName("rendered_text")
+                text_holder = this["song"+i][0].innerText
+            }
         } else {
             if (i < all_tracks.length) {
                 j = i+1 
             } else {
                 continue
             }
-            this["song"+i] = document.querySelector(`#tracks > li:nth-child(${j}) > div > span.tracklist_title > a`)
+            this["song"+i] = document.querySelector(`#tracks > li:nth-child(${j}) > div.tracklist_line > span.tracklist_title > span:nth-child(1) > a.song`)
+            // this["song"+i] = document.querySelector(`#tracks > li:nth-child(${j}) > div > span.tracklist_title > a`)
             if (this["song"+i] == null) {
                 continue
             }
