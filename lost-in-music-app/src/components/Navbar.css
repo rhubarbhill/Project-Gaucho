@@ -1,0 +1,45 @@
+/* navbar.css */
+.navigation-menu ol{
+    list-style-type: none;
+    background-color: white;
+    color: #fff;
+    overflow: hidden;
+    margin: 0;
+    border: 0;
+}
+
+.navigation-menu{
+    width: 100%;
+}
+
+.navigation-menu li{
+    display: inline-block;
+    font-family: Helvetica, sans-serif;
+    padding: 25px;
+}
+
+a:link { 
+    color: blue;
+    text-decoration: none;
+} 
+
+a:visited { 
+    color: purple;
+    text-decoration: none; 
+}
+
+a:hover { 
+    color: green;
+    text-decoration: none; 
+} 
+
+a:active { 
+    text-decoration: none; 
+}
+
+#root {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+  }

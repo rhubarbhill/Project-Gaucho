@@ -1,0 +1,296 @@
+.desc-tool table {
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+table th {
+    /* Irrelevant because there is no th */
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid #999999;
+    padding: 0px 5px;
+}
+
+table td {
+    border: 1px solid #999999;
+    padding: 0px;
+    width: 145px;
+}
+
+.desc-tool button {
+    font-size: 1.0rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    width: 145px;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5 ease;
+}
+
+textarea {
+    margin-top: 25px;
+    font-family: Helvetica, sans-serif;
+    font-size: 1.5rem;
+    height: 100px;
+    width: 500px;
+}
+
+.blank button {
+    background-color: #000000;
+    color: #ffffff;
+    opacity: 0;
+}
+
+.catchy button {
+    background-color: #c9daf8;
+    color: #000000;
+}
+
+.repetitive button {
+    background-color: #f9cb9c;
+    color: #000000;
+}
+
+.complex button {
+    background-color: #a61c00;
+    color: #ffffff;
+}
+
+.ballad button {
+    background-color: #1155cc;
+    color: #ffffff;
+}
+
+.examination button {
+    background-color: #00ffba;
+    color: #000000;
+}
+
+.conscious button {
+    background-color: #783f04;
+    color: #fce5cd;
+}
+
+.thought button {
+    background-color: #073763;
+    color: #efefef;
+}
+
+.positive button {
+    background-color: #ffff00;
+    color: #000000;
+}
+
+.fun button {
+    background-color: #ffe599;
+    color: #000000;
+}
+
+.party button {
+    background-color: #134f5c;
+    color: #ffff00;
+}
+
+.passionate button {
+    background-color: #ff4500;
+    color: #ffffff;
+}
+
+.adventure button {
+    background-color: #a8fa83;
+    color: #38761d;
+}
+
+.nostalgic button {
+    background-color: #c180ca;
+    color: #ffffff;
+}
+
+.love button {
+    background-color: #ff8b92;
+    color: #ffffff;
+}
+
+.breakup button {
+    background-color: #8f3f4d;
+    color: #ffffff;
+}
+
+.LGBT button {
+    background-color: #ff0000;
+    color: #ffffff;
+}
+
+.innuendo button {
+    background-color: #903db0;
+    color: #ffffff;
+}
+
+.rich button {
+    background-color: #783f04;
+    color: #f9cb9c;
+}
+
+.otherworldly button {
+    background-color: #ffaded;
+    color: #351c75;
+}
+
+.urban button {
+    background-color: #ffd966;
+    color: #000000;
+}
+
+.nocturne button {
+    background-color: #0b5394;
+    color: #ffff00;
+}
+
+.nocturne button {
+    background-color: #0b5394;
+    color: #ffd966;
+}
+
+.late-nocturne button {
+    background-color: #073763;
+    color: #ffff00;
+}
+
+.space button {
+    background-color: #000000;
+    color: #ffff00;
+}
+
+.mechanical button {
+    background-color: #cccccc;
+    color: #000000;
+}
+
+.soft button {
+    background-color: #f1c232;
+    color: #000000;
+}
+
+.peaceful button {
+    background-color: #26887d;
+    color: #ffffff;
+}
+
+.sad button {
+    background-color: #3c78d8;
+    color: #ffd7ec;
+}
+
+.cloudy-day button {
+    background-color: #999999;
+    color: #ffffff;
+}
+
+.rain button {
+    background-color: #0000ff;
+    color: #ffffff;
+}
+
+.storm button {
+    background-color: #434343;
+    color: #ffff00;
+}
+
+.tough button {
+    background-color: #ff0000;
+    color: #ffffff;
+}
+
+.sports button {
+    background-color: #e06666;
+    color: #ffffff;
+}
+
+.heavy button {
+    background-color: #cc0000;
+    color: #ffffff;
+}
+
+.gray button {
+    background-color: #b7b7b7;
+    color: #000000;
+}
+
+.dark button {
+    background-color: #000000;
+    color: #b7b7b7;
+}
+
+.mysterious button {
+    background-color: #434343;
+    color: #efefef;
+}
+
+.macabre button {
+    background-color: #660000;
+    color: #ff0000;
+}
+
+.icy button {
+    background-color: #7ff2ff;
+    color: #000000;
+}
+
+.aquatic button {
+    background-color: #4a86e8;
+    color: #ffffff;
+}
+
+.tropical button {
+    background-color: #98ff58;
+    color: #000000;
+}
+
+.desert button {
+    background-color: #e69138;
+    color: #fce5cd;
+}
+
+.green button {
+    background-color: #46ce46;
+    color: #ffffff;
+}
+
+.Summer button {
+    background-color: #ffd700;
+    color: #000000;
+}
+
+.Autumn button {
+    background-color: #ffd966;
+    color: #783f04;
+}
+
+.Winter button {
+    background-color: #6d9eeb;
+    color: #ffffff;
+}
+
+.Halloween button {
+    background-color: #000000;
+    color: #ff9900;
+}
+
+.Christmas button {
+    background-color: #38761d;
+    color: #ea9999;
+}
+
+.reset button {
+    background-color: red;
+    color: white;
+}
+
+.strike {
+    color: rgb(70, 67, 67);
+    opacity: 0.2;
+}
