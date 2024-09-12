@@ -12,10 +12,43 @@ h1{
   font-size: 4rem;
 }
 
-.to-do-list button{
-  font-size: 1.7rem;
+.top-button {
+  font-size: 1rem;
+}
+
+.to-do-list th {
+  border-style: none;
+}
+
+.to-do-list li {
+  font-size: 1.5rem;
   font-weight: bold;
-  padding: 10px 20px;
+  padding: 15px;
+  width: 1000px;
+  background-color: hsl(0, 0%, 97%);
+  margin-bottom: 10px;
+  border: 3px solid hsla(0, 0%, 85%, 0.75);
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.to-do-list th {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.song-info {
+  width: 750px;
+}
+
+.buttons {
+  width: 200px;
+  vertical-align: middle;
+}
+
+.to-do-list button{
+  font-weight: bold;
+  padding: 10px 10px;
   color: white;
   border: none;
   border-radius: 5px;
@@ -23,11 +56,17 @@ h1{
   transition: background-color 0.5 ease;
 }
 
-.add-button{
+.delete-button, .move-button, .add-button {
+  padding: 8px 12px;
+  font-size: 1rem;
+  margin-left: 5px;
+}
+
+.add-button, .top-button{
   background-color: hsl(125, 47%, 54%);
 }
 
-.add-button:hover{
+.add-button:hover, .top-button{
   background-color: hsl(125, 47%, 44%);
 }
 
@@ -47,31 +86,17 @@ h1{
   background-color: hsl(207, 90%, 54%);
 }
 
-ol {
-  padding: 0;
+.language {
+  padding: 0px;
+  text-align: left;
 }
 
-.to-do-list li {
-  font-size: 1.5rem;
-  font-weight: bold;
-  padding: 15px;
-  width: 1000px;
-  background-color: hsl(0, 0%, 97%);
-  margin-bottom: 10px;
-  border: 3px solid hsla(0, 0%, 85%, 0.75);
-  border-radius: 5px;
-  display: inline-block;
-  align-items: center;
+ol {
+  padding: 0 0;
 }
 
 .text {
   flex: 1;
-}
-
-.delete-button, .move-button {
-  padding: 8px 12px;
-  font-size: 1.4rem;
-  margin-left: 10px;
 }
 
 /* Stuff below */

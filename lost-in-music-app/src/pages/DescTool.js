@@ -153,7 +153,7 @@ function DescTool() {
                     <td className="peaceful" id="ECM Style"><button onClick={() => writeText("ECM Style")}>ECM Style</button></td>
                     <td className="storm" id="storm"><button onClick={() => writeText("storm")}>storm</button></td>
                     <td className="heavy" id="dense"><button onClick={() => writeText("dense")}>dense</button></td>
-                    <td className="macabre" id="suicide"><button onClick={() => writeText("suicide")}>suicide</button></td>
+                    <td className="blank" id="INC"><button onClick={() => writeText("INC")}>INC</button></td>
                     <td className="Winter" id="Winter"><button onClick={() => writeText("Winter")}>Winter</button></td>
                 </tr>
                 <tr>
