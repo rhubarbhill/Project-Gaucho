@@ -9,6 +9,7 @@ function Navbar() {
         <ol>
             <li><Link to={"/"}>Song Randomizer</Link></li>
             <li><Link to={"/DescTool"}>Descriptor Tool</Link></li>
+            <li><Link to={"/GenreTool"}>Genre Tool</Link></li>
             <li><Link to={"/about"}>About</Link></li>
 
 

@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import About from './pages/about';
 import DescTool from './pages/DescTool';
+import GenreTool from './pages/GenreTool';
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: "/DescTool",
     element: <DescTool />,
+  },
+  {
+    path: "/GenreTool",
+    element: <GenreTool />,
   },
 ]);
 

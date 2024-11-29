@@ -21,29 +21,82 @@ h1{
 }
 
 .to-do-list li {
-  font-size: 1.5rem;
-  font-weight: bold;
-  padding: 15px;
-  width: 1000px;
+  font-size: 1.2rem; /* Base font size for song rows */
+  padding: 10px; /* Padding around the rows */
+  width: 95%; /* Full width of the container */
+  text-align: left;
   background-color: hsl(0, 0%, 97%);
-  margin-bottom: 10px;
-  border: 3px solid hsla(0, 0%, 85%, 0.75);
-  border-radius: 5px;
-  display: inline-block;
+  margin-bottom: 5px; /* Margin between song rows */
+  border: 2px solid hsla(0, 0%, 85%, 0.75); /* Thinner border */
+  border-radius: 3px; /* Smaller border radius */
 }
 
 .to-do-list th {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
+/* Flexbox container for the page */
+.song-page {
+  display: grid;
+  grid-template-columns: 3fr 1fr; /* 3 parts for song container, 1 part for search container */
+  padding: 10px; /* Add padding around the page */
+  gap: 20px; /* Space between song container and search container */
+}
+
+/* Scrollable container for the song list */
+.song-container {
+  height: 65vh; /* Maximum height for scrolling */
+  overflow-y: auto; /* Enable scrolling if content overflows */
+  padding: 15px; /* Padding inside the song container */
+  border-right: 1px solid #ccc; /* Border to the right */
+  background-color: #fff; /* Background color */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Container for search bars */
+.search-container {
+  float: right; /* Float the search container to the right */
+  width: 100%; /* Set a width for the search container */
+  height: 35vh;
+  padding: 15px; /* Padding inside the search container */
+  background-color: #f9f9f9; /* Background color */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.song-row {
+  display: flex; /* Use flexbox for the song row */
+  justify-content: space-between; /* Align items to fill the space */
+  align-items: center; /* Center items vertically */
+  padding: 10px; /* Reduced padding */
+  width: 90%; /* Keep flexible width */
+  background-color: hsl(0, 0%, 97%);
+  margin-bottom: 5px; /* Reduced margin for spacing */
+  border: 2px solid hsla(0, 0%, 85%, 0.75);
+  border-radius: 3px;
+}
+
+.song-name {
+  font-size: 1.2rem;
+  font-weight: bold; /* Bold font for song name */
+  display: block; /* Ensure song name is on its own line */
+}
+
+/* Content wrapper for song info and buttons */
+.song-content {
+  display: flex; /* Flexbox for content alignment */
+  justify-content: space-between; /* Space between song info and buttons */
+  width: 100%; /* Full width for the content */
+}
+
 .song-info {
-  width: 750px;
+  flex: 1; /* Allow song info to take available space */
+  margin-right: 20px; /* Add space between info and buttons */
 }
 
 .buttons {
-  width: 200px;
-  vertical-align: middle;
+  display: flex; /* Align buttons horizontally */
+  align-items: center; /* Center buttons vertically */
 }
 
 .to-do-list button{
@@ -99,52 +152,29 @@ ol {
   flex: 1;
 }
 
-/* Stuff below */
-
-/* #root {
-  max-width: 1250px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-} */
-
-/* ??? */
-
-/* .App {
-  text-align: center;
+.search-group {
+  display: flex; /* Use flexbox to align items horizontally */
+  align-items: center; /* Center items vertically */
+  margin-bottom: 15px; /* Space below each search group */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Style individual search bars */
+.search-container input[type="text"] {
+  padding: 8px; /* Padding inside the input */
+  border: 1px solid #ccc; /* Border style */
+  border-radius: 5px; /* Rounded corners */
+  width: 100%; /* Full width for inputs */
+  box-sizing: border-box; /* Include padding in width calculation */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+/* Style for checkbox and label alignment */
+.search-group label {
+  margin-left: 5px; /* Space between checkbox and label */
+  font-weight: normal; /* Normal font weight for labels */
+  font-size: 0.7rem; /* Smaller font size for labels */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.search-container input[type="checkbox"] {
+  margin-right: 5px; /* Space between checkbox and label */
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
