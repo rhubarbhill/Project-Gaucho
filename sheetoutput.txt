@@ -61502,3 +61502,77 @@ ID
 
 663
 7777
+Jangle Pop; Pop Rock; Alternative Rock
+Jangle Pop; Pop Rock; Alternative Rock
+Power Pop; J-Rock; Television Music; Pop Rock; Alternative Rock; Soundtrack; Descriptor Genres
+Bitpop; Television Music; J-Pop; Glitch Pop; Indietronica; Electronic; Soundtrack; Descriptor Genres
+Television Music; Chiptune; Bitpop; Soundtrack; Descriptor Genres; Bit Music; Electronic; Pop
+Bitpop; Television Music; Indietronica; Glitch Pop; Electronic; Soundtrack; Descriptor Genres
+Glitch Pop; Amb–ent House; Electronic; Indietronica; EDM; Dance
+Dance-Pop; Diva House; Brazilian Bass; EDM; Electronic
+Singer-Songwriter; Pop
+Indie Rock; F0lk Rock; Folk Pop; Alternative Rock; Contemporary Folk
+Indie Rock; F0lk Rock; Folk Pop; Alternative Rock; Contemporary Folk
+Indie Rock; F0lk Rock; Folk Pop; Alternative Rock; Contemporary Folk
+Indie Rock; F0lk Rock; Folk Pop; Alternative Rock; Contemporary Folk
+Indie Rock; F0lk Rock; Folk Pop; Alternative Rock; Contemporary Folk
+Heartland Rock; Country; Americana; Singer-Songwriter; C0untry Rock; Northern American Music; Regional Music
+Americana; Singer-Songwriter; Alt-Country; Northern American Music; Regional Music
+Americana; Country; Singer-Songwriter; Northern American Music; Regional Music
+Americana; Singer-Songwriter; Country; Northern American Music; Regional Music
+Chamber Pop; Singer-Songwriter; Indie Pop
+Chamber Folk; Singer-Songwriter; Indie Folk; Contemporary Folk
+Power Pop; J-Rock; Television Music; Pop Rock; Alternative Rock; Soundtrack; Descriptor Genres
+Bitpop; Television Music; J-Pop; Glitch Pop; Indietronica; Electronic; Soundtrack; Descriptor Genres
+Television Music; Chiptune; Bitpop; Soundtrack; Descriptor Genres; Bit Music; Electronic; Pop
+Bitpop; Television Music; Indietronica; Glitch Pop; Electronic; Soundtrack; Descriptor Genres
+Glitch Pop; Amb–ent House; Electronic; Indietronica; EDM; Dance
+Dance-Pop; Diva House; Brazilian Bass; EDM; Electronic
+Singer-Songwriter; Pop
+Indie Rock; F0lk Rock; Folk Pop; Alternative Rock; Contemporary Folk
+Indie Rock; F0lk Rock; Folk Pop; Alternative Rock; Contemporary Folk
+Indie Rock; F0lk Rock; Folk Pop; Alternative Rock; Contemporary Folk
+Indie Rock; F0lk Rock; Folk Pop; Alternative Rock; Contemporary Folk
+Indie Rock; F0lk Rock; Folk Pop; Alternative Rock; Contemporary Folk
+Heartland Rock; Country; Americana; Singer-Songwriter; C0untry Rock; Northern American Music; Regional Music
+Americana; Singer-Songwriter; Alt-Country; Northern American Music; Regional Music
+Americana; Country; Singer-Songwriter; Northern American Music; Regional Music
+Americana; Singer-Songwriter; Country; Northern American Music; Regional Music
+Chamber Pop; Singer-Songwriter; Indie Pop
+Chamber Folk; Singer-Songwriter; Indie Folk; Contemporary Folk
+Power Pop; J-Rock; Television Music; Pop Rock; Alternative Rock; Soundtrack; Descriptor Genres
+Bitpop; Television Music; J-Pop; Glitch Pop; Indietronica; Electronic; Soundtrack; Descriptor Genres
+Television Music; Chiptune; Bitpop; Soundtrack; Descriptor Genres; Bit Music; Electronic; Pop
+Bitpop; Television Music; Indietronica; Glitch Pop; Electronic; Soundtrack; Descriptor Genres
+Glitch Pop; Amb–ent House; Electronic; Indietronica; EDM; Dance
+Dance-Pop; Diva House; Brazilian Bass; EDM; Electronic
+Singer-Songwriter; Pop
+Indie Rock; F0lk Rock; Folk Pop; Alternative Rock; Contemporary Folk
+Indie Rock; F0lk Rock; Folk Pop; Alternative Rock; Contemporary Folk
+Indie Rock; F0lk Rock; Folk Pop; Alternative Rock; Contemporary Folk
+Indie Rock; F0lk Rock; Folk Pop; Alternative Rock; Contemporary Folk
+Indie Rock; F0lk Rock; Folk Pop; Alternative Rock; Contemporary Folk
+Heartland Rock; Country; Americana; Singer-Songwriter; C0untry Rock; Northern American Music; Regional Music
+Americana; Singer-Songwriter; Alt-Country; Northern American Music; Regional Music
+Americana; Country; Singer-Songwriter; Northern American Music; Regional Music
+Americana; Singer-Songwriter; Country; Northern American Music; Regional Music
+Chamber Pop; Singer-Songwriter; Indie Pop
+Chamber Folk; Singer-Songwriter; Indie Folk; Contemporary Folk
+Power Pop; J-Rock; Television Music; Pop Rock; Alternative Rock; Soundtrack; Descriptor Genres
+Bitpop; Television Music; J-Pop; Glitch Pop; Indietronica; Electronic; Soundtrack; Descriptor Genres
+Television Music; Chiptune; Bitpop; Soundtrack; Descriptor Genres; Bit Music; Electronic; Pop
+Bitpop; Television Music; Indietronica; Glitch Pop; Electronic; Soundtrack; Descriptor Genres
+Glitch Pop; Amb–ent House; Electronic; Indietronica; EDM; Dance
+Dance-Pop; Diva House; Brazilian Bass; EDM; Electronic
+Singer-Songwriter; Pop
+Indie Rock; F0lk Rock; Folk Pop; Alternative Rock; Contemporary Folk
+Indie Rock; F0lk Rock; Folk Pop; Alternative Rock; Contemporary Folk
+Indie Rock; F0lk Rock; Folk Pop; Alternative Rock; Contemporary Folk
+Indie Rock; F0lk Rock; Folk Pop; Alternative Rock; Contemporary Folk
+Indie Rock; F0lk Rock; Folk Pop; Alternative Rock; Contemporary Folk
+Heartland Rock; Country; Americana; Singer-Songwriter; C0untry Rock; Northern American Music; Regional Music
+Americana; Singer-Songwriter; Alt-Country; Northern American Music; Regional Music
+Americana; Country; Singer-Songwriter; Northern American Music; Regional Music
+Americana; Singer-Songwriter; Country; Northern American Music; Regional Music
+Chamber Pop; Singer-Songwriter; Indie Pop
+Chamber Folk; Singer-Songwriter; Indie Folk; Contemporary Folk

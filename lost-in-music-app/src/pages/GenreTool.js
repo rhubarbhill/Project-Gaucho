@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import GenreProcessor from "../GenreProcessor"
+import UnfilteredProcessor from "../UnfilteredProcessor";
 
 function GenreTool() {
 
@@ -40,6 +41,7 @@ function GenreTool() {
         <div>
             <Navbar />
             <GenreProcessor />
+            <UnfilteredProcessor />
             
         </div>
     )

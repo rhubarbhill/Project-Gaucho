@@ -26,6 +26,14 @@
         {
             "matches": ["https://rateyourmusic.com/rgenre/set?album_id=*"],
             "js": ["scripts/genre-page-script.js"]
+        },
+        {
+            "matches": ["https://rateyourmusic.com/song/*"],
+            "js": ["scripts/song-page-script.js"]
+        },
+        {
+            "matches": ["https://rateyourmusic.com/admin/queue/hq/profile_history?type=d&context=p"],
+            "js": ["scripts/descriptor-queue-script.js"]
         }
     ]
 }  

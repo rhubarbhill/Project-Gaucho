@@ -58,7 +58,7 @@ h1{
 .search-container {
   float: right; /* Float the search container to the right */
   width: 100%; /* Set a width for the search container */
-  height: 35vh;
+  height: 48vh;
   padding: 15px; /* Padding inside the search container */
   background-color: #f9f9f9; /* Background color */
   box-sizing: border-box; /* Include padding in width calculation */
@@ -81,6 +81,29 @@ h1{
   font-weight: bold; /* Bold font for song name */
   display: block; /* Ensure song name is on its own line */
 }
+
+/* All matching songs */
+
+.all-matching-songs {
+  height: 75vh; /* Taller than the main song container */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 15px; /* Padding inside the container */
+  border-left: 1px solid #ccc; /* Border on the left */
+  background-color: #f9f9f9; /* Slightly lighter background for differentiation */
+  box-sizing: border-box; /* Include padding in height/width calculations */
+}
+
+.all-matching-songs .song-row {
+  margin-bottom: 10px; /* Spacing between rows */
+  padding: 10px; /* Padding inside each row */
+  border-radius: 5px; /* Rounded corners for cleaner look */
+  text-align: left; /* Ensure left alignment */
+  display: flex; /* Ensure content behaves predictably */
+  align-items: flex-start; /* Align items to the top */
+  gap: 0; /* No gaps between children */
+  box-sizing: border-box; /* Include padding in width calculations */
+}
+
 
 /* Content wrapper for song info and buttons */
 .song-content {

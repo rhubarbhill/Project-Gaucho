@@ -517,7 +517,7 @@ def csv_back_main_multi(filename):
         csvreader = csv.reader(file)
         for row in csvreader:
             string = back_main_multiple(str(row[0]))
-            with open('sheetoutput.txt', 'a', encoding="utf-8") as f:
+            with open('Genre Tree Program\sheetoutput.txt', 'a', encoding="utf-8") as f:
                 f.write(string)
                 f.write('\n')
 
@@ -549,7 +549,7 @@ def print_testing():
     return "Hello from Python! (Testing)"
 
 def main():
-    csv_extract('Genre Tree Program\genres5.csv')
+    csv_extract('Genre Tree Program\genres6.csv')
 
     back_main_input = input('Input a list of genres, separated by semicolons: ')
     print(back_main_multiple(str(back_main_input)))

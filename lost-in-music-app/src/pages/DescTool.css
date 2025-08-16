@@ -24,7 +24,6 @@ table td {
     font-weight: bold;
     padding: 10px 20px;
     width: 145px;
-    background-color: transparent;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -37,6 +36,50 @@ textarea {
     font-size: 1.5rem;
     height: 100px;
     width: 500px;
+}
+
+/* Buttons container */
+.desc-tool desc_buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 10px;
+}
+
+/* Copy All Button */
+.copy-all {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 145px; /* Matches the width of the "Reset" button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.copy-all:hover {
+    background-color: #0056b3;
+}
+
+/* Reset Button */
+.reset {
+    background-color: red;
+    color: white;
+    margin-left: 100px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.reset:hover {
+    background-color: rgb(218, 3, 3);
 }
 
 .blank button {
@@ -285,10 +328,10 @@ textarea {
     color: #ea9999;
 }
 
-.reset button {
+/* .reset button {
     background-color: red;
     color: white;
-}
+} */
 
 .strike {
     color: rgb(70, 67, 67);

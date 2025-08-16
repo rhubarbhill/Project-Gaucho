@@ -1,4 +1,4 @@
-const genresText = `Pure Tag,Edited Version (if appl.) –,I. Parents,A1,A2,A3,A4,A5,A6,A7,A8,A9,A10,A11,A12
+Pure Tag,Edited Version (if appl.) –,I. Parents,A1,A2,A3,A4,A5,A6,A7,A8,A9,A10,A11,A12
 Top-level,Top-level,,,,,,,,,,,,,
 Ambient,Ambient,Top-level,Top-level,,,,,,,,,,,
 Blues,Blues,Top-level,Top-level,,,,,,,,,,,
@@ -924,6 +924,4 @@ Digital Fusion,Digital Fusion,Electronic,Electronic,,,,,,,,,,,
 16-bit,16-bit,Sequencer & Tracker,Sequencer & Tracker,Bit Music,Electronic,,,,,,,,,
 Southeastern Brazilian Music,Southeastern Brazilian Music,Brazilian Music,Brazilian Music,South American Music,Regional Music,,,,,,,,,
 Clube da esquina,Clube da esquina,MPB; Southeastern Brazilian Music; Scenes & Movements,MPB,Southeastern Brazilian Music,Brazilian Music,South American Music,Regional Music,Scenes & Movements,,,,,,
-Mall Screamo,Mall Scream0,Emo; Post-Hardcore; Alternative Rock,Emo,Punk,Post-Hardcore,Hardcore [Punk],Rock,Alternative Rock,,,,,,`;
-
-export default genresText
+Mall Screamo,Mall Scream0,Emo; Post-Hardcore; Alternative Rock,Emo,Punk,Post-Hardcore,Hardcore [Punk],Rock,Alternative Rock,,,,,,

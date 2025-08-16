@@ -2,8 +2,38 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import './DescTool.css'
+import GenreProcessor from "../GenreProcessor"
 
 function DescTool() {
+
+    // Function to handle striking out words in the table
+    function handleTextareaInput() {
+        const textarea = document.querySelector("#descriptor-area");
+        const typedWords = textarea.value.split(";").map(word => word.trim());
+
+        // Reset all strikes first
+        document.querySelectorAll(".strike").forEach(element => {
+            element.classList.remove("strike");
+        });
+
+        // Strike out words in the table that match typed words
+        typedWords.forEach(word => {
+            const buttonElement = document.getElementById(word);
+            if (buttonElement) {
+                buttonElement.classList.add("strike");
+            }
+        });
+    }
+
+    // Function to handle the "Copy All" button
+    function copyAll() {
+        const textarea = document.querySelector("#descriptor-area");
+        textarea.select();
+        document.execCommand("copy");
+
+        // navigator.clipboard.writeText(textarea);
+        // alert("Copied all text to clipboard!");
+    }
 
     function writeText(descriptor) {
         let classes = document.getElementById(descriptor)
@@ -16,20 +46,29 @@ function DescTool() {
         }
     }
 
+    // function reset() {
+    //     let classes = document.getElementsByClassName("strike")
+
+    //     for (let i = classes.length-1; i >= 0; i--) {
+    //         classes[i].classList.remove("strike")
+    //     }
+
+    //     document.querySelector("#descriptor-area").value = ""
+
+    // }
+
+    // Function to handle reset
     function reset() {
-        let classes = document.getElementsByClassName("strike")
-
-        for (let i = classes.length-1; i >= 0; i--) {
-            classes[i].classList.remove("strike")
-        }
-
-        document.querySelector("#descriptor-area").value = ""
-
+        const struckElements = document.querySelectorAll(".strike");
+        struckElements.forEach(element => element.classList.remove("strike"));
+        document.querySelector("#descriptor-area").value = "";
     }
 
-    return (<div className="desc-tool">
+    return (<div>
 
         <Navbar />
+
+        <div className="desc-tool">
 
         <h1>Descriptor Tool</h1>
 
@@ -191,12 +230,22 @@ function DescTool() {
                 </tr>
             </tbody>
         </table>
-
-    <textarea id="descriptor-area" name="descriptor area"></textarea>
-
-    <div className="reset" id="reset">
-        <button onClick={() => reset()}>Reset</button>
     </div>
+
+    {/* Textarea */}
+    <textarea
+                id="descriptor-area"
+                name="descriptor-area"
+                onInput={handleTextareaInput}
+            ></textarea>
+
+    {/* Buttons */}
+    <div className="desc_buttons">
+                <button className="copy-all" onClick={copyAll}>Copy All</button>
+                <button className="reset" onClick={reset}>Reset</button>
+            </div>
+    
+    <GenreProcessor />
 
     </div>)
 }
